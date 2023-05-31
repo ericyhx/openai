@@ -1,0 +1,2340 @@
+
+
+
+
+
+
+A propos de nous
+
+
+hsjQuery = window['jQuery'];
+
+
+
+
+
+a.cta_button{-moz-box-sizing:content-box !important;-webkit-box-sizing:content-box !important;box-sizing:content-box !important;vertical-align:middle}.hs-breadcrumb-menu{list-style-type:none;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px}.hs-breadcrumb-menu-item{float:left;padding:10px 0px 10px 10px}.hs-breadcrumb-menu-divider:before{content:'›';padding-left:10px}.hs-featured-image-link{border:0}.hs-featured-image{float:right;margin:0 0 20px 20px;max-width:50%}@media (max-width: 568px){.hs-featured-image{float:none;margin:0;width:100%;max-width:100%}}.hs-screen-reader-text{clip:rect(1px, 1px, 1px, 1px);height:1px;overflow:hidden;position:absolute !important;width:1px}
+
+
+
+
+
+
+  .widget_31428439164 .container-fluid {
+    max-width: 95% !important;
+    margin: 0 auto !important;
+    float: none !important;
+    padding: 0 15px;
+    width: 100%;
+  }
+
+  
+  .widget_31428439164 .Banner_contact.left{ text-align:left;}
+  .widget_31428439164 .Banner_contact.right{ text-align:right;}
+  .widget_31428439164 .Banner_contact.center{ text-align:center;}
+
+  .widget_31428439164 .uppercase{
+    text-transform: uppercase;
+  }
+  .widget_31428439164 .vimeo-wrapper video {
+    position: absolute;
+    z-index: -100;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    background-size: cover;
+    overflow: hidden;
+    opacity: 1;
+    transition: 2s opacity;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  .widget_31428439164 .explore {
+    position: absolute;
+    bottom: 22px;
+    font-size: 16px;
+    left: 50%;
+    color: #FFF;
+    transform: translateX(-50%);
+    z-index: 1990;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    text-align: center;
+  }
+  .widget_31428439164 .explore span {
+    color: #fff;
+    display: block;
+  }
+  .widget_31428439164 .explore i.icon {
+    margin: 5px auto 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 9px 0 9px;
+    border-color: #FFF transparent transparent transparent;
+    animation: pulse 2s infinite;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .widget_31428439164 .defaut{
+    text-transform: inherit;
+  }
+  .widget_31428439164 .capitalize{
+    text-transform: capitalize;
+  }
+  .widget_31428439164 .Banner_contact h1{ 
+    color:#ffffff;
+    font-size:100px;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 22px;
+  }
+  .widget_31428439164 .Banner_contact h4 { 
+    color: rgba(255, 255, 255, 1.0);
+    font-size: 32px;
+    line-height: 1.5;
+  }
+  .widget_31428439164 .Banner_contact .geek_banner-desc p { 
+    color:#ffffff;
+    font-size:12px;
+  }
+
+
+  .banner_section {
+    width: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 135px;
+    padding-bottom:  135px;
+  }
+  @keyframes pulse {
+    0% {
+      -webkit-transform: translate(0, 0);
+      transform: translate(0, 0);
+    }
+    50% {
+      -webkit-transform: translate(0, 10px);
+      transform: translate(0, 10px);
+    }
+    100% {
+      -webkit-transform: translate(0, 0);
+      transform: translate(0, 0);
+    }
+  }
+
+  .conatiner_wrap {
+    /*position: absolute;*/
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+  .widget_31428439164 .overlay{
+    background-color: #011031;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .vimeo-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*height:calc(100vh - 0px);*/
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+    overflow: hidden;
+  }
+  .vimeo-wrapper iframe {
+    width: 100vw;
+    height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+    min-height: 100vh;
+    min-width: 177.77vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .image_Section{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*height:calc(100vh - 0px); */
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+  }
+  .widget_31428439164 .banner_section .img-overlay{
+    background-color: #141724;
+    opacity: 0.0; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+  }
+  .widget_31428439164 .Banner_contact ul li a {
+    display: inline-block;
+    height: 50px;
+    line-height: 48px;
+    margin: 0;
+    padding: 0 30px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 5px;
+    border:2px solid #ffffff;   
+    text-decoration: none;
+    border-radius:5px; 
+  }
+  .widget_31428439164 .Banner_contact ul li a:hover{
+    background-color: #FF0201 !important;
+    color:#ffffff;
+    border:2px solid #FF0201 !important; 
+  }
+  .gareer_mail {
+    position: relative;
+    text-align: center;
+    padding: 25px 0;
+  }
+  .gareer_mail a {
+    padding: 0 10px;
+    color: #333;
+    z-index: 2;
+    position: relative;
+    background: #fff;
+  }
+  .gareer_mail:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    left: 0;
+    border-bottom: 1px solid #C9C9C9;
+    z-index: 1;
+  }
+
+  
+
+  @media screen and (max-width: 1199px) {
+
+    div.widget_31428439164 .Banner_contact h1 {
+      font-size: 42px;
+    }
+
+
+  }
+
+  @media screen and (max-width: 991px) {
+
+    div.widget_31428439164 .Banner_contact h1 {
+      font-size: 32px;
+    }
+    div.widget_31428439164 .Banner_contact p {
+      font-size: 22px;
+    }
+
+  }
+
+
+  @media screen and (max-width: 767px) {
+    .Banner_contact h1 br {
+      display: none;
+    }
+    div.widget_31428439164 .geek_banner-desc p {
+      display: inline;
+    }
+
+    
+    .widget_31428439164 .banner_section {
+      background-image: url(https://source.www.geekplus.com/hubfs/Geek%20Plus%20Images%202020/about-us-%E6%89%8B%E6%9C%BA%E7%AB%AF.jpg) !important; 
+    }
+    
+
+
+  }
+
+
+  @media screen and (max-width: 639px) {
+
+    div.widget_31428439164 .Banner_contact h1 {
+      font-size: 28px;
+    }
+    .widget_31428439164 .banner_section {
+      padding-top: 105px;
+      padding-bottom: 100px;
+    }
+    div.widget_31428439164 .Banner_contact h4 {
+      font-size: 16px;
+    }
+
+
+  }
+
+
+  @media screen and (max-width: 359px) {
+
+    div.widget_31428439164 .Banner_contact h1 {
+      margin-bottom: 7px;
+      line-height: 1.5;
+    }
+
+
+  }
+
+
+
+
+
+
+  .box-about-top-text .title.type1, .about_leader .title.type1 {
+    margin-top: 76px;
+  }
+  .title.type1 {
+    position: relative;
+    text-align: center;
+  }
+  .about-text .title {
+    margin: 50px 0;
+  }
+  .title.type1 h2 {
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.3;
+    background-color: #FFF;
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    padding: 0 76px;
+    font-weight: normal;
+    color: #333;
+    font-size: 34px;
+  }
+  .box-about-top-text .title.type1 h2, .about_leader .title.type1 h2 {
+    line-height: 1;
+  }
+  .title.type1:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #333;
+    z-index: 1;
+  }
+  .box-about-top-text .d-flex {
+    justify-content: space-between;
+  }
+  .box-about-top-text .d-flex p {
+    font-size: 16px;
+    text-align: center;
+  }
+  .box-about-top-text p {
+    margin-bottom: 15px;
+  }
+  .about_info_number ul {
+    padding: 60px 0;
+  }
+  .about_info_number li {
+    float: left;
+    width: 20%;
+    padding: 8px 0;
+    position: relative;
+    text-align: center;
+  }
+  .about_info_number small {
+    font-size: 16px;
+    display: block;
+  }
+  .about_info_number li em {
+    margin-top: 20px;
+    display: inline-block;
+    color: #333;
+    font-size: 60px;
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  .about_info_number .icon img {
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+    vertical-align: middle;
+  }
+  .about_info_number li:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 90%;
+    border-right: 1px solid #999;
+  }
+  .about_info_number li:nth-last-of-type(1):after {
+    display: none;
+  }
+  .about_info_number ul {
+    padding: 60px 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+
+  
+
+  @media screen and (max-width: 1199px) {
+
+    div.about_info_number li em {
+      margin-top: 12px;
+      font-size: 40px;
+    } 
+
+
+  }
+
+  @media screen and (max-width: 991px) {
+
+    div.about_info_number li {
+      width: 33%;
+    }
+    div.title.type1 h2 {
+      font-size: 28px;
+    }
+
+
+  } 
+
+  @media screen and (max-width: 639px) {
+
+    div.about_info_number li {
+      width: 50%;
+    }
+    div.title.type1 h2 {
+      font-size: 24px;
+      width: 100%;
+      padding: 0;
+    }
+    div.box-about-top-text .title.type1, div.about_leader .title.type1 {
+      margin-top: 50px;
+      margin-bottom: 30px;
+    }
+    div.about_info_number li em {
+      margin-top: 10px;
+      font-size: 32px;
+    }
+    div.about_info_number ul {
+      padding-bottom: 0px;
+      padding-top: 40px;
+    }
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .about_map_grid .title.type1 {
+    position: relative;
+    text-align: center;
+  }
+  .about_map_grid .title {
+    margin: 50px 0;
+  }
+  .about_map_grid .title.type1 h2 {
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.3;
+    background-color: #FFF;
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    padding: 0 76px;
+    font-weight: normal;
+    color: #333;
+    font-size: 34px;
+  }
+  .about_map_grid .title.type1:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #333;
+    z-index: 1;
+  }
+
+
+  
+
+  @media screen and (max-width: 767px) {
+
+    div.about_map_grid .title.type1 h2 {
+      padding: 0 15px;
+      font-size: 24px;
+    }
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .about_care .title {
+    margin: 50px 0;
+  }
+
+  .about_care .title.type1 {
+    position: relative;
+    text-align: center;
+  }
+
+  .about_care .textcenter {
+    text-align: center !important;
+    justify-content: center;
+  }
+
+  .about_care .title.type1 h2 {
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.3;
+    background-color: #FFF;
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    padding: 0 76px;
+    font-weight: normal;
+    color: #333;
+    font-size: 34px;
+  }
+
+  .about_care .title.type1 h2 {
+    max-width: 660px;
+  }
+
+  .about_care .title.type1:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #333;
+    z-index: 1;
+  }
+
+  .odm_work {
+    background-color: #FFF;
+    padding: 1px 0;
+  }
+
+  .odm_work ul {
+    position: relative;
+    margin: 0 35px;
+  }
+
+  .odm_work li {
+    background-color: #FFF;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    color: #494A4C;
+    font-size: 16px;
+    flex-wrap: wrap;
+    transition: all 0.3s;
+    position: relative;
+  }
+
+  .odm_work li:nth-of-type(1).act {
+    color: #009FEF;
+  }
+
+  .odm_work li p {
+    display: block;
+    color: #F3F3F3;
+    font-size: 21px;
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+  }
+
+  .odm_work li:nth-of-type(1).act p {
+    color: #009FEF;
+  }
+
+  .odm_work li:nth-of-type(2).act p {
+    color: #ffcc66;
+  }
+
+  .odm_work li:nth-of-type(3).act p {
+    color: #ec6c7b;
+  }
+
+  .odm_work li:nth-of-type(4).act p {
+    color: #c3ec6f;
+  }
+
+  .odm_work li:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 9px 8px 9px;
+    border-color: transparent transparent #eee transparent;
+    position: absolute;
+    bottom: -36px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .odm_work li.act:after {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .odm_work li:hover .icon {
+    display: none !important;
+  }
+
+  .odm_work li:hover .icon-hover {
+    display: inline-block !important;
+  }
+
+  .odm_work li .icon-hover {
+    display: none;
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .odm_work li .icon {
+    text-align: center;
+    font-weight: bold;
+    color: #F3F3F3;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .odm_work li:nth-of-type(1) .icon {
+    background-image: url(https://source.www.geekplus.com/hubfs/Geek%20Plus%20Images%202020/C.png);
+  }
+
+  .odm_work li:nth-of-type(1).act .icon {
+    background-image: url(https://source.www.geekplus.com/hubfs/Geek%20Plus%20Images%202020/C2.png);
+  }
+
+  .odm_work li:nth-of-type(2) .icon {
+    background-image: url(https://source.www.geekplus.com/hubfs/Geek%20Plus%20Images%202020/A.png);
+  }
+
+  .odm_work li:nth-of-type(2).act .icon {
+    background-image: url(https://source.www.geekplus.com/hubfs/Geek%20Plus%20Images%202020/A2.png);
+  }
+
+  .odm_work li:nth-of-type(3) .icon {
+    background-image: url(https://source.www.geekplus.com/hubfs/Geek%20Plus%20Images%202020/R.png);
+  }
+
+  .odm_work li:nth-of-type(3).act .icon {
+    background-image: url(https://source.www.geekplus.com/hubfs/Geek%20Plus%20Images%202020/R2.png);
+    color: #ec6c7b;
+  }
+
+  .odm_work li:nth-of-type(4) .icon {
+    background-image: url(https://source.www.geekplus.com/hubfs/Geek%20Plus%20Images%202020/E.png);
+  }
+
+  .odm_work li:nth-of-type(4).act .icon {
+    background-image: url(https://source.www.geekplus.com/hubfs/Geek%20Plus%20Images%202020/E2.png);
+    color: #c3ec6f;
+  }
+
+  .odm_work .text_over {
+    color: #333;
+    width: 90%;
+    box-sizing: border-box;
+    left: 0;
+    border-radius: 10px;
+    margin: 35px auto 0;
+    background-color: #eee;
+  }
+
+  .odm_work .text_over ul {
+    list-style: initial;
+    padding: revert;
+  }
+
+  .odm_work .text_over ul li {
+    background: unset;
+    display: list-item;
+    border: none;
+  }
+
+  .odm_work .text_over p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .odm_work .text_over p:last-child {
+    margin-bottom: 0;
+  }
+
+  .odm_work .text_over {
+    padding: 35px 25px;
+  }
+
+  .text p {
+    line-height: 1.5;
+  }
+
+
+  @media screen and (max-width: 991px) {
+
+    .about_care .title.type1 h2 {
+      font-size: 28px;
+      padding: 0 15px;
+    }
+
+    .about_care .title.type1 h2 {
+      max-width: 458px;
+    }
+
+    .odm_work ul {
+      flex-wrap: wrap;
+    }
+
+    .odm_work li {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    .odm_work li p {
+      width: 100%;
+      text-align: center;
+      margin-top: 0;
+    }
+
+
+
+  }
+
+  @media screen and (max-width: 767px) {
+
+    div.about_care .title.type1 h2 {
+      max-width: 100%;
+      font-size: 24px;
+    }
+
+
+
+
+  }
+
+
+
+
+  .about_awards .title {
+    margin: 110px 0 50px 0;
+  }
+  .about_awards .title.type1 {
+    position: relative;
+    text-align: center;
+  }
+  .about_awards .title.type1 h2 {
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.3;
+    background-color: #FFF;
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    padding: 0 76px;
+    font-weight: normal;
+    color: #333;
+    font-size: 34px;
+  }
+  .about_awards-left {
+    flex: 0 0 40%;
+    max-width: 40%;
+  }
+  .about_awards-right {
+    flex: 0 0 40%;
+    max-width: 40%;
+  }
+  .about_awards-row ul li {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 10px 15px;
+  }
+  .about_awards-row ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .about_awards-center {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+  .about_awards-row .about_awards-center li {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .about_awards {
+    padding-bottom: 70px;
+  }
+
+
+  
+
+  @media screen and (max-width: 767px) {
+
+    div.about_awards .title.type1 h2 {
+      padding: 0 15px;
+      font-size: 24px;
+    }
+
+
+
+  }
+
+  @media screen and (max-width: 639px) {
+
+    div.about_awards-left, div.about_awards-right {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    div.about_awards-center {
+      flex: 0 0 100%;
+      max-width: 100%;
+      text-align: center;
+    }
+    div.about_awards .title {
+      margin: 55px 0 40px 0;
+    }
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .box-about-top-text .title.type1, .about_leader .title.type1 {
+    margin-top: 76px;
+  }
+  .about_leader .title {
+    margin: 50px 0;
+  }
+  .box-about-top-text  .title.type1 {
+    position: relative;
+    text-align: center;
+  }
+  .about_leader .title.type1 h2 {
+    /* max-width: 905px; */
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.3;
+    background-color: #f6f6f6;
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    padding: 0 76px;
+    font-weight: normal;
+    color: #333;
+    font-size: 34px;
+  }
+  .box-about-top-text .title.type1 h2, .about_leader .title.type1 h2 {
+    line-height: 1;
+  }
+  .bgccc {
+    background-color: #F6F6F6;
+  }
+  .about_leader {
+    padding: 1px 0 50px;
+  }
+  .about_leader .title.type1:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #333;
+    z-index: 1;
+  }
+  .about_leader-list li {
+    flex: 0 0 25%;
+    max-width: 25%;
+    text-align: center;
+    padding: 0 15px;
+  }
+  ul.about_leader-list {
+    margin: 0 -15px;
+  }
+  a {
+    transition: all 0.3s;
+  }
+  .about_leader .imgshow {
+    position: relative;
+  }
+  .about_leader .imgshow img {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: max-content;
+  }
+  .about_leader .text_layer, .about_leader .layer_img {
+    display: none;
+  }
+  .about_leader h4 {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+  }
+  .about_leader li p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    height: 42px;
+    line-height: 1.5;
+    overflow: hidden;
+  }
+
+  .layui-layer-my .layui-layer-content {
+    padding: 5% 7%;
+  }
+  .layui-layer-my .user_grid {
+    display: block;
+    position: relative;
+    padding-left: 380px;
+  }
+  .layui-layer-my .imgshow {
+    position: absolute;
+    left: 0;
+    top: -30px;
+    width: 350px;
+  }
+  .layui-layer-my .imgshow img.layer_img {
+    display: block;
+  }
+  .layui-layer-my .imgshow img {
+    display: none;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    width: 350px;
+  }
+  .layui-layer-my .imgshow img {
+    display: none;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    width: 350px;
+  }
+  .layui-layer-my .text {
+    display: none;
+  }
+  .layui-layer-my h4 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 13px;
+    font-weight: normal;
+  }
+  .layui-layer-my .btn.hover {
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    width: auto;
+    display: inline-block;
+    border-radius: 7px;
+    font-size: 16px;
+  }
+  .btn.hover, .btn:hover {
+    background-color: #009FEF;
+    color: #FFF;
+    box-shadow: none;
+  }
+  .layui-layer-my .text_p {
+    min-height: 428px;
+  }
+  .layui-layer-my .text_p p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  .about_leader .text_layer, .about_leader .layer_img {
+    display: none;
+  }
+  .layui-layer-my .layui-layer-title {
+    display: none;
+  }
+  .layui-layer-my .layui-layer-title {
+    background-color: #FFF;
+    border-bottom: 0;
+  }
+  .layui-layer-my .layui-layer-setwin .layui-layer-close1 {
+    background: url(https://source.www.geekplus.com/hubfs/Geek%20Plus%20Images%202020/close.jpg) no-repeat 50% 50%;
+    background-size: 22px;
+    width: 22px;
+    height: 20px;
+    z-index: 3;
+  }
+
+
+  
+
+  @media screen and (max-width: 991px) {
+
+    ul.about_leader-list li {
+      flex: 0 0 33.33336%;
+      max-width: 33.33336%;
+    }
+    div.layui-layer-my .user_grid {
+      padding-left: 0px;
+    }
+    div.layui-layer-my .imgshow {
+      position: relative;
+      left: 0;
+      top: 0;
+      width: 100%;
+      text-align: center;
+    }
+    div.layui-layer-my .imgshow img.layer_img {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .layui-layer-content .text_layer {
+      width: 100%;
+      text-align: center;
+    }
+
+
+  }
+
+  @media screen and (max-width: 639px) {
+
+    ul.about_leader-list li {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+    div.about_leader .title.type1 h2 {
+      padding: 0;
+      font-size: 26px;
+      width: 100%;
+    }
+
+
+  }
+
+  @media screen and (max-width: 479px) {
+
+    ul.about_leader-list li {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+
+  }
+
+
+
+
+
+  .about_video>.m-width-1200 {
+    position: relative;
+  }
+  .about_video .title.type1 {
+    margin-top: 100px;
+    margin-bottom: 72px;
+  }
+  .about_video .title.type1 {
+    position: relative;
+    text-align: center;
+  }
+  .about_video .title {
+    margin: 50px 0;
+  }
+  .about_video .title.type1 h2 {
+    /* max-width: 905px; */
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1;
+    background-color: #FFF;
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    padding: 0 76px;
+    font-weight: normal;
+    color: #333;
+    font-size: 34px;
+  }
+
+  
+
+  @media screen and (max-width: 991px) {
+
+    div.about_video .title.type1 h2 {
+      padding: 0 15px;
+      font-size: 25px;
+    }
+    div.about_video .title.type1 {
+      margin-top: 60px;
+      margin-bottom: 32px;
+    }
+
+
+  }
+
+
+
+
+
+
+
+  .widget_31428439171 iframe {
+    border: none;
+    border-radius: 10px;
+  }
+  .widget_31428439171 .hs-oembed__starter, .widget_31428439171 .hs-mp4-Video {
+    margin-top: 0px;
+  }
+  
+  .widget_31428439171 .hs-mp4-Video video {
+    width: 65%;
+    max-height: 431px;
+    margin: 0 auto;
+    box-shadow: 0px 10px 27px 3px rgba(0, 0, 0, 0.14);
+    /* background-image: url(https://source.www.geekplus.com/hubfs/766x431%E5%B1%8F%E4%BF%9D-%E6%8B%A3%E9%80%89nike.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: contain; */
+}
+  .hs-mp4-Video { text-align: center; position: relative;}
+
+  
+
+  @media screen and (max-width: 991px) {
+
+    div.widget_31428439171 .hs-oembed__starter {
+      margin-top: 0px;
+    }
+    div.widget_31428439171 {
+      padding: 20px 0px;
+    }
+
+
+
+  }
+
+  @media screen and (max-width: 767px) {
+
+    div#hs-oembed__starter--target_widget_31428439171 {
+      max-width: 766px;
+      padding-bottom: 85%; 
+    }
+
+
+
+  }
+
+
+
+  .widget_1617191207061 .spacer{
+        height:50px;
+    }
+  
+  @media(max-width:767px){
+    .widget_1617191207061 .spacer{
+        height:30px;
+    } 
+    
+  }
+
+
+
+var _hsp = window._hsp = window._hsp || [];
+_hsp.push(['addPrivacyConsentListener', function(consent) { if (consent.allowed || (consent.categories && consent.categories.analytics)) {
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create','UA-112333841-1','auto');
+  ga('send','pageview');
+}}]);
+
+
+
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+
+if (!window._hsGoogleConsentRunOnce) {
+  window._hsGoogleConsentRunOnce = true;
+
+  gtag('consent', 'default', {
+    'ad_storage': 'denied',
+    'analytics_storage': 'denied'
+  });
+
+  var _hsp = window._hsp = window._hsp || [];
+
+  _hsp.push(['addPrivacyConsentListener', function(consent){
+    var hasAnalyticsConsent = consent && (consent.allowed || (consent.categories && consent.categories.analytics));
+    var hasAdsConsent = consent && (consent.allowed || (consent.categories && consent.categories.advertisement));
+
+    gtag('consent', 'update', {
+      'ad_storage': hasAdsConsent ? 'granted' : 'denied',
+      'analytics_storage': hasAnalyticsConsent ? 'granted' : 'denied'
+    });
+  }]);
+}
+
+gtag('js', new Date());
+gtag('set', 'developer_id.dZTQ1Zm', true);
+gtag('config', 'G-KY9L2DX70B');
+
+
+
+
+
+var _hsp = window._hsp = window._hsp || [];
+
+var hsLoadGtm = function loadGtm() {
+    if(window._hsGtmLoadOnce) {
+      return;
+    }
+
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-P9R4HZ2');
+
+    window._hsGtmLoadOnce = true;
+};
+
+var useGoogleConsentMode = false;
+
+if (!useGoogleConsentMode){
+    _hsp.push(['addPrivacyConsentListener', function(consent){
+      if(consent.allowed || (consent.categories && consent.categories.analytics)){
+        hsLoadGtm();
+      }
+  }]);
+} else{
+    if(!window._hsGoogleConsentRunOnce){
+      window._hsGoogleConsentRunOnce=true;
+
+      window.dataLayer=window.dataLayer||[];
+      function gtag(){dataLayer.push(arguments);}
+
+      gtag('consent','default',{
+        'ad_storage':'denied',
+        'analytics_storage':'denied'
+      });
+
+      gtag('set','developer_id.dZTQ1Zm',true);
+
+      _hsp.push(['addPrivacyConsentListener',function(consent){
+      var hasAnalyticsConsent=consent&&(consent.allowed||(consent.categories&&consent.categories.analytics));
+      var hasAdsConsent=consent&&(consent.allowed||(consent.categories&&consent.categories.advertisement));
+
+      gtag('consent','update',{
+        'ad_storage':hasAdsConsent?'granted':'denied',
+        'analytics_storage':hasAnalyticsConsent?'granted':'denied'
+      });
+    }]);
+  }
+
+  hsLoadGtm();
+}
+
+
+
+
+
+
+!function(){window.analytics||(window.analytics=[]),window.analytics.methods=["identify","track","trackLink","trackForm","trackClick","trackSubmit","page","pageview","ab","alias","ready","group","on","once","off"],window.analytics.factory=function(a){return function(){var t=Array.prototype.slice.call(arguments);return t.unshift(a),window.analytics.push(t),window.analytics}};for(var a=0;a<window.analytics.methods.length;a++){var t=window.analytics.methods[a];window.analytics[t]=window.analytics.factory(t)}analytics.load=function(a){if(!document.getElementById("dreamdata-analytics")){window.a=window.analytics;var t=document.createElement("script");t.async=!0,t.id="dreamdata-analytics",t.type="text/javascript",t.src="https://cdn.dreamdata.cloud/scripts/analytics/v1/dreamdata.min.js";var n=function(){if(analytics&&analytics.initialize)for(analytics.initialize({"Dreamdata.io":{apiKey:a}});window.a.length>0;){var t=window.a.shift(),n=t.shift();analytics[n]&&analytics[n].apply(analytics,t)}};t.addEventListener?t.addEventListener("load",function(){n()},!1):t.onreadystatechange=function(){"complete"!=this.readyState&&"loaded"!=this.readyState||n()};var i=document.getElementsByTagName("script")[0];i.parentNode.insertBefore(t,i)}},analytics.load("48463ff1-067f-482d-896e-fdc77f72e77f"),analytics.page()}();
+
+
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?39cdd0017f43cf7d1b6e3b38e549d281";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+
+
+var hsVars = { app_hs_base_url: 'https://app.hubspot.com' };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Technologie
+
+Robotique 
+
+Série P
+Série RS
+Série S
+Série M
+
+Logiciel
+
+Produits
+
+Goods-to-person
+RoboShuttle
+ Déplacement de charge
+Le Tri
+Entrepôt intelligent
+Usine intelligente
+
+Industries
+
+E-commerce
+Vêtements
+Distribution
+3PL
+Pharmaceutiques
+Fabrication
+Automobile
+
+Assistance
+Entreprise
+
+A propos de Nous
+Nouvelles
+Étude de cas
+Carrière
+
+Contactez Nous
+
+
+
+
+
+
+
+
+
+
+中文
+English
+日本語
+한국어
+Deutsch
+Español
+Français
+繁體中文
+
+
+
+
+
+
+
+
+
+Technologie
+
+Robotique 
+
+Série P
+Série RS
+Série S
+Série M
+
+Logiciel
+
+Produits
+
+Goods-to-person
+RoboShuttle
+ Déplacement de charge
+Le Tri
+Entrepôt intelligent
+Usine intelligente
+
+Industries
+
+E-commerce
+Vêtements
+Distribution
+3PL
+Pharmaceutiques
+Fabrication
+Automobile
+
+Assistance
+Entreprise
+
+A propos de Nous
+Nouvelles
+Étude de cas
+Carrière
+
+Contactez Nous
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.geek_header-menu ul li.hs-menu-depth-1:last-child > a{
+  background: #389fef;
+  border-radius: 45px;
+  padding: 10px;
+  margin-top: 11px;
+  color: white;
+  font-size: 14px;
+}
+.mm-listview>li:last-child:after{
+  display: none;
+}
+.mm-listview li.hs-menu-depth-1:last-child > a{
+  background: #389fef;
+  border-radius: 45px;
+  padding: 10px;
+  margin-top: 11px;
+  color: white;
+  font-size: 14px;
+  max-width: 180px;
+  text-align: center;
+}
+
+
+
+
+
+
+选择另一个国家或地区以查看特定于您的位置的内容。
+
+
+
+
+選擇語言
+中文
+英語
+日本
+
+
+
+繼續
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+A propos de Nous
+Ouvrir L'ère de la Logistique Intelligente
+
+
+
+
+
+
+
+
+
+
+
+
+Qui sommes-nous ?
+
+
+
+Geek+ est un leader mondial de solutions robotiques pour la logistique. La société développe des solutions automatisées flexibles, denses, fiables et efficaces pour la gestion des flux logistiques dans les entrepôts. Geek+ est le partenaire de confiance de plus de 700 des plus grandes entreprises du monde dans les domaines du retail, du e-commerce, de la logistique et de la grande distribution. Reconnu comme le leader mondial des robots mobiles autonomes, Geek+ compte plus de 1500 employés et possède des bureaux en Allemagne, au Royaume-Uni, en Chine, aux États-Unis, au Japon, en Corée du Sud, à Hong Kong SAR et à Singapour. 
+ Avec l'essor du commerce électronique et la demande d'un mouvement plus rapide et plus flexible des marchandises, les opérateurs d'entrepôts et d'usines sont aujourd'hui confrontés à des défis de production et de logistique de plus en plus complexes. Rapidité, diversification des produits, livraison le jour même, volume, sécurité... ces préoccupations ont un impact sur un large éventail d'industries, de l'habillement à la vente au détail, en passant par l'automobile, et même l'électronique, l'énergie et l'industrie pharmaceutique.
+Geek+ a été fondé pour être la solution à ces problèmes. Nous rendons la logistique abordable, efficace, flexible, sûre et agile. Notre vision est d'établir une chaîne d'approvisionnement entièrement automatisée et intelligente à l'échelle mondiale.
+
+
+
+
+
+
+
+
+
+
+Commandes en USD 2022
+300M+
+
+
+
+
+
+Employés
+1500+
+
+
+
+
+
+Global AMR Market
+Nº 1
+
+
+
+
+
+Brevets
+600+
+
+
+
+
+
+Pays
+40+
+
+
+
+
+
+
+
+
+
+
+
+
+          Notre empreinte mondiale
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+La stratégie de Geek+ CARE pour stimuler la croissance et l'expansion mondiale
+
+
+
+
+
+
+Orienté vers le client
+
+
+
+
+Applications intelligentes
+
+
+
+
+Le service du robot
+
+
+
+
+L'écosystème favorable
+
+
+
+We don’t just focus on one project, but on customers’ operations.
+We design and upgrade our solutions to help customers become more competitive and achieve their business
+            goals.
+We develop comprehensive smart warehouse and smart factory solutions that integrate mobile robots, robot
+            arms, computer vision, IoT technologies and management systems inside the warehouse and the factory.
+
+
+
+
+
+
+
+
+
+
+Le mur d’honneur de Geek+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Direction
+
+
+
+
+
+
+
+
+
+
+
+Yong ZHENG
+Fondateur et PDG
+
+
+Yong ZHENG
+Fondateur et PDG
+
+Yong Zheng est le fondateur et le directeur général de Geek+.
+Yong a grandi en hésitant entre une carrière artistique et une carrière d'ingénieur avant de décider de se concentrer sur l'ingénierie industrielle. Animé par l'idée de trouver des applications industrielles et concrètes aux nouvelles technologies, Yong a rapidement acquis la conviction qu'il pouvait apporter une vision créative au monde de la logistique.
+En 2015, il a décidé de suivre son intuition que la robotique et l'intelligence artificielle seraient la prochaine frontière technologique en fondant Geek+, préparant l'entreprise à mener la révolution de la logistique intelligente et à apporter des solutions d'automatisation innovantes à un large éventail d'industries.
+Sous la direction de Yong, Geek+ est devenu un leader mondial de la robotique avancée et des technologies d'IA, fournissant les meilleures solutions de logistique intelligente aux plus grandes entreprises du monde sur 4 continents. Geek+ figure parmi les 50 premières entreprises mondiales de robotique selon Robotics Business Review. Yong a été nommé dans la liste des "40 under 40" de Fortune China.
+Yong a étudié le génie industriel à l'université de Tsinghua et à la RWTH d'Aix-la-Chapelle avant d'entamer une carrière dans la gestion de la chaîne d'approvisionnement au sein des multinationales ABB et Saint-Gobain, où il était responsable de l'ensemble des opérations, de l'ingénierie au contrôle de la qualité et à la logistique, sur les principaux sites de production en Chine.
+Yong a ensuite rejoint le fonds d'investissement New Horizon Capital où il était responsable de la gestion post-investissement des sociétés du portefeuille et des nouveaux investissements dans les secteurs des TMT et de la robotique.
+Lorsqu'il ne développe pas de nouvelles solutions robotiques, Yong continue à peindre, avec l'aide de ses jumeaux en bas âge.
+Yong est titulaire d'une maîtrise en génie industriel de l'université de Tsinghua et de l'université RWTH Aachen en Allemagne.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hongbo LI
+Co-fondateur, CTO
+
+
+Hongbo LI
+Co-fondateur, CTO
+
+Hongbo Li est co fondateur et directeur de la technologie chez Geek+.
+En tant que directeur technique, il dirige le vaste département de R&D de Geek+ et est responsable de toutes les activités de R&D en matière de robotique, de systèmes logiciels et de conception d'algorithmes d'IA. À la tête d'une équipe de plus de 400 ingénieurs, il encadre certains des esprits les plus brillants dans le développement de solutions technologiques complètes applicables à un large éventail de scénarios industriels.
+Avant de rejoindre Geek+, il était professeur associé au département des sciences et technologies informatiques de l'université de Tsinghua. Hongbo est l'un des plus grands experts mondiaux en matière de systèmes robotiques multi-agents. Il possède 15 ans d'expérience dans la recherche théorique et applicative sur la navigation, la perception et l'ordonnancement de la robotique avancée à grande échelle et les algorithmes d'intelligence artificielle. Il a publié plus de 30 articles dans les principales revues scientifiques mondiales IEEE/IEE.
+Hongbo a obtenu son doctorat en informatique à l'université de Tsinghua. Il a remporté de nombreux prix pour ses recherches, notamment le prix des sciences naturelles du ministère de l'éducation, le prix des sciences et technologies de Pékin et le prix des sciences et technologies de la China Automation Society. Il est membre du comité de rédaction de l'International Journal of Control Automation and Systems.
+Fan de biographies et de romans historiques, Hongbo est également un passionné de tennis de table et on peut le trouver en train de jouer dans différents parcs de Pékin tout au long de l'année.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Kai LIU
+Co-fondateur, VP, BU Produits
+
+
+Kai LIU
+Co-fondateur, VP, BU Produits
+
+Kai Liu est cofondateur et responsable de la BU Picking and Smart Warehouse Products chez Geek+. Il supervise la conception et le développement des robots de prélèvement et de triage, des entrepôts sans personnel et des solutions Orion de Geek+.
+Il est spécialisé dans la conception robotique, y compris les robots mobiles et la desserte visuelle, les systèmes de contrôle, les algorithmes multi-agents et la conception de systèmes logiciels. Il a déposé plus de 30 brevets pour son travail dans le domaine de la robotique.
+Kai est titulaire d'une maîtrise de l'Institut d'intelligence artificielle de l'université de Tsinghua et a reçu le premier prix du concours national chinois de voitures intelligentes et de robotique.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Xi CHEN
+Co-fondateur, VP, Robots R&D
+
+
+Xi CHEN
+Co-fondateur, VP, Robots R&D
+
+Xi Chen est cofondateur et vice-président de la R&D des robots chez Geek+. Il supervise les solutions robotiques de Geek+. En tant que premier membre de l'équipe de robotique, il a fait passer ce département de rien à la force qu'il représente aujourd'hui.
+Avant de rejoindre Geek+, Xi était chef de produit dans le domaine des communications optiques à haut débit chez Raisecom. Avec plus de dix ans d'expérience dans la recherche en robotique appliquée, Xi est spécialisé dans l'automatisation industrielle et la fabrication intelligente.
+Xi est titulaire d'une maîtrise en ingénierie automobile de l'université des sciences et technologies de Pékin. Il est lauréat du concours national chinois de voitures intelligentes et de robotique.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hongyan LIU
+CFO
+
+
+Hongyan LIU
+CFO
+
+Hongyan Liu est directrice financière chez Geek+. Elle supervise le département financier de Geek+ et contribue à définir et à mettre en œuvre la stratégie financière de l'entreprise, l'évaluation des projets et la gestion des risques. Sous sa direction, Geek+ a réalisé des levées de fonds B et C1 en octobre 2018 et juillet 2019.
+Avant de rejoindre Geek+, Hongyan était chef de projet chez Grant Thornton, après avoir travaillé comme directrice financière chez Ya Xia share, une société cotée en bourse. Elle est spécialisée dans les opérations de marché, avec une forte expertise dans les opérations de financement. Elle a plus de 15 ans d'expérience dans les stratégies financières et d'investissement.
+Hongyan est titulaire d'une maîtrise en comptabilité de l'université de Xiamen. Elle a remporté le prix du meilleur talent comptable de la province de Zhejiang.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Willa WANG
+CHO
+
+
+Willa WANG
+CHO
+
+Willa Wang est directrice des ressources humaines chez Geek+. Elle supervise la stratégie d'acquisition et de gestion des talents ainsi que la culture d'entreprise de Geek+. Passionnée par l'idée de trouver les meilleurs talents et de les aider à s'épanouir dans un environnement stimulant et sûr, elle s'efforce de mettre en place un système de gestion des ressources humaines efficace et compatissant pour façonner une culture d'entreprise supérieure.
+Elle possède près de 20 ans d'expérience dans la gestion des ressources humaines. Avant de rejoindre Geek+, Willa Wang était cadre supérieur chez Lenovo Chine, où elle a occupé des postes clés dans le domaine des ressources humaines, notamment ceux de directrice des ressources humaines pour la Chine, de directrice du recrutement pour Lenovo Chine et l'APAC et de directrice mondiale de la rémunération et des avantages sociaux. Elle possède une riche expérience pratique en matière de gestion des performances, de recrutement des talents, de rémunération et d'avantages sociaux, de changement organisationnel et de changement culturel.
+Willa est titulaire d'une maîtrise en gestion de l'Institut de technologie de Harbin.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hong YU
+CMO
+
+
+Hong Yu
+CMO
+
+Hong Yu est directeur du marketing chez Geek+. Il est responsable du positionnement mondial de la société et dirige la stratégie et le plan marketing de l'entreprise, notamment le marketing des ventes, les partenariats stratégiques mondiaux, les relations publiques, les événements et le contenu.
+Hong a passé toute sa carrière à se concentrer sur le service à la clientèle, en plaçant le client au cœur des stratégies de marketing. Il possède une vaste expérience de la formulation et de la gestion de stratégies de marketing pour des entreprises technologiques figurant au classement Fortune 500.
+Hong a rejoint Geek+ après avoir travaillé chez Amazon, où il était responsable du marketing de Kindle en Chine. Auparavant, il était directeur de l'organisation centrale du marketing chez Microsoft Chine, après 8 ans chez Intel où il a occupé des postes de direction clés, notamment ceux de directeur de la mondialisation numérique et de directeur de la stratégie de marque.
+Hong est titulaire d'un diplôme de bachelier en commerce international de l'Université de technologie de Pékin.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Lit Fung
+VP, Directeur Général APAC, UK et Amériques
+
+
+Lit Fung
+VP, Directeur Général APAC, UK et Amériques
+
+Lit Fung est directeur général en charge de la région Asie-Pacifique et de la Grande-Bretagne. Basé à Hong Kong, il dirige l'expansion et les opérations de la société dans la région Asie-Pacifique, notamment la stratégie, les ventes, la gestion de projets et les relations avec les clients. Précédemment directeur général pour le marché d'outre-mer, il a joué un rôle crucial dans le lancement et le développement des premiers projets de l'entreprise à l'étranger.
+Spécialiste de l'IA et de la robotique, Lit a plus de 10 ans d'expérience dans le domaine de l'automatisation logistique en travaillant sur des projets mondiaux. Il a une compréhension approfondie des secteurs du commerce électronique et de la vente au détail en particulier et de la façon dont l'automatisation peut répondre aux défis mondiaux auxquels ils sont confrontés et améliorer les opérations.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Jackson ZHANG
+Vice-Président Europe
+
+
+Jackson ZHANG
+Vice-Président Europe
+
+Jackson Zhang est directeur général en charge de l'Europe. Basé à Dusseldorf, en Allemagne, il dirige les opérations et l'expansion de la société en Europe, notamment la stratégie, les ventes, la gestion de projets et les relations avec les clients.
+Jackson a plus de 14 ans d'expérience dans le marketing, les ventes et la gestion des opérations mondiales dans le domaine des technologies TIC, de la fabrication intelligente, du nouveau commerce de détail, de l'informatique en nuage et de l'IA.
+Avant de rejoindre Geek+, Jackson était président du marketing et des ventes mondiales chez Autel Technology, après avoir passé plus de 8 ans à des postes de direction chez Huawei Technologies, notamment en tant que responsable du cloud mondial et directeur commercial européen. Jackson a commencé sa carrière en tant qu'ingénieur électronique chez Ericsson.
+Jackson est titulaire d'une maîtrise en sciences et technologies électroniques de l'Université des sciences et technologies électroniques de Chine.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Kevin GUO
+Directeur Général Amérique
+
+
+Kevin GUO
+Directeur Général Amérique
+
+Kevin Guo est directeur général de Geek+ Americas. En tant que GM de Geek+ Americas, il supervise l'expansion et les opérations de la société aux États-Unis, au Canada, au Mexique et en Amérique du Sud, notamment la stratégie, les ventes, la gestion de projets et les relations avec les clients. Auparavant, Kevin était responsable de la gestion et des ventes mondiales des services Geek+, notamment la gestion des pièces détachées, la formation après-vente et la gestion du cycle de vie complet des produits matériels des robots.
+Avant de rejoindre Geek+, Kevin a occupé pendant plus de dix ans des postes de direction chez ABB, notamment dans les domaines du marketing et des ventes de services, de la R&D de services et de la gestion de produits de services. Il possède une riche expérience pratique de la gestion de projets et de l'expansion des entreprises.
+Kevin est titulaire d'une licence et d'une maîtrise en génie électrique de l'université de Tsinghua.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Junzhe YANG
+VP, RaaS et Région de Chine
+
+
+Junzhe YANG
+VP, Smart Warehouse
+
+Junzhe est vice-président de la région Chine et de Smart Warehouse. Il est responsable de l'activité Robots as a Service (RaaS) de la société et chargé de la gestion et du développement du département Smart Warehouse. Sous sa direction, le service d'entrepôt intelligent a connu une expansion continue. À la fin de l'année 2019, la surface d'entrepôt intelligent exploitée par Geek+ a dépassé 300 000 mètres carrés.
+Avant de rejoindre Geek+, Junzhe a occupé des postes de direction dans des entreprises de renom, notamment en tant que directeur des ventes chez TNT Hoau, directeur général régional de la logistique informatique et vice-président de Shanghai FineEx. Junzhe a plus de 10 ans d'expérience de gestion dans les domaines de la logistique, du commerce électronique et de la nouvelle distribution.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            Faire bouger le monde intelligemment
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Contactez nous
+
+
+
+
+
+
+
+
+
+
+
+
+
+Chine: +86 4000 450 010
+APAC: +852 3462 2128
+Europe: +49 211 53829033
+Japon: +81 0476 37 7509
+
+Amériques: +1 404 406 3961Sales: sales@geekplus.com
+PR:  pr@geekplus.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Disclaimer
+Privacy Policy
+
+
+
+
+              COPYRIGHT © 2022 Geekplus Technology Co., Ltd.
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var hsVars = hsVars || {}; hsVars['language'] = 'fr';
+
+
+
+
+
+
+
+      
+
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      if(document.querySelector(this.getAttribute('href'))){
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+
+
+
+
+  $(function () {
+
+    try {
+      $('.odm_work li').hover(function () {
+        $('.odm_work .text_over').html('');
+        // let title = $(this).data('title');
+        let sub = $(this).data('sub');
+        $(this).addClass('act').siblings().removeClass('act');
+        $('.odm_work .text_over').html(sub);
+      });
+    } catch (error) {
+
+    }
+
+  })
+  $(document).ready(function () {
+    $('.odm_work .text_over').html('');
+    let sub = $('.odm_work li:first-child').data('sub');
+    $('.odm_work li:first-child').addClass('act').siblings().removeClass('act');
+    $('.odm_work .text_over').html(sub);
+  })
+
+
+
+
+
+
+
+
+  $(function() {
+
+
+    //leaderç‚¹å‡»å¼¹çª—æ•ˆæžœ
+    try {
+      $('.about_leader li').click(function() {
+        console.log($(this).html());
+        let html = $(this).html();
+        layer.open({
+          type: 1,
+          // offset: '182px',
+          skin: 'layui-layer-my', //åŠ ä¸Šè¾¹æ¡†
+          area: '80%', //å®½é«˜
+          content: html,
+          shadeClose: true,
+          zIndex: 199002101521
+        });
+      });
+
+      //gareer å¼¹çª—
+      $('.gareer_detail').click(function() {
+
+        // let html = $(this).html();
+        layer.open({
+          type: 1,
+          offset: '180px',
+          skin: 'layui-layer-my', //åŠ ä¸Šè¾¹æ¡†
+          area: ['80%', '70%'], //å®½é«˜
+          shade: false,
+          content: $('.gareer_detail_lay_content'),
+          // shadeClose: true,
+          scrollbar: false,
+          zIndex: 199002101521,
+        });
+      });
+    } catch (error) {
+
+    }
+
+  });
+
+
+
+
+
+
+
+
+
+
+
+        var options = {
+            portalId: '5868638',
+            formId: 'e583b95d-22af-4d9a-9a55-e4e6ce8f8647',
+            formInstanceId: '2209',
+            pageId: '52702133430',
+            region: 'na1',
+            
+            
+            
+            
+            pageName: "A propos de nous",
+            
+            
+            
+            inlineMessage: "<span>Merci d\u2019avoir soumis le formulaire&nbsp;</span>",
+            
+            
+            rawInlineMessage: "<span>Merci d\u2019avoir soumis le formulaire&nbsp;</span>",
+            
+            
+            hsFormKey: "757b1753e1122989886d53d792c0d78a",
+            
+            
+            deactivateSmartForm: true,
+            
+            css: '',
+            target: '#hs_form_target_form_118594985',
+            
+            
+            
+            
+            
+            contentType: "standard-page",
+            
+            
+            
+            formsBaseUrl: '/_hcms/forms/',
+            
+            
+            useDraft: "true",
+            
+            
+            formData: {
+                cssClass: 'hs-form stacked hs-custom-form'
+            }
+        };
+
+        options.getExtraMetaDataBeforeSubmit = function() {
+            var metadata = {};
+            
+
+            if (hbspt.targetedContentMetadata) {
+                var count = hbspt.targetedContentMetadata.length;
+                var targetedContentData = [];
+                for (var i = 0; i < count; i++) {
+                    var tc = hbspt.targetedContentMetadata[i];
+                     if ( tc.length !== 3) {
+                        continue;
+                     }
+                     targetedContentData.push({
+                        definitionId: tc[0],
+                        criterionId: tc[1],
+                        smartTypeId: tc[2]
+                     });
+                }
+                metadata["targetedContentMetadata"] = JSON.stringify(targetedContentData);
+            }
+
+            return metadata;
+        };
+
+        hbspt.forms.create(options);
+    
+
+
+(function(){
+  const timeoutEvent = document.createEvent('CustomEvent');
+  timeoutEvent.initCustomEvent("content-analytics-code-not-loaded", true, true, { detail: "Not loaded in preview mode" });
+  window.dispatchEvent(timeoutEvent);
+})();
+
+
+
+var hsVars = {
+    ticks: 1681969540530,
+    page_id: 52702133430,
+    
+    content_group_id: 0,
+    portal_id: 5868638,
+    app_hs_base_url: "https://app.hubspot.com",
+    cp_hs_base_url: "https://cp.hubspot.com",
+    language: "fr",
+    analytics_page_type: "standard-page",
+    analytics_page_id: "52702133430",
+    category_id: 1,
+    folder_id: 0,
+    is_hubspot_user: false
+}
+
+
+

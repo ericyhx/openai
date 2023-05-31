@@ -1,0 +1,2438 @@
+
+
+
+
+
+
+E-commerce
+
+
+hsjQuery = window['jQuery'];
+
+
+
+
+
+a.cta_button{-moz-box-sizing:content-box !important;-webkit-box-sizing:content-box !important;box-sizing:content-box !important;vertical-align:middle}.hs-breadcrumb-menu{list-style-type:none;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px}.hs-breadcrumb-menu-item{float:left;padding:10px 0px 10px 10px}.hs-breadcrumb-menu-divider:before{content:'›';padding-left:10px}.hs-featured-image-link{border:0}.hs-featured-image{float:right;margin:0 0 20px 20px;max-width:50%}@media (max-width: 568px){.hs-featured-image{float:none;margin:0;width:100%;max-width:100%}}.hs-screen-reader-text{clip:rect(1px, 1px, 1px, 1px);height:1px;overflow:hidden;position:absolute !important;width:1px}
+
+
+
+
+
+
+  .widget_31428388543 .container-fluid {
+    max-width: 95% !important;
+    margin: 0 auto !important;
+    float: none !important;
+    padding: 0 15px;
+    width: 100%;
+  }
+
+  
+  .widget_31428388543 .Banner_contact.left{ text-align:left;}
+  .widget_31428388543 .Banner_contact.right{ text-align:right;}
+  .widget_31428388543 .Banner_contact.center{ text-align:center;}
+
+  .widget_31428388543 .uppercase{
+    text-transform: uppercase;
+  }
+  .widget_31428388543 .vimeo-wrapper video {
+    position: absolute;
+    z-index: -100;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    background-size: cover;
+    overflow: hidden;
+    opacity: 1;
+    transition: 2s opacity;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  .widget_31428388543 .explore {
+    position: absolute;
+    bottom: 22px;
+    font-size: 16px;
+    left: 50%;
+    color: #FFF;
+    transform: translateX(-50%);
+    z-index: 1990;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    text-align: center;
+  }
+  .widget_31428388543 .explore span {
+    color: #fff;
+    display: block;
+  }
+  .widget_31428388543 .explore i.icon {
+    margin: 5px auto 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 9px 0 9px;
+    border-color: #FFF transparent transparent transparent;
+    animation: pulse 2s infinite;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .widget_31428388543 .defaut{
+    text-transform: inherit;
+  }
+  .widget_31428388543 .capitalize{
+    text-transform: capitalize;
+  }
+  .widget_31428388543 .Banner_contact h1{ 
+    color:#ffffff;
+    font-size:100px;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 22px;
+  }
+  .widget_31428388543 .Banner_contact h4 { 
+    color: rgba(255, 255, 255, 1.0);
+    font-size: 32px;
+    line-height: 1.5;
+  }
+  .widget_31428388543 .Banner_contact .geek_banner-desc p { 
+    color:#ffffff;
+    font-size:12px;
+  }
+
+
+  .banner_section {
+    width: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 135px;
+    padding-bottom:  135px;
+  }
+  @keyframes pulse {
+    0% {
+      -webkit-transform: translate(0, 0);
+      transform: translate(0, 0);
+    }
+    50% {
+      -webkit-transform: translate(0, 10px);
+      transform: translate(0, 10px);
+    }
+    100% {
+      -webkit-transform: translate(0, 0);
+      transform: translate(0, 0);
+    }
+  }
+
+  .conatiner_wrap {
+    /*position: absolute;*/
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+  .widget_31428388543 .overlay{
+    background-color: #011031;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .vimeo-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*height:calc(100vh - 0px);*/
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+    overflow: hidden;
+  }
+  .vimeo-wrapper iframe {
+    width: 100vw;
+    height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+    min-height: 100vh;
+    min-width: 177.77vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .image_Section{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*height:calc(100vh - 0px); */
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+  }
+  .widget_31428388543 .banner_section .img-overlay{
+    background-color: #141724;
+    opacity: 0.0; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+  }
+  .widget_31428388543 .Banner_contact ul li a {
+    display: inline-block;
+    height: 50px;
+    line-height: 48px;
+    margin: 0;
+    padding: 0 30px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 5px;
+    border:2px solid #ffffff;   
+    text-decoration: none;
+    border-radius:5px; 
+  }
+  .widget_31428388543 .Banner_contact ul li a:hover{
+    background-color: #FF0201 !important;
+    color:#ffffff;
+    border:2px solid #FF0201 !important; 
+  }
+  .gareer_mail {
+    position: relative;
+    text-align: center;
+    padding: 25px 0;
+  }
+  .gareer_mail a {
+    padding: 0 10px;
+    color: #333;
+    z-index: 2;
+    position: relative;
+    background: #fff;
+  }
+  .gareer_mail:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    left: 0;
+    border-bottom: 1px solid #C9C9C9;
+    z-index: 1;
+  }
+
+  
+
+  @media screen and (max-width: 1199px) {
+
+    div.widget_31428388543 .Banner_contact h1 {
+      font-size: 42px;
+    }
+
+
+  }
+
+  @media screen and (max-width: 991px) {
+
+    div.widget_31428388543 .Banner_contact h1 {
+      font-size: 32px;
+    }
+    div.widget_31428388543 .Banner_contact p {
+      font-size: 22px;
+    }
+
+  }
+
+
+  @media screen and (max-width: 767px) {
+    .Banner_contact h1 br {
+      display: none;
+    }
+    div.widget_31428388543 .geek_banner-desc p {
+      display: inline;
+    }
+
+    
+    .widget_31428388543 .banner_section {
+      background-image: url(https://source.www.geekplus.com/hubfs/Geek%20Plus%20Images%202020/E-commerce%20banner%20mobile.jpg) !important; 
+    }
+    
+
+
+  }
+
+
+  @media screen and (max-width: 639px) {
+
+    div.widget_31428388543 .Banner_contact h1 {
+      font-size: 28px;
+    }
+    .widget_31428388543 .banner_section {
+      padding-top: 105px;
+      padding-bottom: 100px;
+    }
+    div.widget_31428388543 .Banner_contact h4 {
+      font-size: 16px;
+    }
+
+
+  }
+
+
+  @media screen and (max-width: 359px) {
+
+    div.widget_31428388543 .Banner_contact h1 {
+      margin-bottom: 7px;
+      line-height: 1.5;
+    }
+
+
+  }
+
+
+
+
+
+
+  
+  .widget_31428388544 {
+    padding-top: 75px;
+    padding-bottom: 75px;
+    background: rgba(255, 255, 255, 1.0);
+    overflow: hidden;
+  }
+  
+
+  .widget_31428388544 .geek_imageText-row {
+    margin: 0 -15px;
+  }
+
+  
+  .widget_31428388544 .geek_imageText-left, .widget_31428388544 .geek_imageText-right {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 15px;
+  }
+
+  
+
+  
+  .widget_31428388544 .geek_imageText-right {
+    order: -1;
+  }
+  
+
+  
+  .widget_31428388544 .geek_imageText-left {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 15px;
+  }
+  
+
+  
+
+  .widget_31428388544 .container {
+    max-width: px !important;
+    margin: 0 auto !important;
+  }
+
+  .widget_31428388544 .container-fluid {
+    max-width: % !important;
+    margin: 0 auto !important;
+  }
+  .widget_31428388544 .geek_imageText-row {
+    align-items: flex-start;
+  }
+  .widget_31428388544 .enate_rich-text {
+    text-align: center;
+    width: 85%;
+  }
+
+  
+  .widget_31428388544 .enate_rich-text {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  
+
+
+
+  .widget_31428388544 .geek_imageText-right {
+    text-align: center; 
+  }
+  .widget_31428388544 .enate_rich-text h1 {
+    font-size: 30px;
+    color: rgba(111, 114, 125, 1.0);
+    padding-bottom: 0.5rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  .widget_31428388544 .enate_rich-text h2 {
+    font-size: 45px;
+    color: rgba(43, 44, 50, 1.0);
+    padding-bottom: 0.5rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  .widget_31428388544 .enate_rich-text h3 {
+    font-size: 24px;
+    color: rgba(111, 114, 125, 1.0);
+    padding-bottom: 0.5rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  .widget_31428388544 .enate_rich-text h4 {
+    font-size: 20px;
+    color: rgba(111, 114, 125, 1.0);
+    padding-bottom: 0.5rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  .widget_31428388544 .enate_rich-text h5 {
+    font-size: 18px;
+    color: rgba(111, 114, 125, 1.0);
+    padding-bottom: 0.5rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  .widget_31428388544 .enate_rich-text h6 {
+    font-size: 16px;
+    color: rgba(111, 114, 125, 1.0);
+    padding-bottom: 0.5rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  .widget_31428388544 .enate_rich-text p {
+    font-size: 20px;
+    color: rgba(51, 51, 51, 1.0);
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+  }
+  .widget_31428388544 .enate_rich-text p:last-child {
+    margin-bottom: 0px; 
+  }
+
+  
+
+  .widget_31428388544 .geek_imageText-right img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: px;
+  }
+
+  .widget_31428388544 ul li {
+    color: rgba(111, 114, 125, 1.0);
+    margin-bottom: 10px;
+    margin-left: 0;
+    position: relative;
+    font-size: 14px;
+    line-height: 1.5;
+    flex: 0 0 45%;
+    max-width: 45%;
+    list-style: inside;
+  }
+
+  
+
+  
+
+  .widget_31428388544 .geek_imageText-right {
+    margin-bottom: 40px;
+  }
+
+  
+
+  
+
+
+  
+
+  
+  .widget_31428388544 ul li {
+    flex: 0 0 45%;
+    max-width: 45%;
+  }
+
+  
+
+  .widget_31428388544 ul li a {
+    color: inherit; 
+  }
+  .widget_31428388544 ul {
+    list-style: inherit;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .widget_31428388544 .geek_imageText-right p {
+    font-size: 12px;
+  }
+
+
+  
+
+  @media screen and (max-width: 991px) {
+    div.widget_31428388544 .container-fluid {
+      max-width: 100% !important;
+    }
+    div.widget_31428388544 .enate_rich-text {
+      width: 100%;
+    }
+    div.widget_31428388544 {
+      padding-top: 35px;
+      padding-bottom: 35px;
+    }
+    div.widget_31428388544 .enate_rich-text h2 {
+      font-size: 32px;
+    }
+    div.widget_31428388544 .enate_rich-text h3 {
+      font-size: 24px;
+    }
+    div.widget_31428388544 .enate_rich-text p {
+      font-size: 18px;
+    }
+    div.widget_31428388544 .geek_imageText-left, div.widget_31428388544 .geek_imageText-right {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    div.widget_31428388544 .geek_imageText-right {
+      order: inherit;
+      padding-top: 20px;
+    }
+
+    
+
+    
+
+    .widget_31428388544 .geek_imageText-right {
+      margin-bottom: 0;
+    }
+
+    
+
+    
+
+        
+
+    div.widget_31428388544 .geek_imageText-right img {
+      margin-top: 0;
+    }
+
+  }
+
+  @media screen and (max-width: 767px) {
+
+    div.widget_31428388544 .enate_rich-text h2 {
+      font-size: 22px;
+    }
+    div.widget_31428388544 .enate_rich-text h3 {
+      font-size: 20px;
+    }
+
+  }
+
+  @media screen and (max-width: 479px) {
+
+    div.widget_31428388544 ul li {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }    
+    div.widget_31428388544 .enate_rich-text h2 {
+      font-size: 20px;
+    }
+    div.widget_31428388544 .enate_rich-text h3 {
+      font-size: 19px;
+    }
+
+  }
+
+
+
+
+
+
+  .widget_31428388545 .geek_industrial-listing-left {
+    flex: 0 0 42%;
+    max-width: 42%;
+  }
+  .widget_31428388545 .geek_industrial-listing-right {
+    flex: 0 0 58%;
+    max-width: 58%;
+    position: relative;
+  }
+  .widget_31428388545 .geek_industrial-listing-right:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    margin-top: -22px;
+    border-style: solid;
+    border-width: 22px 0 22px 22px;
+    border-color: transparent transparent transparent #f1f1f1;
+    z-index: 8;
+  }
+  .widget_31428388545 .geek_industrial-listing-leftInner {
+    max-width: 455px;
+    margin-left: auto;
+    padding-right: 50px;
+  }
+
+  .widget_31428388545 .geek_industrial-listing-leftInner h3 {
+    line-height: 1.5;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .widget_31428388545 .geek_industrial-listing-leftDesc ul {
+    list-style: inherit;
+  }
+  .widget_31428388545 .geek_industrial-listing-leftDesc li {
+    font-size: 20px;
+    line-height: 2;
+    margin-left: 19px;
+  }
+  .widget_31428388545 .geek_industrial-listing-right .tips {
+    display: inline-block;
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  .widget_31428388545 .geek_industrial-listing-right h3 {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #fff;
+  }
+  .widget_31428388545 .geek_industrial-listing-right h3 a {
+    display: inline-block;
+    min-width: 80px;
+    height: 24px;
+    background: #009fef;
+    border-radius: 12px;
+    font-size: 14px;
+    padding: 0 5px 0 18px;
+    color: #fff;
+  }
+  .widget_31428388545 .geek_industrial-listing-right h3 .arrow_btn {
+    overflow: hidden;
+    line-height: 24px;
+    flex-shrink: 0;
+    margin-left: 14px;
+  }
+  .widget_31428388545 .geek_industrial-listing-right h3 .arrow_btn .icon {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    background: url(https://source.www.geekplus.com/hubfs/Geek%20Plus%20Images%202020/arrow-btn.png) no-repeat;
+    float: right;
+    margin-top: 3px;
+  }
+  .widget_31428388545 .geek_industrial-listing-rightDesc ul {
+    list-style: inherit;
+  }
+  .widget_31428388545 .geek_industrial-listing-rightDesc li {
+    font-size: 14px;
+    line-height: 1.8;
+    margin-left: 19px;
+    color: #fff;
+  }
+  .widget_31428388545 .geek_industrial-listing-rightDesc p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #fff;
+  }
+  .widget_31428388545 .geek_industrial-listing-rightInner {
+    padding: 10% 0 10% 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .widget_31428388545 .geek_industrial-listing-rightInnerBox {
+    max-width: 595px;
+    margin-left: 12%;
+  }
+  .widget_31428388545 .geek_industrial-listing {
+    background: #f1f1f1;
+  }
+
+  
+
+  
+  @media screen and (max-width: 1199px) {
+
+    .widget_31428388545 .geek_industrial-listing-leftInner {
+      padding-left: 20px;
+    }
+    div.widget_31428388545 .geek_industrial-listing-rightInnerBox {
+      margin-left: 7%;
+    }
+
+
+  }
+
+  @media screen and (max-width: 991px) {
+
+    .widget_31428388545 .geek_industrial-listing-leftDesc li {
+      font-size: 18px;
+      line-height: 2;
+      margin-left: 19px;
+    }
+
+
+  }
+
+  @media screen and (max-width: 767px) {
+
+    .widget_31428388545 .geek_industrial-listing-left {
+      flex: 0 0 100%;
+      max-width: 100%;
+      padding: 40px 0;
+    }
+    div.widget_31428388545 .geek_industrial-listing-right {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    div.widget_31428388545 .geek_industrial-listing-right:before {
+      display: none;
+    }
+    div.widget_31428388545 .geek_industrial-listing-leftInner {
+      padding-left: 20px;
+      max-width: 100%;
+      padding-right: 20px;
+    }
+    div.widget_31428388545 .geek_industrial-listing-rightInnerBox {
+      margin-left: 0;
+      padding: 0 20px;
+      margin-right: 0;
+      max-width: 100%;
+    }
+
+
+
+
+  }
+
+  @media screen and (max-width: 639px) {
+
+    .widget_31428388545  .geek_industrial-listing-leftDesc li {
+      font-size: 15px;
+    }
+    div.widget_31428388545 .geek_industrial-listing-right h3 {
+      font-size: 20px;
+    }
+    
+
+
+
+
+  }
+
+
+
+
+
+
+
+  .widget_31428388546 .geek_industrial-listing-left {
+    flex: 0 0 42%;
+    max-width: 42%;
+  }
+  .widget_31428388546 .geek_industrial-listing-right {
+    flex: 0 0 58%;
+    max-width: 58%;
+    position: relative;
+  }
+  .widget_31428388546 .geek_industrial-listing-right:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    margin-top: -22px;
+    border-style: solid;
+    border-width: 22px 0 22px 22px;
+    border-color: transparent transparent transparent #f1f1f1;
+    z-index: 8;
+  }
+  .widget_31428388546 .geek_industrial-listing-leftInner {
+    max-width: 455px;
+    margin-left: auto;
+    padding-right: 50px;
+  }
+
+  .widget_31428388546 .geek_industrial-listing-leftInner h3 {
+    line-height: 1.5;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .widget_31428388546 .geek_industrial-listing-leftDesc ul {
+    list-style: inherit;
+  }
+  .widget_31428388546 .geek_industrial-listing-leftDesc li {
+    font-size: 20px;
+    line-height: 2;
+    margin-left: 19px;
+  }
+  .widget_31428388546 .geek_industrial-listing-right .tips {
+    display: inline-block;
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  .widget_31428388546 .geek_industrial-listing-right h3 {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #fff;
+  }
+  .widget_31428388546 .geek_industrial-listing-right h3 a {
+    display: inline-block;
+    min-width: 80px;
+    height: 24px;
+    background: #009fef;
+    border-radius: 12px;
+    font-size: 14px;
+    padding: 0 5px 0 18px;
+    color: #fff;
+  }
+  .widget_31428388546 .geek_industrial-listing-right h3 .arrow_btn {
+    overflow: hidden;
+    line-height: 24px;
+    flex-shrink: 0;
+    margin-left: 14px;
+  }
+  .widget_31428388546 .geek_industrial-listing-right h3 .arrow_btn .icon {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    background: url(https://source.www.geekplus.com/hubfs/Geek%20Plus%20Images%202020/arrow-btn.png) no-repeat;
+    float: right;
+    margin-top: 3px;
+  }
+  .widget_31428388546 .geek_industrial-listing-rightDesc ul {
+    list-style: inherit;
+  }
+  .widget_31428388546 .geek_industrial-listing-rightDesc li {
+    font-size: 14px;
+    line-height: 1.8;
+    margin-left: 19px;
+    color: #fff;
+  }
+  .widget_31428388546 .geek_industrial-listing-rightDesc p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #fff;
+  }
+  .widget_31428388546 .geek_industrial-listing-rightInner {
+    padding: 10% 0 10% 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .widget_31428388546 .geek_industrial-listing-rightInnerBox {
+    max-width: 595px;
+    margin-left: 12%;
+  }
+  .widget_31428388546 .geek_industrial-listing {
+    background: #f1f1f1;
+  }
+
+  
+
+  .widget_31428388546 .geek_industrial-listing-right {
+    order: -1;
+  }
+  div.widget_31428388546 .geek_industrial-listing-leftInner {
+    max-width: 455px;
+    margin-left: 0;
+    padding-right: 0px;
+    padding-left: 80px;
+  }
+  .widget_31428388546 .geek_industrial-listing-rightInnerBox {
+    max-width: 595px;
+    margin-left: auto;
+    margin-right: 12%;
+  }
+  .widget_31428388546 .geek_industrial-listing-right:before {
+    left: auto;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 22px 22px 22px 0;
+    border-color: transparent #f1f1f1 transparent transparent;
+  }
+
+
+  
+  @media screen and (max-width: 1199px) {
+
+    div.widget_31428388546 .geek_industrial-listing-leftInner {
+      padding-left: 20px;
+    }
+    div.widget_31428388546 .geek_industrial-listing-rightInnerBox {
+      margin-right: 7%;
+      padding-left: 20px;
+    } 
+
+
+  }
+
+  @media screen and (max-width: 991px) {
+
+    div.widget_31428388546 div.geek_industrial-listing-rightInnerBox {
+      margin-left: 0;
+      margin-right: 5%;
+    }
+
+
+  }
+
+  @media screen and (max-width: 767px) {
+
+    div.widget_31428388546 .geek_industrial-listing-right {
+      order: 0;
+    }
+
+
+  }
+
+
+  
+
+  
+  @media screen and (max-width: 1199px) {
+
+    .widget_31428388546 .geek_industrial-listing-leftInner {
+      padding-left: 20px;
+    }
+    div.widget_31428388546 .geek_industrial-listing-rightInnerBox {
+      margin-left: 7%;
+    }
+
+
+  }
+
+  @media screen and (max-width: 991px) {
+
+    .widget_31428388546 .geek_industrial-listing-leftDesc li {
+      font-size: 18px;
+      line-height: 2;
+      margin-left: 19px;
+    }
+
+
+  }
+
+  @media screen and (max-width: 767px) {
+
+    .widget_31428388546 .geek_industrial-listing-left {
+      flex: 0 0 100%;
+      max-width: 100%;
+      padding: 40px 0;
+    }
+    div.widget_31428388546 .geek_industrial-listing-right {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    div.widget_31428388546 .geek_industrial-listing-right:before {
+      display: none;
+    }
+    div.widget_31428388546 .geek_industrial-listing-leftInner {
+      padding-left: 20px;
+      max-width: 100%;
+      padding-right: 20px;
+    }
+    div.widget_31428388546 .geek_industrial-listing-rightInnerBox {
+      margin-left: 0;
+      padding: 0 20px;
+      margin-right: 0;
+      max-width: 100%;
+    }
+
+
+
+
+  }
+
+  @media screen and (max-width: 639px) {
+
+    .widget_31428388546  .geek_industrial-listing-leftDesc li {
+      font-size: 15px;
+    }
+    div.widget_31428388546 .geek_industrial-listing-right h3 {
+      font-size: 20px;
+    }
+    
+
+
+
+
+  }
+
+
+
+
+
+
+
+  .widget_31428388547 .geek_industrial-listing-left {
+    flex: 0 0 42%;
+    max-width: 42%;
+  }
+  .widget_31428388547 .geek_industrial-listing-right {
+    flex: 0 0 58%;
+    max-width: 58%;
+    position: relative;
+  }
+  .widget_31428388547 .geek_industrial-listing-right:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    margin-top: -22px;
+    border-style: solid;
+    border-width: 22px 0 22px 22px;
+    border-color: transparent transparent transparent #f1f1f1;
+    z-index: 8;
+  }
+  .widget_31428388547 .geek_industrial-listing-leftInner {
+    max-width: 455px;
+    margin-left: auto;
+    padding-right: 50px;
+  }
+
+  .widget_31428388547 .geek_industrial-listing-leftInner h3 {
+    line-height: 1.5;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .widget_31428388547 .geek_industrial-listing-leftDesc ul {
+    list-style: inherit;
+  }
+  .widget_31428388547 .geek_industrial-listing-leftDesc li {
+    font-size: 20px;
+    line-height: 2;
+    margin-left: 19px;
+  }
+  .widget_31428388547 .geek_industrial-listing-right .tips {
+    display: inline-block;
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  .widget_31428388547 .geek_industrial-listing-right h3 {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #fff;
+  }
+  .widget_31428388547 .geek_industrial-listing-right h3 a {
+    display: inline-block;
+    min-width: 80px;
+    height: 24px;
+    background: #009fef;
+    border-radius: 12px;
+    font-size: 14px;
+    padding: 0 5px 0 18px;
+    color: #fff;
+  }
+  .widget_31428388547 .geek_industrial-listing-right h3 .arrow_btn {
+    overflow: hidden;
+    line-height: 24px;
+    flex-shrink: 0;
+    margin-left: 14px;
+  }
+  .widget_31428388547 .geek_industrial-listing-right h3 .arrow_btn .icon {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    background: url(https://source.www.geekplus.com/hubfs/Geek%20Plus%20Images%202020/arrow-btn.png) no-repeat;
+    float: right;
+    margin-top: 3px;
+  }
+  .widget_31428388547 .geek_industrial-listing-rightDesc ul {
+    list-style: inherit;
+  }
+  .widget_31428388547 .geek_industrial-listing-rightDesc li {
+    font-size: 14px;
+    line-height: 1.8;
+    margin-left: 19px;
+    color: #fff;
+  }
+  .widget_31428388547 .geek_industrial-listing-rightDesc p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #fff;
+  }
+  .widget_31428388547 .geek_industrial-listing-rightInner {
+    padding: 10% 0 10% 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .widget_31428388547 .geek_industrial-listing-rightInnerBox {
+    max-width: 595px;
+    margin-left: 12%;
+  }
+  .widget_31428388547 .geek_industrial-listing {
+    background: #f1f1f1;
+  }
+
+  
+
+  
+  @media screen and (max-width: 1199px) {
+
+    .widget_31428388547 .geek_industrial-listing-leftInner {
+      padding-left: 20px;
+    }
+    div.widget_31428388547 .geek_industrial-listing-rightInnerBox {
+      margin-left: 7%;
+    }
+
+
+  }
+
+  @media screen and (max-width: 991px) {
+
+    .widget_31428388547 .geek_industrial-listing-leftDesc li {
+      font-size: 18px;
+      line-height: 2;
+      margin-left: 19px;
+    }
+
+
+  }
+
+  @media screen and (max-width: 767px) {
+
+    .widget_31428388547 .geek_industrial-listing-left {
+      flex: 0 0 100%;
+      max-width: 100%;
+      padding: 40px 0;
+    }
+    div.widget_31428388547 .geek_industrial-listing-right {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    div.widget_31428388547 .geek_industrial-listing-right:before {
+      display: none;
+    }
+    div.widget_31428388547 .geek_industrial-listing-leftInner {
+      padding-left: 20px;
+      max-width: 100%;
+      padding-right: 20px;
+    }
+    div.widget_31428388547 .geek_industrial-listing-rightInnerBox {
+      margin-left: 0;
+      padding: 0 20px;
+      margin-right: 0;
+      max-width: 100%;
+    }
+
+
+
+
+  }
+
+  @media screen and (max-width: 639px) {
+
+    .widget_31428388547  .geek_industrial-listing-leftDesc li {
+      font-size: 15px;
+    }
+    div.widget_31428388547 .geek_industrial-listing-right h3 {
+      font-size: 20px;
+    }
+    
+
+
+
+
+  }
+
+
+
+
+
+
+ .content-box-margin {
+  margin: 20px 0; 
+}
+  
+  .widget_31428388548 .geek_content-box {
+    padding: 90px 0 40px;
+    background-image: url(https://source.www.geekplus.com/hubfs/Geek%20Plus%20Images%202020/Suning%20Logistics.jpg);
+    background-position: center;
+    background-color: rgba(12, 52, 61, 1.0 );
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .widget_31428388548 .geek_content-box:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.1 );
+  }
+  .widget_31428388548 .geek_content-box > div {
+    position: relative;
+  }
+
+  
+  
+  .widget_31428388548 .geek_content-box-col {
+    text-align: center;
+    width: 100%;
+  }
+  .widget_31428388548 .geek_content-box-col h3 {
+    color: rgba(255, 255, 255, 1.0 );
+    margin: 0 0 37px;
+    font-weight: normal;
+    font-size: 30px;
+  }
+  .widget_31428388548 .geek_content-box-desc p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 1.0 );
+    line-height: 1.7;
+  }
+  .widget_31428388548 .geek_content-box-action-btn .btn {
+    display: inline-block;
+    padding: 5px 35px 5px 20px;
+    background-color: rgba(0, 159, 239, 1.0 );
+    background-image: url(https://source.www.geekplus.com/hubfs/Geek%20Plus%20Images%202020/arrow-right-hover.png);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 17px);
+    justify-content: center;
+    vertical-align: middle;
+    color: rgba(255, 255, 255, 1.0 );
+    width: 95px;
+    text-transform: capitalize;
+    border: 0px solid rgba(0, 159, 239, 1.0 );
+    transition: all 0.3s;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.18);
+    border-radius: 55px;
+    font-size: 14px;
+    margin-top: 8px;
+    text-align: left;
+  }
+  .widget_31428388548 .geek_content-box-action-btn .btn:hover {
+    background-color: rgba(255, 255, 255, 1.0 );
+    background-image: url(https://source.www.geekplus.com/hubfs/Geek%20Plus%20Images%202020/arrow-right.png);
+    color: rgba(0, 159, 239, 1.0 );
+    border-color: rgba(255, 255, 255, 1.0 );
+  }
+  .widget_31428388548 .geek_content-box-desc {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .widget_31428388548 .geek_content-box-desc ul {
+    margin-top: 42px;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: inherit;
+    padding: 0 30px;
+  }
+  .widget_31428388548 .geek_content-box-desc ul li {
+    font-size: 16px;
+    flex: 0 0 40%;
+    max-width: 40%;
+    text-align: left;
+    line-height: 1.8;
+    color: #fff;
+    margin-left: 17px;
+    margin-right: 7%;
+    letter-spacing: normal;
+  }
+  .widget_31428388548 .geek_content-box-caselibotCol .top_text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+  .widget_31428388548 .geek_content-box-caselibotCol .top_text em {
+    font-size: 50px;
+    padding-right: 3px;
+    font-style: normal;
+  }
+  .widget_31428388548 .geek_content-box-caselibotCol .top_text i {
+    font-size: 18px;
+    position: relative;
+    top: 10px;
+    font-style: normal;
+  }
+  .widget_31428388548 .geek_content-box-caselibotCol h4 {
+    margin-top: 13px;
+    font-size: 18px;
+    color: #fff;
+  }
+  .widget_31428388548 .geek_content-box-caselibot {
+    padding-top: 20px;
+    padding-bottom: 22px;
+  }
+  .widget_31428388548 .geek_content-box-caselibotCol {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .widget_31428388548 .geek_content-box-caselibotCol:last-child {
+    margin-right: 0;
+  }
+  .widget_31428388548 .geek_content-box-action-btn {
+    margin-top: 45px;
+  }
+
+
+
+
+
+  
+
+  @media screen and (max-width: 1199px) {
+
+    div.widget_31428388548 .geek_content-box {
+      padding: 75px 0;
+    }
+    div.widget_31428388548 .geek_content-box-col h3 {
+      font-size: 28px;
+    }
+    div.widget_31428388548 .geek_content-box-desc p {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+
+
+  }
+
+  @media screen and (max-width: 991px) {
+
+    div.widget_31428388548 .geek_content-box {
+      padding: 55px 0;
+    }
+    div.widget_31428388548 .geek_content-box-col h2 {
+      font-size: 24px;
+    }
+    div.widget_31428388548 .geek_content-box-desc {
+      width: 100%;
+    }
+    div.widget_31428388548 .geek_content-box-desc ul {
+      padding: 0px;
+    }
+    div.widget_31428388548 .geek_content-box-caselibotCol .top_text em {
+      font-size: 32px;
+    }
+    div.widget_31428388548 .geek_content-box-caselibotCol .top_text i {
+      font-size: 15px;
+      top: 8px;
+    }
+    div.widget_31428388548 .geek_content-box-caselibotCol h4 {
+      margin-top: 9px;
+      font-size: 14px;
+    }
+    div.widget_31428388548 .geek_content-box-caselibotCol {
+      margin-bottom: 30px;
+    }
+    div.widget_31428388548 .geek_content-box-action-btn {
+      margin-top: 12px;
+    }
+
+
+
+
+
+  }
+
+  @media screen and (max-width: 767px) {
+
+    div.widget_31428388548 .geek_content-box-col {
+      padding: 0 15px;
+    }
+
+
+
+  }
+
+  @media screen and (max-width: 639px) {
+
+    div.widget_31428388548 .geek_content-box-caselibot {
+      flex-wrap: wrap;
+    }
+    div.widget_31428388548 .geek_content-box-col h3 {
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+
+
+
+  }
+
+
+
+
+ .content-box-margin {
+  margin: 20px 0; 
+}
+  
+  .widget_31428388549 .geek_content-box {
+    padding: 90px 0 40px;
+    background-image: url(https://source.www.geekplus.com/hubfs/Geek%20Plus%20Images%202020/Vipshop.jpg);
+    background-position: center;
+    background-color: rgba(12, 52, 61, 1.0 );
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .widget_31428388549 .geek_content-box:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.1 );
+  }
+  .widget_31428388549 .geek_content-box > div {
+    position: relative;
+  }
+
+  
+  
+  .widget_31428388549 .geek_content-box-col {
+    text-align: center;
+    width: 100%;
+  }
+  .widget_31428388549 .geek_content-box-col h3 {
+    color: rgba(255, 255, 255, 1.0 );
+    margin: 0 0 37px;
+    font-weight: normal;
+    font-size: 30px;
+  }
+  .widget_31428388549 .geek_content-box-desc p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 1.0 );
+    line-height: 1.7;
+  }
+  .widget_31428388549 .geek_content-box-action-btn .btn {
+    display: inline-block;
+    padding: 5px 35px 5px 20px;
+    background-color: rgba(0, 159, 239, 1.0 );
+    background-image: url(https://source.www.geekplus.com/hubfs/Geek%20Plus%20Images%202020/arrow-right-hover.png);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 17px);
+    justify-content: center;
+    vertical-align: middle;
+    color: rgba(255, 255, 255, 1.0 );
+    width: 95px;
+    text-transform: capitalize;
+    border: 0px solid rgba(0, 159, 239, 1.0 );
+    transition: all 0.3s;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.18);
+    border-radius: 55px;
+    font-size: 14px;
+    margin-top: 8px;
+    text-align: left;
+  }
+  .widget_31428388549 .geek_content-box-action-btn .btn:hover {
+    background-color: rgba(255, 255, 255, 1.0 );
+    background-image: url(https://source.www.geekplus.com/hubfs/Geek%20Plus%20Images%202020/arrow-right.png);
+    color: rgba(0, 159, 239, 1.0 );
+    border-color: rgba(255, 255, 255, 1.0 );
+  }
+  .widget_31428388549 .geek_content-box-desc {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .widget_31428388549 .geek_content-box-desc ul {
+    margin-top: 42px;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: inherit;
+    padding: 0 30px;
+  }
+  .widget_31428388549 .geek_content-box-desc ul li {
+    font-size: 16px;
+    flex: 0 0 40%;
+    max-width: 40%;
+    text-align: left;
+    line-height: 1.8;
+    color: #fff;
+    margin-left: 17px;
+    margin-right: 7%;
+    letter-spacing: normal;
+  }
+  .widget_31428388549 .geek_content-box-caselibotCol .top_text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+  .widget_31428388549 .geek_content-box-caselibotCol .top_text em {
+    font-size: 50px;
+    padding-right: 3px;
+    font-style: normal;
+  }
+  .widget_31428388549 .geek_content-box-caselibotCol .top_text i {
+    font-size: 18px;
+    position: relative;
+    top: 10px;
+    font-style: normal;
+  }
+  .widget_31428388549 .geek_content-box-caselibotCol h4 {
+    margin-top: 13px;
+    font-size: 18px;
+    color: #fff;
+  }
+  .widget_31428388549 .geek_content-box-caselibot {
+    padding-top: 20px;
+    padding-bottom: 22px;
+  }
+  .widget_31428388549 .geek_content-box-caselibotCol {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .widget_31428388549 .geek_content-box-caselibotCol:last-child {
+    margin-right: 0;
+  }
+  .widget_31428388549 .geek_content-box-action-btn {
+    margin-top: 45px;
+  }
+
+
+
+
+
+  
+
+  @media screen and (max-width: 1199px) {
+
+    div.widget_31428388549 .geek_content-box {
+      padding: 75px 0;
+    }
+    div.widget_31428388549 .geek_content-box-col h3 {
+      font-size: 28px;
+    }
+    div.widget_31428388549 .geek_content-box-desc p {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+
+
+  }
+
+  @media screen and (max-width: 991px) {
+
+    div.widget_31428388549 .geek_content-box {
+      padding: 55px 0;
+    }
+    div.widget_31428388549 .geek_content-box-col h2 {
+      font-size: 24px;
+    }
+    div.widget_31428388549 .geek_content-box-desc {
+      width: 100%;
+    }
+    div.widget_31428388549 .geek_content-box-desc ul {
+      padding: 0px;
+    }
+    div.widget_31428388549 .geek_content-box-caselibotCol .top_text em {
+      font-size: 32px;
+    }
+    div.widget_31428388549 .geek_content-box-caselibotCol .top_text i {
+      font-size: 15px;
+      top: 8px;
+    }
+    div.widget_31428388549 .geek_content-box-caselibotCol h4 {
+      margin-top: 9px;
+      font-size: 14px;
+    }
+    div.widget_31428388549 .geek_content-box-caselibotCol {
+      margin-bottom: 30px;
+    }
+    div.widget_31428388549 .geek_content-box-action-btn {
+      margin-top: 12px;
+    }
+
+
+
+
+
+  }
+
+  @media screen and (max-width: 767px) {
+
+    div.widget_31428388549 .geek_content-box-col {
+      padding: 0 15px;
+    }
+
+
+
+  }
+
+  @media screen and (max-width: 639px) {
+
+    div.widget_31428388549 .geek_content-box-caselibot {
+      flex-wrap: wrap;
+    }
+    div.widget_31428388549 .geek_content-box-col h3 {
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+
+
+
+  }
+
+
+
+
+
+var _hsp = window._hsp = window._hsp || [];
+_hsp.push(['addPrivacyConsentListener', function(consent) { if (consent.allowed || (consent.categories && consent.categories.analytics)) {
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create','UA-112333841-1','auto');
+  ga('send','pageview');
+}}]);
+
+
+
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+
+if (!window._hsGoogleConsentRunOnce) {
+  window._hsGoogleConsentRunOnce = true;
+
+  gtag('consent', 'default', {
+    'ad_storage': 'denied',
+    'analytics_storage': 'denied'
+  });
+
+  var _hsp = window._hsp = window._hsp || [];
+
+  _hsp.push(['addPrivacyConsentListener', function(consent){
+    var hasAnalyticsConsent = consent && (consent.allowed || (consent.categories && consent.categories.analytics));
+    var hasAdsConsent = consent && (consent.allowed || (consent.categories && consent.categories.advertisement));
+
+    gtag('consent', 'update', {
+      'ad_storage': hasAdsConsent ? 'granted' : 'denied',
+      'analytics_storage': hasAnalyticsConsent ? 'granted' : 'denied'
+    });
+  }]);
+}
+
+gtag('js', new Date());
+gtag('set', 'developer_id.dZTQ1Zm', true);
+gtag('config', 'G-KY9L2DX70B');
+
+
+
+
+
+var _hsp = window._hsp = window._hsp || [];
+
+var hsLoadGtm = function loadGtm() {
+    if(window._hsGtmLoadOnce) {
+      return;
+    }
+
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-P9R4HZ2');
+
+    window._hsGtmLoadOnce = true;
+};
+
+var useGoogleConsentMode = false;
+
+if (!useGoogleConsentMode){
+    _hsp.push(['addPrivacyConsentListener', function(consent){
+      if(consent.allowed || (consent.categories && consent.categories.analytics)){
+        hsLoadGtm();
+      }
+  }]);
+} else{
+    if(!window._hsGoogleConsentRunOnce){
+      window._hsGoogleConsentRunOnce=true;
+
+      window.dataLayer=window.dataLayer||[];
+      function gtag(){dataLayer.push(arguments);}
+
+      gtag('consent','default',{
+        'ad_storage':'denied',
+        'analytics_storage':'denied'
+      });
+
+      gtag('set','developer_id.dZTQ1Zm',true);
+
+      _hsp.push(['addPrivacyConsentListener',function(consent){
+      var hasAnalyticsConsent=consent&&(consent.allowed||(consent.categories&&consent.categories.analytics));
+      var hasAdsConsent=consent&&(consent.allowed||(consent.categories&&consent.categories.advertisement));
+
+      gtag('consent','update',{
+        'ad_storage':hasAdsConsent?'granted':'denied',
+        'analytics_storage':hasAnalyticsConsent?'granted':'denied'
+      });
+    }]);
+  }
+
+  hsLoadGtm();
+}
+
+
+
+
+
+
+!function(){window.analytics||(window.analytics=[]),window.analytics.methods=["identify","track","trackLink","trackForm","trackClick","trackSubmit","page","pageview","ab","alias","ready","group","on","once","off"],window.analytics.factory=function(a){return function(){var t=Array.prototype.slice.call(arguments);return t.unshift(a),window.analytics.push(t),window.analytics}};for(var a=0;a<window.analytics.methods.length;a++){var t=window.analytics.methods[a];window.analytics[t]=window.analytics.factory(t)}analytics.load=function(a){if(!document.getElementById("dreamdata-analytics")){window.a=window.analytics;var t=document.createElement("script");t.async=!0,t.id="dreamdata-analytics",t.type="text/javascript",t.src="https://cdn.dreamdata.cloud/scripts/analytics/v1/dreamdata.min.js";var n=function(){if(analytics&&analytics.initialize)for(analytics.initialize({"Dreamdata.io":{apiKey:a}});window.a.length>0;){var t=window.a.shift(),n=t.shift();analytics[n]&&analytics[n].apply(analytics,t)}};t.addEventListener?t.addEventListener("load",function(){n()},!1):t.onreadystatechange=function(){"complete"!=this.readyState&&"loaded"!=this.readyState||n()};var i=document.getElementsByTagName("script")[0];i.parentNode.insertBefore(t,i)}},analytics.load("48463ff1-067f-482d-896e-fdc77f72e77f"),analytics.page()}();
+
+
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?39cdd0017f43cf7d1b6e3b38e549d281";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Technology
+
+Robotics
+
+P Series
+X Series
+RS Series
+S Series
+M Series
+
+Software
+
+Product
+
+Goods-to-person
+RoboShuttle
+Four-way Shuttle Solution
+Moving
+Sorting
+Smart Warehouse
+Smart Factory
+
+Industries
+
+Apparel
+E-commerce
+Retail
+3PL
+Pharmaceutical
+Manufacturing
+Automotive
+
+Support
+Company
+
+About us 
+Cases
+News
+Sustainability
+Partnership
+Career
+Robotics Blog
+Brochures & Flyers
+
+Contact us
+
+
+
+
+
+
+
+
+
+
+中文
+English
+日本語
+한국어
+Deutsch
+Español
+Français
+繁體中文
+
+
+
+
+
+
+
+
+
+Technology
+
+Robotics
+
+P Series
+X Series
+RS Series
+S Series
+M Series
+
+Software
+
+Product
+
+Goods-to-person
+RoboShuttle
+Four-way Shuttle Solution
+Moving
+Sorting
+Smart Warehouse
+Smart Factory
+
+Industries
+
+Apparel
+E-commerce
+Retail
+3PL
+Pharmaceutical
+Manufacturing
+Automotive
+
+Support
+Company
+
+About us 
+Cases
+News
+Sustainability
+Partnership
+Career
+Robotics Blog
+Brochures & Flyers
+
+Contact us
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.geek_header-menu ul li.hs-menu-depth-1:last-child > a{
+  background: #389fef;
+  border-radius: 45px;
+  padding: 10px;
+  margin-top: 11px;
+  color: white;
+  font-size: 14px;
+}
+.mm-listview>li:last-child:after{
+  display: none;
+}
+.mm-listview li.hs-menu-depth-1:last-child > a{
+  background: #389fef;
+  border-radius: 45px;
+  padding: 10px;
+  margin-top: 11px;
+  color: white;
+  font-size: 14px;
+  max-width: 180px;
+  text-align: center;
+}
+
+
+
+
+
+
+选择另一个国家或地区以查看特定于您的位置的内容。
+
+
+
+
+選擇語言
+中文
+英語
+日本
+
+
+
+繼續
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+E-commerce
+Extraordinary Efficiency Tested by the World’s Largest E-commerce Sales
+
+
+
+
+
+
+
+
+
+
+
+
+For the fast-growing e-commerce industry, traditional manual warehouse operation cannot meet market demands on efficiency, accuracy and return on investment.Geek+ provides reliable and efficient solutions with unmatchable performances proven and tested during several mega e-commerce sales promotions, providing clients with the agility to respond to fluctuation and market demands.
+
+
+
+
+
+
+
+
+
+
+
+Industry Challenge
+
+
+Large orders
+Large SKU and low inventory
+High peaks
+Low picking efficiency of orders with multiple products
+Time constraints
+
+
+
+
+
+
+
+Solution
+Goods-to-personMore
+
+
+Allows continuous picking through smart order grouping
+Robots can easily be added or removed during and after peak
+Automatic ABC partitioning of shelves for higher picking efficiency
+Smart monitoring of whole process to guarantee picking accuracy
+Flexible storage sizes for different product categories
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Industry Challenge
+
+
+Low space utilization
+Low efficiency of manual operations on steel platforms
+Frequent tallying
+High labor costs
+
+
+
+
+
+
+
+Solution
+Bin-to-personMore
+
+
+Robot-operated multi-level steel platform
+Accurate picking
+Can be combined with robot arm for unmanned picking
+Robots can easily be added or removed during and after peak
+Technology enables inventory analysis, smart tallying, sales forecast, replenishment suggestions
+Smart monitoring of whole process to guarantee picking accuracy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Industry Challenge
+
+
+Massive number of packages
+High fluctuation
+Multiple flows
+High sorting difficulty
+High error rate
+
+
+
+
+
+
+
+Solution
+SortingMore
+
+
+Layout and number of robots adjustable depending on required quantity
+Supports multiple package types
+High density, three-dimensional sorting, dynamic grid distribution
+Smart monitoring of whole process to guarantee picking accuracy
+Smart sorting + moving
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Suning Logistics
+
+Pain points: Suning has been looking into unmanned warehouse application. In order to further improve the efficiency of the warehouse and the automation process, Suning has strategically cooperated with Geek+.Solution: In 2019, Geek+ deployed 15 P800 picking robots and 193 shelves, integrating the robots’ management system with Suning Logistics.
+
+
+
+
+ 300 pieces/hour
+
+picking efficiency
+
+
+
+ 700+ pieces/hour/station
+
+maximum picking capacity
+
+
+
+ 600 pieces/hour/station
+
+outbound capacity
+
+
+
+More
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Vipshop
+
+Pain points: Variety of goods, large inbound and outbound traffic marred by lower manual efficiency and higher error rateSolution: Deploying 121 robots and 2000 racks, accommodating an inventory of 1 million daily pieces.
+
+
+
+
+ 100,000 pieces
+
+daily shipping capacity
+
+
+
+ 600 pieces / hour
+
+picking efficiency
+
+
+
+More
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Contact us
+
+
+
+
+
+
+
+
+
+
+
+
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P9R4HZ2');
+China: +86 4000 450 010
+APAC: +852 3462 2128
+Europe: +49 211 53829033
+Japan: +81 0476 37 7509
+America: +1 404 406 3961Sales: sales@geekplus.comPR:  pr@geekplus.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Disclaimer
+Privacy Policy
+
+
+
+
+              COPYRIGHT © 2022 Geekplus Technology Co., Ltd.
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(function () {
+    window.addEventListener('load', function () {
+        setTimeout(function () {
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', '/_hcms/perf', true /*async*/);
+            xhr.setRequestHeader("Content-type", "application/json");
+            xhr.onreadystatechange = function () {
+                // do nothing.
+            };
+            var connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+            function populateNetworkInfo(name, connection, info) {
+                if (name in connection) {
+                    info[name] = connection[name];
+                }
+            }
+            var networkInfo = {};
+            if (connection) {
+                ['type', 'effectiveType', 'downlink', 'rtt'].forEach(function(name) {
+                    populateNetworkInfo(name, connection, networkInfo);
+                });
+            }
+            var perfData = {
+                url: location.href,
+                portal: 5868638,
+                content: 31431105505,
+                group: -1,
+                connection: networkInfo,
+                timing: performance.timing
+            };
+            xhr.send(JSON.stringify(perfData));
+        }, 3000);  // Execute this 3 seconds after onload.
+    });
+})();
+
+
+
+
+var hsVars = hsVars || {}; hsVars['language'] = 'en';
+
+
+
+
+
+
+
+      
+
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      if(document.querySelector(this.getAttribute('href'))){
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+
+
+
+
+
+
+
+
+        var options = {
+            portalId: '5868638',
+            formId: '6e5982c1-3ab0-45b8-abdf-4c57ab606a47',
+            formInstanceId: '7593',
+            pageId: '31431105505',
+            region: 'na1',
+            
+            
+            
+            
+            pageName: "E-commerce",
+            
+            
+            redirectUrl: "https:\/\/source.blog.geekplus.com\/en-us\/thankyou",
+            
+            
+            
+            
+            
+            css: '',
+            target: '#hs_form_target_form_751226126',
+            
+            
+            
+            
+            
+            contentType: "standard-page",
+            
+            
+            
+            formsBaseUrl: '/_hcms/forms/',
+            
+            
+            
+            formData: {
+                cssClass: 'hs-form stacked hs-custom-form'
+            }
+        };
+
+        options.getExtraMetaDataBeforeSubmit = function() {
+            var metadata = {};
+            
+
+            if (hbspt.targetedContentMetadata) {
+                var count = hbspt.targetedContentMetadata.length;
+                var targetedContentData = [];
+                for (var i = 0; i < count; i++) {
+                    var tc = hbspt.targetedContentMetadata[i];
+                     if ( tc.length !== 3) {
+                        continue;
+                     }
+                     targetedContentData.push({
+                        definitionId: tc[0],
+                        criterionId: tc[1],
+                        smartTypeId: tc[2]
+                     });
+                }
+                metadata["targetedContentMetadata"] = JSON.stringify(targetedContentData);
+            }
+
+            return metadata;
+        };
+
+        hbspt.forms.create(options);
+    
+
+
+var _hsq = _hsq || [];
+_hsq.push(["setContentType", "standard-page"]);
+_hsq.push(["setCanonicalUrl", "https:\/\/source.www.geekplus.com\/industry\/e-commerce"]);
+_hsq.push(["setPageId", "31431105505"]);
+_hsq.push(["setContentMetadata", {
+    "contentPageId": 31431105505,
+    "legacyPageId": "31431105505",
+    "contentFolderId": null,
+    "contentGroupId": null,
+    "abTestId": null,
+    "languageVariantId": 31431105505,
+    "languageCode": "en",
+    
+}]);
+
+
+
+
+var hsVars = {
+    ticks: 1681958738233,
+    page_id: 31431105505,
+    
+    content_group_id: 0,
+    portal_id: 5868638,
+    app_hs_base_url: "https://app.hubspot.com",
+    cp_hs_base_url: "https://cp.hubspot.com",
+    language: "en",
+    analytics_page_type: "standard-page",
+    analytics_page_id: "31431105505",
+    category_id: 1,
+    folder_id: 0,
+    is_hubspot_user: false
+}
+
+
+

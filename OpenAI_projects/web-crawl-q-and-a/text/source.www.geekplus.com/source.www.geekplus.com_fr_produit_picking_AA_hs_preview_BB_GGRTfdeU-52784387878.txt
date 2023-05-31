@@ -1,0 +1,4627 @@
+
+
+
+
+
+
+Picking
+
+
+hsjQuery = window['jQuery'];
+
+
+
+
+
+a.cta_button{-moz-box-sizing:content-box !important;-webkit-box-sizing:content-box !important;box-sizing:content-box !important;vertical-align:middle}.hs-breadcrumb-menu{list-style-type:none;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px}.hs-breadcrumb-menu-item{float:left;padding:10px 0px 10px 10px}.hs-breadcrumb-menu-divider:before{content:'›';padding-left:10px}.hs-featured-image-link{border:0}.hs-featured-image{float:right;margin:0 0 20px 20px;max-width:50%}@media (max-width: 568px){.hs-featured-image{float:none;margin:0;width:100%;max-width:100%}}.hs-screen-reader-text{clip:rect(1px, 1px, 1px, 1px);height:1px;overflow:hidden;position:absolute !important;width:1px}
+
+
+
+
+
+
+  .widget_31428388187 .container-fluid {
+    max-width: 95% !important;
+    margin: 0 auto !important;
+    float: none !important;
+    padding: 0 15px;
+    width: 100%;
+  }
+
+  
+  .widget_31428388187 .Banner_contact.left{ text-align:left;}
+  .widget_31428388187 .Banner_contact.right{ text-align:right;}
+  .widget_31428388187 .Banner_contact.center{ text-align:center;}
+
+  .widget_31428388187 .uppercase{
+    text-transform: uppercase;
+  }
+  .widget_31428388187 .vimeo-wrapper video {
+    position: absolute;
+    z-index: -100;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    background-size: cover;
+    overflow: hidden;
+    opacity: 1;
+    transition: 2s opacity;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  .widget_31428388187 .explore {
+    position: absolute;
+    bottom: 22px;
+    font-size: 16px;
+    left: 50%;
+    color: #FFF;
+    transform: translateX(-50%);
+    z-index: 1990;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    text-align: center;
+  }
+  .widget_31428388187 .explore span {
+    color: #fff;
+    display: block;
+  }
+  .widget_31428388187 .explore i.icon {
+    margin: 5px auto 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 9px 0 9px;
+    border-color: #FFF transparent transparent transparent;
+    animation: pulse 2s infinite;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .widget_31428388187 .defaut{
+    text-transform: inherit;
+  }
+  .widget_31428388187 .capitalize{
+    text-transform: capitalize;
+  }
+  .widget_31428388187 .Banner_contact h1{ 
+    color:#ffffff;
+    font-size:100px;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 22px;
+  }
+  .widget_31428388187 .Banner_contact h4 { 
+    color: rgba(255, 255, 255, 1.0);
+    font-size: 32px;
+    line-height: 1.5;
+  }
+  .widget_31428388187 .Banner_contact .geek_banner-desc p { 
+    color:#ffffff;
+    font-size:12px;
+  }
+
+
+  .banner_section {
+    width: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 115px;
+    padding-bottom:  115px;
+  }
+  @keyframes pulse {
+    0% {
+      -webkit-transform: translate(0, 0);
+      transform: translate(0, 0);
+    }
+    50% {
+      -webkit-transform: translate(0, 10px);
+      transform: translate(0, 10px);
+    }
+    100% {
+      -webkit-transform: translate(0, 0);
+      transform: translate(0, 0);
+    }
+  }
+
+  .conatiner_wrap {
+    /*position: absolute;*/
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+  .widget_31428388187 .overlay{
+    background-color: #011031;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .vimeo-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*height:calc(100vh - 0px);*/
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+    overflow: hidden;
+  }
+  .vimeo-wrapper iframe {
+    width: 100vw;
+    height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+    min-height: 100vh;
+    min-width: 177.77vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .image_Section{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*height:calc(100vh - 0px); */
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+  }
+  .widget_31428388187 .banner_section .img-overlay{
+    background-color: #141724;
+    opacity: 0.0; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+  }
+  .widget_31428388187 .Banner_contact ul li a {
+    display: inline-block;
+    height: 50px;
+    line-height: 48px;
+    margin: 0;
+    padding: 0 30px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 5px;
+    border:2px solid #ffffff;   
+    text-decoration: none;
+    border-radius:5px; 
+  }
+  .widget_31428388187 .Banner_contact ul li a:hover{
+    background-color: #FF0201 !important;
+    color:#ffffff;
+    border:2px solid #FF0201 !important; 
+  }
+  .gareer_mail {
+    position: relative;
+    text-align: center;
+    padding: 25px 0;
+  }
+  .gareer_mail a {
+    padding: 0 10px;
+    color: #333;
+    z-index: 2;
+    position: relative;
+    background: #fff;
+  }
+  .gareer_mail:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    left: 0;
+    border-bottom: 1px solid #C9C9C9;
+    z-index: 1;
+  }
+
+  
+
+  @media screen and (max-width: 1199px) {
+
+    div.widget_31428388187 .Banner_contact h1 {
+      font-size: 42px;
+    }
+
+
+  }
+
+  @media screen and (max-width: 991px) {
+
+    div.widget_31428388187 .Banner_contact h1 {
+      font-size: 32px;
+    }
+    div.widget_31428388187 .Banner_contact p {
+      font-size: 22px;
+    }
+
+  }
+
+
+  @media screen and (max-width: 767px) {
+    .Banner_contact h1 br {
+      display: none;
+    }
+    div.widget_31428388187 .geek_banner-desc p {
+      display: inline;
+    }
+
+    
+    .widget_31428388187 .banner_section {
+      background-image: url(https://source.www.geekplus.com/hubfs/Geek%20Plus%20Images%202020/Picking-banner-mobile.jpg) !important; 
+    }
+    
+
+
+  }
+
+
+  @media screen and (max-width: 639px) {
+
+    div.widget_31428388187 .Banner_contact h1 {
+      font-size: 28px;
+    }
+    .widget_31428388187 .banner_section {
+      padding-top: 105px;
+      padding-bottom: 100px;
+    }
+    div.widget_31428388187 .Banner_contact h4 {
+      font-size: 16px;
+    }
+
+
+  }
+
+
+  @media screen and (max-width: 359px) {
+
+    div.widget_31428388187 .Banner_contact h1 {
+      margin-bottom: 7px;
+      line-height: 1.5;
+    }
+
+
+  }
+
+
+
+
+
+
+  .widget_31428388188 {
+    background: rgba(243, 243, 243, 1.0);
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+  .widget_31428388188 .container {
+    max-width: px !important;
+    margin: 0 auto !important;
+  }
+  .widget_31428388188 .container-fluid {
+    max-width: 100% !important;
+    margin: 0 auto !important;
+  }
+  .widget_31428388188 .geek_rccb-heading {
+    text-align: center;
+    margin-bottom: 52px;
+  }
+  .widget_31428388188 .geek_rccb-heading h1 {
+    font-size: 38px;
+    color: rgba(43, 44, 50, 1.0);
+    margin-bottom: 25px;
+  }
+  .widget_31428388188 .geek_rccb-heading h2 {
+    font-size: 30px;
+    color: rgba(43, 44, 50, 1.0);
+    margin-bottom: 25px;
+  }
+  .widget_31428388188 .geek_rccb-heading h3 {
+    font-size: 28px;
+    color: rgba(43, 44, 50, 1.0);
+    margin-bottom: 25px;
+  }
+  .widget_31428388188 .geek_rccb-heading h4 {
+    font-size: 20px;
+    color: rgba(43, 44, 50, 1.0);
+    margin-bottom: 25px;
+  }
+  .widget_31428388188 .geek_rccb-heading h5 {
+    font-size: 18px;
+    color: rgba(43, 44, 50, 1.0);
+    margin-bottom: 25px;
+  }
+  .widget_31428388188 .geek_rccb-heading h6 {
+    font-size: 16px;
+    color: rgba(43, 44, 50, 1.0);
+    margin-bottom: 25px;
+  }
+  .widget_31428388188 .geek_rccb-heading p {
+    font-size: 14px;
+    color: rgba(43, 44, 50, 1.0);
+    margin-bottom: 10px;
+  }
+  .widget_31428388188 .geek_rccb-heading p:last-child {
+    margin-bottom: 0px; 
+  }
+  .widget_31428388188 ul li {
+    color: rgba(43, 44, 50, 1.0);
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: left;
+  }
+  .widget_31428388188 ul li a {
+    color: inherit; 
+  }
+  .widget_31428388188 ul li:before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background: #ff4300;
+    position: absolute;
+    left: 2px;
+    top: 9px;
+    border-radius: 100%;
+  }
+  .widget_31428388188 .geek_rccb-contentBox-row {
+    margin: 0 -30px;
+  }
+  .widget_31428388188 .geek_rccb-contentBox-col {
+    min-height: 132px;
+    padding: 0 30px;
+    flex: 1 1 0;
+  }
+  .widget_31428388188 .geek_rccb-contentBox-colInner {
+    background: #fcfcfc;
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.09);
+    border-radius: 10px;
+    padding: 24px;
+    text-align: center;
+    height: 100%;
+  }
+  
+    .widget_31428388188 .geek_rccb-contentBox-colInner:hover {
+    background: #fcfcfc;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    padding: 24px;
+    text-align: center;
+    height: 100%;
+}
+  
+
+  .widget_31428388188 .geek_rccb-contentBox-colInner h3 {
+    font-size: 28px;
+    color: rgba(43, 44, 50, 1.0);;
+    margin-bottom: 20px;
+  }
+  .widget_31428388188 .geek_rccb-contentBox-colInner p {
+    font-size: 14px;
+    color: rgba(43, 44, 50, 1.0);;
+  }
+  .widget_31428388188 .geek_rccb-contentBox {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .widget_31428388188 .geek_rccb-contentBox-colInner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .widget_31428388188 .geek_rccb-contentBox-colInnerBox {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  
+  .widget_31428388188 .geek_rccb-contentBox-colInner h3 {
+    margin-bottom: 0px;
+  }
+  
+
+
+
+  
+
+  @media screen and (max-width: 1199px) {
+
+    div.widget_31428388188 .geek_rccb-heading h2 {
+      font-size: 32px;
+    }
+    div.widget_31428388188 .geek_rccb-contentBox {
+      width: 100%;
+    }
+    div.widget_31428388188 {
+      padding-top: 65px;
+      padding-bottom: 45px;
+    }
+    div.widget_31428388188 .geek_rccb-contentBox-colInner h3 {
+      font-size: 22px;
+    }
+    div.widget_31428388188 .geek_rccb-contentBox-col {
+      padding: 0 15px;
+      flex: 0 0 33.333336%;
+      max-width: 33.333336%;
+      margin-bottom: 30px;
+    }
+    div.widget_31428388188 .geek_rccb-contentBox-row {
+      margin: 0 -15px;
+      flex-wrap: wrap;
+    }
+
+
+
+
+
+  }
+
+  @media screen and (max-width: 991px) {
+    div.widget_31428388188 .container-fluid {
+      max-width: 100% !important;
+    }
+    .widget_31428388188 .enate_rich-text p {
+      font-size: 16px;
+    }
+    .widget_31428388188 ul li {
+      font-size: 16px;
+    }
+
+
+  }
+
+  @media screen and (max-width: 767px) {
+
+    div.widget_31428388188 .geek_rccb-contentBox-col {
+      padding: 0 15px;
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+    div.widget_31428388188 .geek_rccb-heading h2 {
+      font-size: 26px;
+    }
+
+
+
+  }
+
+  @media screen and (max-width: 639px) {
+
+    div.widget_31428388188 .geek_rccb-contentBox-col {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    div.widget_31428388188 .geek_rccb-heading h3 {
+      font-size: 24px;
+    }
+     
+
+
+
+  }
+
+
+
+
+
+
+  #hs-oembed__starter--target_widget_1677141629321 {
+    
+
+max-width: 766px;
+padding-bottom: 32%;
+
+  }
+
+
+
+  .widget_1677141629321 iframe {
+    border: none;
+    border-radius: 10px;
+  }
+  .widget_1677141629321 .hs-oembed__starter, .widget_1677141629321 .hs-mp4-Video {
+    margin-top: -60px;
+  }
+  
+  .widget_1677141629321 .hs-mp4-Video video {
+    width: 65%;
+    max-height: 431px;
+    margin: 0 auto;
+    box-shadow: 0px 10px 27px 3px rgba(0, 0, 0, 0.14);
+    /* background-image: url(https://source.www.geekplus.com/hubfs/766x431%E5%B1%8F%E4%BF%9D-%E6%8B%A3%E9%80%89nike.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: contain; */
+}
+  .hs-mp4-Video { text-align: center; position: relative;}
+
+  
+
+  @media screen and (max-width: 991px) {
+
+    div.widget_1677141629321 .hs-oembed__starter {
+      margin-top: 0px;
+    }
+    div.widget_1677141629321 {
+      padding: 20px 0px;
+    }
+
+
+
+  }
+
+  @media screen and (max-width: 767px) {
+
+    div#hs-oembed__starter--target_widget_1677141629321 {
+      max-width: 766px;
+      padding-bottom: 85%; 
+    }
+
+
+
+  }
+
+
+
+
+  
+  .widget_1677140774777 {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    background: rgba(255, 255, 255, 1.0);
+    overflow: hidden;
+  }
+  
+
+  .widget_1677140774777 .geek_imageText-row {
+    margin: 0 -15px;
+  }
+
+  
+  .widget_1677140774777 .geek_imageText-left, .widget_1677140774777 .geek_imageText-right {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 15px;
+  }
+
+  
+
+  
+  .widget_1677140774777 .geek_imageText-right {
+    order: -1;
+  }
+  
+
+  
+  .widget_1677140774777 .geek_imageText-left {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 15px;
+  }
+  
+
+  
+
+  .widget_1677140774777 .container {
+    max-width: px !important;
+    margin: 0 auto !important;
+  }
+
+  .widget_1677140774777 .container-fluid {
+    max-width: % !important;
+    margin: 0 auto !important;
+  }
+  .widget_1677140774777 .geek_imageText-row {
+    align-items: flex-start;
+  }
+  .widget_1677140774777 .enate_rich-text {
+    text-align: center;
+    width: 100%;
+  }
+
+  
+  .widget_1677140774777 .enate_rich-text {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  
+
+
+
+  .widget_1677140774777 .geek_imageText-right {
+    text-align: center; 
+  }
+  .widget_1677140774777 .enate_rich-text h1 {
+    font-size: 30px;
+    color: rgba(111, 114, 125, 1.0);
+    padding-bottom: 0.5rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  .widget_1677140774777 .enate_rich-text h2 {
+    font-size: 28px;
+    color: rgba(111, 114, 125, 1.0);
+    padding-bottom: 0.5rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  .widget_1677140774777 .enate_rich-text h3 {
+    font-size: 24px;
+    color: rgba(111, 114, 125, 1.0);
+    padding-bottom: 0.5rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  .widget_1677140774777 .enate_rich-text h4 {
+    font-size: 20px;
+    color: rgba(111, 114, 125, 1.0);
+    padding-bottom: 0.5rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  .widget_1677140774777 .enate_rich-text h5 {
+    font-size: 18px;
+    color: rgba(111, 114, 125, 1.0);
+    padding-bottom: 0.5rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  .widget_1677140774777 .enate_rich-text h6 {
+    font-size: 16px;
+    color: rgba(111, 114, 125, 1.0);
+    padding-bottom: 0.5rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  .widget_1677140774777 .enate_rich-text p {
+    font-size: 14px;
+    color: rgba(111, 114, 125, 1.0);
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+  }
+  .widget_1677140774777 .enate_rich-text p:last-child {
+    margin-bottom: 0px; 
+  }
+
+  
+
+  .widget_1677140774777 .geek_imageText-right img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: px;
+  }
+
+  .widget_1677140774777 ul li {
+    color: rgba(111, 114, 125, 1.0);
+    margin-bottom: 10px;
+    margin-left: 0;
+    position: relative;
+    font-size: 14px;
+    line-height: 1.5;
+    flex: 0 0 45%;
+    max-width: 45%;
+    list-style: inside;
+  }
+
+  
+
+  
+  .widget_1677140774777 ul li {
+    flex: 0 0 45%;
+    max-width: 45%;
+  }
+
+  
+
+  .widget_1677140774777 ul li a {
+    color: inherit; 
+  }
+  .widget_1677140774777 ul {
+    list-style: inherit;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .widget_1677140774777 .geek_imageText-right p {
+    font-size: 12px;
+  }
+
+
+  
+
+  @media screen and (max-width: 991px) {
+    div.widget_1677140774777 .container-fluid {
+      max-width: 100% !important;
+    }
+    div.widget_1677140774777 .enate_rich-text {
+      width: 100%;
+    }
+    div.widget_1677140774777 {
+      padding-top: 35px;
+      padding-bottom: 35px;
+    }
+    div.widget_1677140774777 .enate_rich-text h2 {
+      font-size: 32px;
+    }
+    div.widget_1677140774777 .enate_rich-text h3 {
+      font-size: 24px;
+    }
+    div.widget_1677140774777 .enate_rich-text p {
+      font-size: 18px;
+    }
+    div.widget_1677140774777 .geek_imageText-left, div.widget_1677140774777 .geek_imageText-right {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    div.widget_1677140774777 .geek_imageText-right {
+      order: inherit;
+      padding-top: 20px;
+    }
+
+        
+
+    div.widget_1677140774777 .geek_imageText-right img {
+      margin-top: 0;
+    }
+
+  }
+
+  @media screen and (max-width: 767px) {
+
+    div.widget_1677140774777 .enate_rich-text h2 {
+      font-size: 22px;
+    }
+    div.widget_1677140774777 .enate_rich-text h3 {
+      font-size: 20px;
+    }
+
+  }
+
+  @media screen and (max-width: 479px) {
+
+    div.widget_1677140774777 ul li {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }    
+    div.widget_1677140774777 .enate_rich-text h2 {
+      font-size: 20px;
+    }
+    div.widget_1677140774777 .enate_rich-text h3 {
+      font-size: 19px;
+    }
+
+  }
+
+
+
+
+
+
+  .geek_picking_pro_list {
+    background: #f3f3f3;
+    overflow: hidden;
+  }
+  .geek_picking_goodsimg {
+    padding-right: 30px;
+  }
+  .geek_picking_goodsimg li:nth-of-type(1) {
+    background: none;
+    box-shadow: none;
+    flex-shrink: 0;
+    width: 130px;
+  }
+  .geek_picking_goodsimg li {
+    position: relative;
+    width: 30%;
+    margin-right: 10px;
+    box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.09);
+    background: #FBFBFB;
+  }
+  .geek_picking_goodsimg li .proimg {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #geek_picking_goodstable {
+    height: 420px;
+    margin-top: 60px;
+  }
+  .geek_picking_goodstable {
+    margin-top: 50px;
+    height: 420px;
+  }
+  .mCSB_container {
+    width: auto;
+    margin-right: 15px;
+    overflow: hidden;
+  }
+  .geek_picking_goodstable li:nth-of-type(odd) {
+    box-shadow: none;
+    background: none;
+    font-weight: normal;
+  }
+  .geek_picking_goodstable .left {
+    width: 200px!important;
+    padding-right: 10px;
+    word-break: break-word;
+  }
+  .geek_picking_goodstable .left, .geek_picking_goodstable .right {
+    flex-shrink: 0;
+    color: #A3A3A3;
+  }
+  .geek_picking_goodstable li {
+    position: relative;
+    width: 30%;
+    margin-right: 10px;
+    background-color: #FFF;
+    box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.09);
+  }
+  .geek_picking_goodstable li:nth-of-type(1) span {
+    justify-content: flex-end;
+  }
+  .geek_picking_goodstable .left span, .geek_picking_goodstable .right span {
+    font-weight: normal;
+  }
+  .geek_picking_goodsimg li:nth-last-of-type(1) {
+    margin-right: 0;
+    background: none;
+    box-shadow: none;
+    flex-shrink: 0;
+    width: 90px;
+  }
+  .geek_picking_goodstable span {
+    display: inline-block;
+    font-size: 14px;
+    color: #878787;
+    display: flex;
+    width: 100%;
+    height: 68px;
+    letter-spacing: normal;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 0 9px;
+    line-height: 1.5;
+  }
+  .geek_picking_goodstable li:nth-of-type(1) span i {
+    text-align: right;
+  }
+  .geek_picking_goodstable span i {
+    display: inline-block;
+    font-style: normal;
+    text-align: center;
+    max-height: 68px;
+    overflow: hidden;
+  }
+  .geek_picking_goodstable span:after {
+    content: '';
+    position: absolute;
+    width: calc(100% + 20px);
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    background: #e9e9e9;
+  }
+  .geek_picking_goodstable li:nth-last-of-type(1) {
+    margin-right: 0;
+  }
+  .geek_picking_goodstable .right {
+    width: 130px;
+    justify-content: flex-start;
+    padding-left: 10px;
+  }
+  .geek_picking_goodstable li:nth-last-of-type(1) span {
+    justify-content: flex-start;
+  }
+  .geek_picking_pro_list .container {
+    max-width: 1465px !important;
+  }
+
+
+  
+
+  @media screen and (max-width: 991px) {
+
+    div.geek_picking_pro_list {
+      display: none;
+    }
+
+
+  }
+
+
+
+
+
+
+
+  
+  .widget_1677141749458 {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    background: rgba(255, 255, 255, 1.0);
+    overflow: hidden;
+  }
+  
+
+  .widget_1677141749458 .geek_imageText-row {
+    margin: 0 -15px;
+  }
+
+  
+  .widget_1677141749458 .geek_imageText-left, .widget_1677141749458 .geek_imageText-right {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 15px;
+  }
+
+  
+
+  
+  .widget_1677141749458 .geek_imageText-right {
+    order: -1;
+  }
+  
+
+  
+  .widget_1677141749458 .geek_imageText-left {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 15px;
+  }
+  
+
+  
+
+  .widget_1677141749458 .container {
+    max-width: px !important;
+    margin: 0 auto !important;
+  }
+
+  .widget_1677141749458 .container-fluid {
+    max-width: % !important;
+    margin: 0 auto !important;
+  }
+  .widget_1677141749458 .geek_imageText-row {
+    align-items: flex-start;
+  }
+  .widget_1677141749458 .enate_rich-text {
+    text-align: center;
+    width: 100%;
+  }
+
+  
+  .widget_1677141749458 .enate_rich-text {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  
+
+
+
+  .widget_1677141749458 .geek_imageText-right {
+    text-align: center; 
+  }
+  .widget_1677141749458 .enate_rich-text h1 {
+    font-size: 30px;
+    color: rgba(111, 114, 125, 1.0);
+    padding-bottom: 0.5rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  .widget_1677141749458 .enate_rich-text h2 {
+    font-size: 28px;
+    color: rgba(111, 114, 125, 1.0);
+    padding-bottom: 0.5rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  .widget_1677141749458 .enate_rich-text h3 {
+    font-size: 24px;
+    color: rgba(111, 114, 125, 1.0);
+    padding-bottom: 0.5rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  .widget_1677141749458 .enate_rich-text h4 {
+    font-size: 20px;
+    color: rgba(111, 114, 125, 1.0);
+    padding-bottom: 0.5rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  .widget_1677141749458 .enate_rich-text h5 {
+    font-size: 18px;
+    color: rgba(111, 114, 125, 1.0);
+    padding-bottom: 0.5rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  .widget_1677141749458 .enate_rich-text h6 {
+    font-size: 16px;
+    color: rgba(111, 114, 125, 1.0);
+    padding-bottom: 0.5rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  .widget_1677141749458 .enate_rich-text p {
+    font-size: 14px;
+    color: rgba(111, 114, 125, 1.0);
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+  }
+  .widget_1677141749458 .enate_rich-text p:last-child {
+    margin-bottom: 0px; 
+  }
+
+  
+
+  .widget_1677141749458 .geek_imageText-right img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: px;
+  }
+
+  .widget_1677141749458 ul li {
+    color: rgba(111, 114, 125, 1.0);
+    margin-bottom: 10px;
+    margin-left: 0;
+    position: relative;
+    font-size: 14px;
+    line-height: 1.5;
+    flex: 0 0 45%;
+    max-width: 45%;
+    list-style: inside;
+  }
+
+  
+
+  
+  .widget_1677141749458 ul li {
+    flex: 0 0 45%;
+    max-width: 45%;
+  }
+
+  
+
+  .widget_1677141749458 ul li a {
+    color: inherit; 
+  }
+  .widget_1677141749458 ul {
+    list-style: inherit;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .widget_1677141749458 .geek_imageText-right p {
+    font-size: 12px;
+  }
+
+
+  
+
+  @media screen and (max-width: 991px) {
+    div.widget_1677141749458 .container-fluid {
+      max-width: 100% !important;
+    }
+    div.widget_1677141749458 .enate_rich-text {
+      width: 100%;
+    }
+    div.widget_1677141749458 {
+      padding-top: 35px;
+      padding-bottom: 35px;
+    }
+    div.widget_1677141749458 .enate_rich-text h2 {
+      font-size: 32px;
+    }
+    div.widget_1677141749458 .enate_rich-text h3 {
+      font-size: 24px;
+    }
+    div.widget_1677141749458 .enate_rich-text p {
+      font-size: 18px;
+    }
+    div.widget_1677141749458 .geek_imageText-left, div.widget_1677141749458 .geek_imageText-right {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    div.widget_1677141749458 .geek_imageText-right {
+      order: inherit;
+      padding-top: 20px;
+    }
+
+        
+
+    div.widget_1677141749458 .geek_imageText-right img {
+      margin-top: 0;
+    }
+
+  }
+
+  @media screen and (max-width: 767px) {
+
+    div.widget_1677141749458 .enate_rich-text h2 {
+      font-size: 22px;
+    }
+    div.widget_1677141749458 .enate_rich-text h3 {
+      font-size: 20px;
+    }
+
+  }
+
+  @media screen and (max-width: 479px) {
+
+    div.widget_1677141749458 ul li {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }    
+    div.widget_1677141749458 .enate_rich-text h2 {
+      font-size: 20px;
+    }
+    div.widget_1677141749458 .enate_rich-text h3 {
+      font-size: 19px;
+    }
+
+  }
+
+
+
+
+
+
+  
+  .widget_31428388191 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background: rgba(255, 255, 255, 1.0);
+    overflow: hidden;
+  }
+  
+
+  .widget_31428388191 .geek_imageText-row {
+    margin: 0 -15px;
+  }
+
+  
+  .widget_31428388191 .geek_imageText-left, .widget_31428388191 .geek_imageText-right {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 15px;
+  }
+
+  
+
+  
+  .widget_31428388191 .geek_imageText-right {
+    order: -1;
+  }
+  
+
+  
+
+  
+  .widget_31428388191 .geek_imageText-right {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 15px;
+  }
+  
+
+  .widget_31428388191 .container {
+    max-width: px !important;
+    margin: 0 auto !important;
+  }
+
+  .widget_31428388191 .container-fluid {
+    max-width: % !important;
+    margin: 0 auto !important;
+  }
+  .widget_31428388191 .geek_imageText-row {
+    align-items: flex-start;
+  }
+  .widget_31428388191 .enate_rich-text {
+    text-align: center;
+    width: 90%;
+  }
+
+  
+  .widget_31428388191 .enate_rich-text {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  
+
+
+
+  .widget_31428388191 .geek_imageText-right {
+    text-align: center; 
+  }
+  .widget_31428388191 .enate_rich-text h1 {
+    font-size: 30px;
+    color: rgba(111, 114, 125, 1.0);
+    padding-bottom: 0.5rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  .widget_31428388191 .enate_rich-text h2 {
+    font-size: 45px;
+    color: rgba(43, 44, 50, 1.0);
+    padding-bottom: 0.5rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  .widget_31428388191 .enate_rich-text h3 {
+    font-size: 24px;
+    color: rgba(111, 114, 125, 1.0);
+    padding-bottom: 0.5rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  .widget_31428388191 .enate_rich-text h4 {
+    font-size: 20px;
+    color: rgba(111, 114, 125, 1.0);
+    padding-bottom: 0.5rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  .widget_31428388191 .enate_rich-text h5 {
+    font-size: 18px;
+    color: rgba(111, 114, 125, 1.0);
+    padding-bottom: 0.5rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  .widget_31428388191 .enate_rich-text h6 {
+    font-size: 16px;
+    color: rgba(111, 114, 125, 1.0);
+    padding-bottom: 0.5rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  .widget_31428388191 .enate_rich-text p {
+    font-size: 20px;
+    color: rgba(51, 51, 51, 1.0);
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+  }
+  .widget_31428388191 .enate_rich-text p:last-child {
+    margin-bottom: 0px; 
+  }
+
+  
+  .widget_31428388191 .geek_imageText-right img {
+    width: 100%;
+  }
+  
+
+  .widget_31428388191 .geek_imageText-right img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: px;
+  }
+
+  .widget_31428388191 ul li {
+    color: rgba(111, 114, 125, 1.0);
+    margin-bottom: 10px;
+    margin-left: 0;
+    position: relative;
+    font-size: 14px;
+    line-height: 1.5;
+    flex: 0 0 45%;
+    max-width: 45%;
+    list-style: inside;
+  }
+
+  
+
+  
+
+  .widget_31428388191 .geek_imageText-right {
+    margin-bottom: 40px;
+  }
+
+  
+
+  
+
+  .widget_31428388191 .geek_imageText-right {
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .widget_31428388191 .geek_imageText-right {
+    margin-bottom: 0;
+  }
+
+  
+
+
+  
+
+  
+  .widget_31428388191 ul li {
+    flex: 0 0 45%;
+    max-width: 45%;
+  }
+
+  
+
+  .widget_31428388191 ul li a {
+    color: inherit; 
+  }
+  .widget_31428388191 ul {
+    list-style: inherit;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .widget_31428388191 .geek_imageText-right p {
+    font-size: 12px;
+  }
+
+
+  
+
+  @media screen and (max-width: 991px) {
+    div.widget_31428388191 .container-fluid {
+      max-width: 100% !important;
+    }
+    div.widget_31428388191 .enate_rich-text {
+      width: 100%;
+    }
+    div.widget_31428388191 {
+      padding-top: 35px;
+      padding-bottom: 35px;
+    }
+    div.widget_31428388191 .enate_rich-text h2 {
+      font-size: 32px;
+    }
+    div.widget_31428388191 .enate_rich-text h3 {
+      font-size: 24px;
+    }
+    div.widget_31428388191 .enate_rich-text p {
+      font-size: 18px;
+    }
+    div.widget_31428388191 .geek_imageText-left, div.widget_31428388191 .geek_imageText-right {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    div.widget_31428388191 .geek_imageText-right {
+      order: inherit;
+      padding-top: 20px;
+    }
+
+    
+
+    
+
+    .widget_31428388191 .geek_imageText-right {
+      margin-bottom: 0;
+    }
+
+    
+
+    
+
+    div.widget_31428388191 .geek_imageText-right {
+      padding-top: 0;
+    }
+    div.widget_31428388191 {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    
+
+        
+
+    div.widget_31428388191 .geek_imageText-right img {
+      margin-top: 0;
+    }
+
+  }
+
+  @media screen and (max-width: 767px) {
+
+    div.widget_31428388191 .enate_rich-text h2 {
+      font-size: 22px;
+    }
+    div.widget_31428388191 .enate_rich-text h3 {
+      font-size: 20px;
+    }
+
+  }
+
+  @media screen and (max-width: 479px) {
+
+    div.widget_31428388191 ul li {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }    
+    div.widget_31428388191 .enate_rich-text h2 {
+      font-size: 20px;
+    }
+    div.widget_31428388191 .enate_rich-text h3 {
+      font-size: 19px;
+    }
+
+  }
+
+
+
+
+
+
+  
+  .widget_31428388192 .geek_content-box {
+    padding: 125px 0 75px;
+    background-image: url(https://source.www.geekplus.com/hubfs/Geek%20Plus%20Images%202020/pikingcenter1.png);
+    background-position: center;
+    background-color: rgba(12, 52, 61, 1.0 );
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .widget_31428388192 .geek_content-box:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.1 );
+  }
+  .widget_31428388192 .geek_content-box > div {
+    position: relative;
+  }
+
+  
+
+  .widget_31428388192 .geek_content-box-col {
+    padding: 20px 15px;
+    text-align: center;
+    width: 100%;
+  }
+  .geek_content-box-col span {
+    font-size: 42px;
+    color: rgba(255, 255, 255, 1.0 );
+  }
+  .widget_31428388192 .geek_content-box-col h2 {
+    color: rgba(255, 255, 255, 1.0 );
+    margin: 10px 0 30px;
+    font-weight: normal;
+    font-size: 60px;
+  }
+  .widget_31428388192 .geek_content-box-desc p {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 1.0 );
+    line-height: 1.5;
+  }
+  .widget_31428388192 .geek_content-box-action-btn .btn {
+    display: inline-block;
+    padding: 5px 35px 5px 20px;
+    background-color: rgba(0, 159, 239, 1.0 );
+    background-image: url(https://source.www.geekplus.com/hubfs/Geek%20Plus%20Images%202020/arrow-right-hover.png);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 17px);
+    justify-content: center;
+    vertical-align: middle;
+    color: rgba(255, 255, 255, 1.0 );
+    text-transform: capitalize;
+    border: 0px solid rgba(0, 159, 239, 1.0 );
+    transition: all 0.3s;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.18);
+    border-radius: 55px;
+    font-size: 14px;
+    margin-top: 8px;
+    text-align: left;
+  }
+  .widget_31428388192 .geek_content-box-action-btn .btn:hover {
+    background-color: rgba(255, 255, 255, 1.0 );
+    background-image: url(https://source.www.geekplus.com/hubfs/Geek%20Plus%20Images%202020/arrow-right.png);
+    color: rgba(0, 159, 239, 1.0 );
+    border-color: rgba(255, 255, 255, 1.0 );
+  }
+  .widget_31428388192 .geek_content-box-desc {
+    width: 85%;
+    margin: 0 auto;
+  }
+  .widget_31428388192 .geek_content-box-desc ul {
+    margin-top: 42px;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: inherit;
+    padding: 0 30px;
+  }
+  .widget_31428388192 .geek_content-box-desc ul li {
+    font-size: 16px;
+    flex: 0 0 40%;
+    max-width: 40%;
+    text-align: left;
+    line-height: 1.8;
+    color: #fff;
+    margin-left: 17px;
+    margin-right: 7%;
+    letter-spacing: normal;
+  }
+
+
+
+  
+
+  @media screen and (max-width: 1199px) {
+
+    div.widget_31428388192 .geek_content-box {
+      padding: 175px 0;
+    }
+    .widget_31428388192 .geek_content-box-col span {
+      font-size: 36px;
+    }
+    div.widget_31428388192 .geek_content-box-col h2 {
+      margin: 10px 0 20px;
+      font-size: 42px;
+    }
+    div.widget_31428388192 .geek_content-box-desc p {
+      font-size: 22px;
+      line-height: 1.6;
+    }
+
+
+
+  }
+
+  @media screen and (max-width: 991px) {
+
+    div.widget_31428388192 .geek_content-box {
+      padding: 75px 0;
+    }
+    .widget_31428388192 .geek_content-box-col span {
+      font-size: 30px;
+    }
+    div.widget_31428388192 .geek_content-box-col h2 {
+      margin: 5px 0 15px;
+      font-size: 32px;
+    }
+    div.widget_31428388192 .geek_content-box-desc p {
+      font-size: 18px;
+      padding: 0;
+    }
+    div.widget_31428388192 .geek_content-box-desc {
+      width: 100%;
+    }
+    div.widget_31428388192 .geek_content-box-desc ul {
+      padding: 0px;
+    }
+
+
+
+
+
+  }
+
+  @media screen and (max-width: 639px) {
+
+    div.widget_31428388192 .geek_content-box {
+      padding: 45px 0;
+    }
+    .widget_31428388192 .geek_content-box-col span {
+      font-size: 22px;
+    }
+    div.widget_31428388192 .geek_content-box-col h2 {
+      margin: 5px 0 12px;
+      font-size: 24px;
+    }
+    div.widget_31428388192 .geek_content-box-desc p {
+      font-size: 16px;
+      padding: 0;
+    }
+    div.widget_31428388192 .geek_content-box-desc ul li {
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+    div.widget_31428388192 .geek_content-box-desc ul {
+      padding: 0 0 0 17px;
+    }
+
+
+
+  }
+
+
+
+
+  #hs-oembed__starter--target_widget_31428388193 {
+    
+
+max-width: 766px;
+padding-bottom: 35%;
+
+  }
+
+
+
+  .widget_31428388193 iframe {
+    border: none;
+    border-radius: 10px;
+  }
+  .widget_31428388193 .hs-oembed__starter, .widget_31428388193 .hs-mp4-Video {
+    margin-top: -60px;
+  }
+  
+  .widget_31428388193 .hs-mp4-Video video {
+    width: 65%;
+    max-height: 431px;
+    margin: 0 auto;
+    box-shadow: 0px 10px 27px 3px rgba(0, 0, 0, 0.14);
+    /* background-image: url(https://source.www.geekplus.com/hubfs/766x431%E5%B1%8F%E4%BF%9D-%E6%8B%A3%E9%80%89nike.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: contain; */
+}
+  .hs-mp4-Video { text-align: center; position: relative;}
+
+  
+
+  @media screen and (max-width: 991px) {
+
+    div.widget_31428388193 .hs-oembed__starter {
+      margin-top: 0px;
+    }
+    div.widget_31428388193 {
+      padding: 20px 0px;
+    }
+
+
+
+  }
+
+  @media screen and (max-width: 767px) {
+
+    div#hs-oembed__starter--target_widget_31428388193 {
+      max-width: 766px;
+      padding-bottom: 85%; 
+    }
+
+
+
+  }
+
+
+
+
+  .widget_31428388200 .geek_heading-tlisting {
+    padding-top: 80px;
+    padding-bottom: 60px;
+  }
+  .widget_31428388200 .geek_heading-tlisting-head h2 {
+    font-size: 50px;
+    text-align: center;
+    color: rgba(43, 44, 50, 1.0);
+    margin-bottom: 60px;
+  }
+  .widget_31428388200 .geek_heading-tlisting-row {
+    margin: 0 -3px;
+  }
+  .widget_31428388200 .geek_heading-tlisting-col {
+    padding: 0 3px 20px;
+    flex: 1 1 0;
+  }
+  .widget_31428388200 .geek_heading-tlisting-col h3 {
+    font-size: 20px;
+    color: rgba(43, 44, 50, 1.0);
+    margin-bottom: 24px;
+  }
+  .widget_31428388200 .geek_heading-tlisting-desc ul {
+    list-style: inherit;
+  }
+  .widget_31428388200 .geek_heading-tlisting-desc ul li {
+    color: rgba(149, 149, 153, 1.0);
+    font-size: 14px;
+    line-height: 2;
+    margin-left: 16px;
+    letter-spacing: normal;
+  }
+  .widget_31428388200 .geek_heading-tlisting-desc p {
+    color: rgba(149, 149, 153, 1.0);
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+
+
+  
+
+  @media screen and (max-width: 1199px) {
+
+    div.widget_31428388200 .geek_heading-tlisting-head h2 {
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
+    div.widget_31428388200 .geek_heading-tlisting-row {
+      flex-wrap: wrap;
+    }
+    div.widget_31428388200 .geek_heading-tlisting-col {
+      flex: 0 0 33.33336%;
+      max-width: 33.33336%;
+    }
+
+
+
+  }
+
+  @media screen and (max-width: 991px) {
+
+
+
+  }
+
+  @media screen and (max-width: 767px) {
+
+    div.widget_31428388200 .geek_heading-tlisting-col {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+    div.widget_31428388200 .geek_heading-tlisting-head h2 {
+      font-size: 26px;
+      margin-bottom: 35px;
+    }
+    div.widget_31428388200 .geek_heading-tlisting {
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+
+  }
+
+  @media screen and (max-width: 479px) {
+
+    div.widget_31428388200 .geek_heading-tlisting-col {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+
+  }
+
+
+
+
+
+
+
+
+  .widget_31428388201 {
+    background: rgba(248, 248, 248, 1.0);
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .widget_31428388201 .container {
+    max-width: px !important;
+    margin: 0 auto !important;
+  }
+  .widget_31428388201 .container-fluid {
+    max-width: 100% !important;
+    margin: 0 auto !important;
+  }
+  .widget_31428388201 .geek_rccb-heading {
+    text-align: center;
+    margin-bottom: 52px;
+  }
+  .widget_31428388201 .geek_rccb-heading h1 {
+    font-size: 38px;
+    color: rgba(43, 44, 50, 1.0);
+    margin-bottom: 25px;
+  }
+  .widget_31428388201 .geek_rccb-heading h2 {
+    font-size: 50px;
+    color: rgba(43, 44, 50, 1.0);
+    margin-bottom: 25px;
+  }
+  .widget_31428388201 .geek_rccb-heading h3 {
+    font-size: 28px;
+    color: rgba(43, 44, 50, 1.0);
+    margin-bottom: 25px;
+  }
+  .widget_31428388201 .geek_rccb-heading h4 {
+    font-size: 20px;
+    color: rgba(43, 44, 50, 1.0);
+    margin-bottom: 25px;
+  }
+  .widget_31428388201 .geek_rccb-heading h5 {
+    font-size: 18px;
+    color: rgba(43, 44, 50, 1.0);
+    margin-bottom: 25px;
+  }
+  .widget_31428388201 .geek_rccb-heading h6 {
+    font-size: 16px;
+    color: rgba(43, 44, 50, 1.0);
+    margin-bottom: 25px;
+  }
+  .widget_31428388201 .geek_rccb-heading p {
+    font-size: 14px;
+    color: rgba(43, 44, 50, 1.0);
+    margin-bottom: 10px;
+  }
+  .widget_31428388201 .geek_rccb-heading p:last-child {
+    margin-bottom: 0px; 
+  }
+  .widget_31428388201 ul li {
+    color: rgba(43, 44, 50, 1.0);
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: left;
+  }
+  .widget_31428388201 ul li a {
+    color: inherit; 
+  }
+  .widget_31428388201 ul li:before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background: #ff4300;
+    position: absolute;
+    left: 2px;
+    top: 9px;
+    border-radius: 100%;
+  }
+  .widget_31428388201 .geek_rccb-contentBox-row {
+    margin: 0 -30px;
+  }
+  .widget_31428388201 .geek_rccb-contentBox-col {
+    min-height: 132px;
+    padding: 0 30px;
+    flex: 1 1 0;
+  }
+  .widget_31428388201 .geek_rccb-contentBox-colInner {
+    background: #fcfcfc;
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.09);
+    border-radius: 10px;
+    padding: 24px;
+    text-align: center;
+    height: 100%;
+  }
+  
+    .widget_31428388201 .geek_rccb-contentBox-colInner:hover {
+    background: #fcfcfc;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    padding: 24px;
+    text-align: center;
+    height: 100%;
+}
+  
+
+  .widget_31428388201 .geek_rccb-contentBox-colInner h3 {
+    font-size: 25px;
+    color: rgba(43, 44, 50, 1.0);;
+    margin-bottom: 20px;
+  }
+  .widget_31428388201 .geek_rccb-contentBox-colInner p {
+    font-size: 14px;
+    color: rgba(43, 44, 50, 1.0);;
+  }
+  .widget_31428388201 .geek_rccb-contentBox {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .widget_31428388201 .geek_rccb-contentBox-colInner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .widget_31428388201 .geek_rccb-contentBox-colInnerBox {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  
+
+
+
+  
+
+  @media screen and (max-width: 1199px) {
+
+    div.widget_31428388201 .geek_rccb-heading h2 {
+      font-size: 32px;
+    }
+    div.widget_31428388201 .geek_rccb-contentBox {
+      width: 100%;
+    }
+    div.widget_31428388201 {
+      padding-top: 65px;
+      padding-bottom: 45px;
+    }
+    div.widget_31428388201 .geek_rccb-contentBox-colInner h3 {
+      font-size: 22px;
+    }
+    div.widget_31428388201 .geek_rccb-contentBox-col {
+      padding: 0 15px;
+      flex: 0 0 33.333336%;
+      max-width: 33.333336%;
+      margin-bottom: 30px;
+    }
+    div.widget_31428388201 .geek_rccb-contentBox-row {
+      margin: 0 -15px;
+      flex-wrap: wrap;
+    }
+
+
+
+
+
+  }
+
+  @media screen and (max-width: 991px) {
+    div.widget_31428388201 .container-fluid {
+      max-width: 100% !important;
+    }
+    .widget_31428388201 .enate_rich-text p {
+      font-size: 16px;
+    }
+    .widget_31428388201 ul li {
+      font-size: 16px;
+    }
+
+
+  }
+
+  @media screen and (max-width: 767px) {
+
+    div.widget_31428388201 .geek_rccb-contentBox-col {
+      padding: 0 15px;
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+    div.widget_31428388201 .geek_rccb-heading h2 {
+      font-size: 26px;
+    }
+
+
+
+  }
+
+  @media screen and (max-width: 639px) {
+
+    div.widget_31428388201 .geek_rccb-contentBox-col {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    div.widget_31428388201 .geek_rccb-heading h3 {
+      font-size: 24px;
+    }
+     
+
+
+
+  }
+
+
+
+
+
+
+  
+  .widget_31428388194 {
+    padding-top: 120px;
+    padding-bottom: 30px;
+    background: rgba(255, 255, 255, 1.0);
+    overflow: hidden;
+  }
+  
+
+  .widget_31428388194 .geek_imageText-row {
+    margin: 0 -15px;
+  }
+
+  
+  .widget_31428388194 .geek_imageText-left, .widget_31428388194 .geek_imageText-right {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 15px;
+  }
+
+  
+
+  
+  .widget_31428388194 .geek_imageText-right {
+    order: -1;
+  }
+  
+
+  
+  .widget_31428388194 .geek_imageText-left {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 15px;
+  }
+  
+
+  
+
+  .widget_31428388194 .container {
+    max-width: px !important;
+    margin: 0 auto !important;
+  }
+
+  .widget_31428388194 .container-fluid {
+    max-width: % !important;
+    margin: 0 auto !important;
+  }
+  .widget_31428388194 .geek_imageText-row {
+    align-items: flex-start;
+  }
+  .widget_31428388194 .enate_rich-text {
+    text-align: center;
+    width: 92%;
+  }
+
+  
+  .widget_31428388194 .enate_rich-text {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  
+
+
+
+  .widget_31428388194 .geek_imageText-right {
+    text-align: center; 
+  }
+  .widget_31428388194 .enate_rich-text h1 {
+    font-size: 30px;
+    color: rgba(111, 114, 125, 1.0);
+    padding-bottom: 0.5rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  .widget_31428388194 .enate_rich-text h2 {
+    font-size: 45px;
+    color: rgba(43, 44, 50, 1.0);
+    padding-bottom: 0.5rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  .widget_31428388194 .enate_rich-text h3 {
+    font-size: 24px;
+    color: rgba(111, 114, 125, 1.0);
+    padding-bottom: 0.5rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  .widget_31428388194 .enate_rich-text h4 {
+    font-size: 20px;
+    color: rgba(111, 114, 125, 1.0);
+    padding-bottom: 0.5rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  .widget_31428388194 .enate_rich-text h5 {
+    font-size: 18px;
+    color: rgba(111, 114, 125, 1.0);
+    padding-bottom: 0.5rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  .widget_31428388194 .enate_rich-text h6 {
+    font-size: 16px;
+    color: rgba(111, 114, 125, 1.0);
+    padding-bottom: 0.5rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  .widget_31428388194 .enate_rich-text p {
+    font-size: 20px;
+    color: rgba(51, 51, 51, 1.0);
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+  }
+  .widget_31428388194 .enate_rich-text p:last-child {
+    margin-bottom: 0px; 
+  }
+
+  
+
+  .widget_31428388194 .geek_imageText-right img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: px;
+  }
+
+  .widget_31428388194 ul li {
+    color: rgba(111, 114, 125, 1.0);
+    margin-bottom: 10px;
+    margin-left: 0;
+    position: relative;
+    font-size: 14px;
+    line-height: 1.5;
+    flex: 0 0 45%;
+    max-width: 45%;
+    list-style: inside;
+  }
+
+  
+
+  
+
+  .widget_31428388194 .geek_imageText-right {
+    margin-bottom: 40px;
+  }
+
+  
+
+  
+
+
+  
+
+  
+  .widget_31428388194 ul li {
+    flex: 0 0 45%;
+    max-width: 45%;
+  }
+
+  
+
+  .widget_31428388194 ul li a {
+    color: inherit; 
+  }
+  .widget_31428388194 ul {
+    list-style: inherit;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .widget_31428388194 .geek_imageText-right p {
+    font-size: 12px;
+  }
+
+
+  
+
+  @media screen and (max-width: 991px) {
+    div.widget_31428388194 .container-fluid {
+      max-width: 100% !important;
+    }
+    div.widget_31428388194 .enate_rich-text {
+      width: 100%;
+    }
+    div.widget_31428388194 {
+      padding-top: 35px;
+      padding-bottom: 35px;
+    }
+    div.widget_31428388194 .enate_rich-text h2 {
+      font-size: 32px;
+    }
+    div.widget_31428388194 .enate_rich-text h3 {
+      font-size: 24px;
+    }
+    div.widget_31428388194 .enate_rich-text p {
+      font-size: 18px;
+    }
+    div.widget_31428388194 .geek_imageText-left, div.widget_31428388194 .geek_imageText-right {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    div.widget_31428388194 .geek_imageText-right {
+      order: inherit;
+      padding-top: 20px;
+    }
+
+    
+
+    
+
+    .widget_31428388194 .geek_imageText-right {
+      margin-bottom: 0;
+    }
+
+    
+
+    
+
+        
+
+    div.widget_31428388194 .geek_imageText-right img {
+      margin-top: 0;
+    }
+
+  }
+
+  @media screen and (max-width: 767px) {
+
+    div.widget_31428388194 .enate_rich-text h2 {
+      font-size: 22px;
+    }
+    div.widget_31428388194 .enate_rich-text h3 {
+      font-size: 20px;
+    }
+
+  }
+
+  @media screen and (max-width: 479px) {
+
+    div.widget_31428388194 ul li {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }    
+    div.widget_31428388194 .enate_rich-text h2 {
+      font-size: 20px;
+    }
+    div.widget_31428388194 .enate_rich-text h3 {
+      font-size: 19px;
+    }
+
+  }
+
+
+
+
+
+
+  .geek_picking_pro_list {
+    background: #f3f3f3;
+    overflow: hidden;
+  }
+  .geek_picking_goodsimg {
+    padding-right: 30px;
+  }
+  .geek_picking_goodsimg li:nth-of-type(1) {
+    background: none;
+    box-shadow: none;
+    flex-shrink: 0;
+    width: 130px;
+  }
+  .geek_picking_goodsimg li {
+    position: relative;
+    width: 30%;
+    margin-right: 10px;
+    box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.09);
+    background: #FBFBFB;
+  }
+  .geek_picking_goodsimg li .proimg {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #geek_picking_goodstable {
+    height: 420px;
+    margin-top: 60px;
+  }
+  .geek_picking_goodstable {
+    margin-top: 50px;
+    height: 420px;
+  }
+  .mCSB_container {
+    width: auto;
+    margin-right: 15px;
+    overflow: hidden;
+  }
+  .geek_picking_goodstable li:nth-of-type(1), .geek_picking_goodstable li:nth-last-of-type(1) {
+    box-shadow: none;
+    background: none;
+    font-weight: normal;
+  }
+  .geek_picking_goodstable .left {
+    width: 130px;
+    padding-right: 10px;
+  }
+  .geek_picking_goodstable .left, .geek_picking_goodstable .right {
+    flex-shrink: 0;
+    color: #A3A3A3;
+  }
+  .geek_picking_goodstable li {
+    position: relative;
+    width: 30%;
+    margin-right: 10px;
+    background-color: #FFF;
+    box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.09);
+  }
+  .geek_picking_goodstable li:nth-of-type(1) span {
+    justify-content: flex-end;
+  }
+  .geek_picking_goodstable .left span, .geek_picking_goodstable .right span {
+    font-weight: normal;
+  }
+  .geek_picking_goodsimg li:nth-last-of-type(1) {
+    margin-right: 0;
+    background: none;
+    box-shadow: none;
+    flex-shrink: 0;
+    width: 90px;
+  }
+  .geek_picking_goodstable span {
+    display: inline-block;
+    font-size: 14px;
+    color: #878787;
+    display: flex;
+    width: 100%;
+    height: 68px;
+    letter-spacing: normal;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 0 5px;
+    line-height: 1.5;
+  }
+  .geek_picking_goodstable li:nth-of-type(1) span i {
+    text-align: right;
+  }
+  .geek_picking_goodstable span i {
+    display: inline-block;
+    font-style: normal;
+    text-align: center;
+    max-height: 68px;
+    overflow: hidden;
+  }
+  .geek_picking_goodstable span:after {
+    content: '';
+    position: absolute;
+    width: calc(100% + 20px);
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    background: #e9e9e9;
+  }
+  .geek_picking_goodstable li:nth-last-of-type(1) {
+    margin-right: 0;
+  }
+  .geek_picking_goodstable .right {
+    width: 90px;
+    justify-content: flex-start;
+    padding-left: 10px;
+  }
+  .geek_picking_goodstable li:nth-last-of-type(1) span {
+    justify-content: flex-start;
+  }
+
+
+  
+
+  @media screen and (max-width: 991px) {
+
+    div.geek_picking_pro_list {
+      display: none;
+    }
+
+
+  }
+
+
+
+
+
+
+
+  
+  .widget_31428388195 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background: rgba(255, 255, 255, 1.0);
+    overflow: hidden;
+  }
+  
+
+  .widget_31428388195 .geek_imageText-row {
+    margin: 0 -15px;
+  }
+
+  
+  .widget_31428388195 .geek_imageText-left, .widget_31428388195 .geek_imageText-right {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 15px;
+  }
+
+  
+
+  
+  .widget_31428388195 .geek_imageText-right {
+    order: -1;
+  }
+  
+
+  
+
+  
+  .widget_31428388195 .geek_imageText-right {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 15px;
+  }
+  
+
+  .widget_31428388195 .container {
+    max-width: px !important;
+    margin: 0 auto !important;
+  }
+
+  .widget_31428388195 .container-fluid {
+    max-width: % !important;
+    margin: 0 auto !important;
+  }
+  .widget_31428388195 .geek_imageText-row {
+    align-items: flex-start;
+  }
+  .widget_31428388195 .enate_rich-text {
+    text-align: center;
+    width: 92%;
+  }
+
+  
+  .widget_31428388195 .enate_rich-text {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  
+
+
+
+  .widget_31428388195 .geek_imageText-right {
+    text-align: center; 
+  }
+  .widget_31428388195 .enate_rich-text h1 {
+    font-size: 30px;
+    color: rgba(111, 114, 125, 1.0);
+    padding-bottom: 0.5rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  .widget_31428388195 .enate_rich-text h2 {
+    font-size: 45px;
+    color: rgba(43, 44, 50, 1.0);
+    padding-bottom: 0.5rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  .widget_31428388195 .enate_rich-text h3 {
+    font-size: 24px;
+    color: rgba(111, 114, 125, 1.0);
+    padding-bottom: 0.5rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  .widget_31428388195 .enate_rich-text h4 {
+    font-size: 20px;
+    color: rgba(111, 114, 125, 1.0);
+    padding-bottom: 0.5rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  .widget_31428388195 .enate_rich-text h5 {
+    font-size: 18px;
+    color: rgba(111, 114, 125, 1.0);
+    padding-bottom: 0.5rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  .widget_31428388195 .enate_rich-text h6 {
+    font-size: 16px;
+    color: rgba(111, 114, 125, 1.0);
+    padding-bottom: 0.5rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  .widget_31428388195 .enate_rich-text p {
+    font-size: 20px;
+    color: rgba(51, 51, 51, 1.0);
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+  }
+  .widget_31428388195 .enate_rich-text p:last-child {
+    margin-bottom: 0px; 
+  }
+
+  
+
+  .widget_31428388195 .geek_imageText-right img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: px;
+  }
+
+  .widget_31428388195 ul li {
+    color: rgba(111, 114, 125, 1.0);
+    margin-bottom: 10px;
+    margin-left: 0;
+    position: relative;
+    font-size: 14px;
+    line-height: 1.5;
+    flex: 0 0 45%;
+    max-width: 45%;
+    list-style: inside;
+  }
+
+  
+
+  
+
+  .widget_31428388195 .geek_imageText-right {
+    margin-bottom: 40px;
+  }
+
+  
+
+  
+
+  .widget_31428388195 .geek_imageText-right {
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .widget_31428388195 .geek_imageText-right {
+    margin-bottom: 0;
+  }
+
+  
+
+
+  
+
+  
+  .widget_31428388195 ul li {
+    flex: 0 0 45%;
+    max-width: 45%;
+  }
+
+  
+
+  .widget_31428388195 ul li a {
+    color: inherit; 
+  }
+  .widget_31428388195 ul {
+    list-style: inherit;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .widget_31428388195 .geek_imageText-right p {
+    font-size: 12px;
+  }
+
+
+  
+
+  @media screen and (max-width: 991px) {
+    div.widget_31428388195 .container-fluid {
+      max-width: 100% !important;
+    }
+    div.widget_31428388195 .enate_rich-text {
+      width: 100%;
+    }
+    div.widget_31428388195 {
+      padding-top: 35px;
+      padding-bottom: 35px;
+    }
+    div.widget_31428388195 .enate_rich-text h2 {
+      font-size: 32px;
+    }
+    div.widget_31428388195 .enate_rich-text h3 {
+      font-size: 24px;
+    }
+    div.widget_31428388195 .enate_rich-text p {
+      font-size: 18px;
+    }
+    div.widget_31428388195 .geek_imageText-left, div.widget_31428388195 .geek_imageText-right {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    div.widget_31428388195 .geek_imageText-right {
+      order: inherit;
+      padding-top: 20px;
+    }
+
+    
+
+    
+
+    .widget_31428388195 .geek_imageText-right {
+      margin-bottom: 0;
+    }
+
+    
+
+    
+
+    div.widget_31428388195 .geek_imageText-right {
+      padding-top: 0;
+    }
+    div.widget_31428388195 {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    
+
+        
+
+    div.widget_31428388195 .geek_imageText-right img {
+      margin-top: 0;
+    }
+
+  }
+
+  @media screen and (max-width: 767px) {
+
+    div.widget_31428388195 .enate_rich-text h2 {
+      font-size: 22px;
+    }
+    div.widget_31428388195 .enate_rich-text h3 {
+      font-size: 20px;
+    }
+
+  }
+
+  @media screen and (max-width: 479px) {
+
+    div.widget_31428388195 ul li {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }    
+    div.widget_31428388195 .enate_rich-text h2 {
+      font-size: 20px;
+    }
+    div.widget_31428388195 .enate_rich-text h3 {
+      font-size: 19px;
+    }
+
+  }
+
+
+
+
+
+
+  
+  .widget_31428388196 .geek_content-box {
+    padding: 125px 0 90px;
+    background-image: url(https://source.www.geekplus.com/hubfs/Geek%20Plus%20Images%202020/pikingcenter1-%E6%8B%B7%E8%B4%9D.jpg);
+    background-position: center;
+    background-color: rgba(12, 52, 61, 1.0 );
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .widget_31428388196 .geek_content-box:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.1 );
+  }
+  .widget_31428388196 .geek_content-box > div {
+    position: relative;
+  }
+
+  
+
+  .widget_31428388196 .geek_content-box-col {
+    padding: 20px 15px;
+    text-align: center;
+    width: 100%;
+  }
+  .geek_content-box-col span {
+    font-size: 40px;
+    color: rgba(255, 255, 255, 1.0 );
+  }
+  .widget_31428388196 .geek_content-box-col h2 {
+    color: rgba(255, 255, 255, 1.0 );
+    margin: 10px 0 30px;
+    font-weight: normal;
+    font-size: 60px;
+  }
+  .widget_31428388196 .geek_content-box-desc p {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 1.0 );
+    line-height: 1.5;
+  }
+  .widget_31428388196 .geek_content-box-action-btn .btn {
+    display: inline-block;
+    padding: 5px 35px 5px 20px;
+    background-color: rgba(0, 159, 239, 1.0 );
+    background-image: url(https://source.www.geekplus.com/hubfs/Geek%20Plus%20Images%202020/arrow-right-hover.png);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 17px);
+    justify-content: center;
+    vertical-align: middle;
+    color: rgba(255, 255, 255, 1.0 );
+    text-transform: capitalize;
+    border: 0px solid rgba(0, 159, 239, 1.0 );
+    transition: all 0.3s;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.18);
+    border-radius: 55px;
+    font-size: 14px;
+    margin-top: 8px;
+    text-align: left;
+  }
+  .widget_31428388196 .geek_content-box-action-btn .btn:hover {
+    background-color: rgba(255, 255, 255, 1.0 );
+    background-image: url(https://source.www.geekplus.com/hubfs/Geek%20Plus%20Images%202020/arrow-right.png);
+    color: rgba(0, 159, 239, 1.0 );
+    border-color: rgba(255, 255, 255, 1.0 );
+  }
+  .widget_31428388196 .geek_content-box-desc {
+    width: 92%;
+    margin: 0 auto;
+  }
+  .widget_31428388196 .geek_content-box-desc ul {
+    margin-top: 42px;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: inherit;
+    padding: 0 30px;
+  }
+  .widget_31428388196 .geek_content-box-desc ul li {
+    font-size: 16px;
+    flex: 0 0 40%;
+    max-width: 40%;
+    text-align: left;
+    line-height: 1.8;
+    color: #fff;
+    margin-left: 17px;
+    margin-right: 7%;
+    letter-spacing: normal;
+  }
+
+
+
+  
+
+  @media screen and (max-width: 1199px) {
+
+    div.widget_31428388196 .geek_content-box {
+      padding: 175px 0;
+    }
+    .widget_31428388196 .geek_content-box-col span {
+      font-size: 36px;
+    }
+    div.widget_31428388196 .geek_content-box-col h2 {
+      margin: 10px 0 20px;
+      font-size: 42px;
+    }
+    div.widget_31428388196 .geek_content-box-desc p {
+      font-size: 22px;
+      line-height: 1.6;
+    }
+
+
+
+  }
+
+  @media screen and (max-width: 991px) {
+
+    div.widget_31428388196 .geek_content-box {
+      padding: 75px 0;
+    }
+    .widget_31428388196 .geek_content-box-col span {
+      font-size: 30px;
+    }
+    div.widget_31428388196 .geek_content-box-col h2 {
+      margin: 5px 0 15px;
+      font-size: 32px;
+    }
+    div.widget_31428388196 .geek_content-box-desc p {
+      font-size: 18px;
+      padding: 0;
+    }
+    div.widget_31428388196 .geek_content-box-desc {
+      width: 100%;
+    }
+    div.widget_31428388196 .geek_content-box-desc ul {
+      padding: 0px;
+    }
+
+
+
+
+
+  }
+
+  @media screen and (max-width: 639px) {
+
+    div.widget_31428388196 .geek_content-box {
+      padding: 45px 0;
+    }
+    .widget_31428388196 .geek_content-box-col span {
+      font-size: 22px;
+    }
+    div.widget_31428388196 .geek_content-box-col h2 {
+      margin: 5px 0 12px;
+      font-size: 24px;
+    }
+    div.widget_31428388196 .geek_content-box-desc p {
+      font-size: 16px;
+      padding: 0;
+    }
+    div.widget_31428388196 .geek_content-box-desc ul li {
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+    div.widget_31428388196 .geek_content-box-desc ul {
+      padding: 0 0 0 17px;
+    }
+
+
+
+  }
+
+
+
+
+  #hs-oembed__starter--target_widget_31428388197 {
+    
+
+max-width: 766px;
+padding-bottom: 35%;
+
+  }
+
+
+
+  .widget_31428388197 iframe {
+    border: none;
+    border-radius: 10px;
+  }
+  .widget_31428388197 .hs-oembed__starter, .widget_31428388197 .hs-mp4-Video {
+    margin-top: -60px;
+  }
+  
+  .widget_31428388197 .hs-mp4-Video video {
+    width: 65%;
+    max-height: 431px;
+    margin: 0 auto;
+    box-shadow: 0px 10px 27px 3px rgba(0, 0, 0, 0.14);
+    /* background-image: url(https://source.www.geekplus.com/hubfs/766x431%E5%B1%8F%E4%BF%9D-%E6%8B%A3%E9%80%89nike.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: contain; */
+}
+  .hs-mp4-Video { text-align: center; position: relative;}
+
+  
+
+  @media screen and (max-width: 991px) {
+
+    div.widget_31428388197 .hs-oembed__starter {
+      margin-top: 0px;
+    }
+    div.widget_31428388197 {
+      padding: 20px 0px;
+    }
+
+
+
+  }
+
+  @media screen and (max-width: 767px) {
+
+    div#hs-oembed__starter--target_widget_31428388197 {
+      max-width: 766px;
+      padding-bottom: 85%; 
+    }
+
+
+
+  }
+
+
+
+
+  .widget_1600678538869 .geek_heading-tlisting {
+    padding-top: 80px;
+    padding-bottom: 60px;
+  }
+  .widget_1600678538869 .geek_heading-tlisting-head h2 {
+    font-size: 50px;
+    text-align: center;
+    color: rgba(43, 44, 50, 1.0);
+    margin-bottom: 60px;
+  }
+  .widget_1600678538869 .geek_heading-tlisting-row {
+    margin: 0 -3px;
+  }
+  .widget_1600678538869 .geek_heading-tlisting-col {
+    padding: 0 3px 20px;
+    flex: 1 1 0;
+  }
+  .widget_1600678538869 .geek_heading-tlisting-col h3 {
+    font-size: 20px;
+    color: rgba(43, 44, 50, 1.0);
+    margin-bottom: 24px;
+  }
+  .widget_1600678538869 .geek_heading-tlisting-desc ul {
+    list-style: inherit;
+  }
+  .widget_1600678538869 .geek_heading-tlisting-desc ul li {
+    color: rgba(149, 149, 153, 1.0);
+    font-size: 14px;
+    line-height: 2;
+    margin-left: 16px;
+    letter-spacing: normal;
+  }
+  .widget_1600678538869 .geek_heading-tlisting-desc p {
+    color: rgba(149, 149, 153, 1.0);
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+
+
+  
+
+  @media screen and (max-width: 1199px) {
+
+    div.widget_1600678538869 .geek_heading-tlisting-head h2 {
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
+    div.widget_1600678538869 .geek_heading-tlisting-row {
+      flex-wrap: wrap;
+    }
+    div.widget_1600678538869 .geek_heading-tlisting-col {
+      flex: 0 0 33.33336%;
+      max-width: 33.33336%;
+    }
+
+
+
+  }
+
+  @media screen and (max-width: 991px) {
+
+
+
+  }
+
+  @media screen and (max-width: 767px) {
+
+    div.widget_1600678538869 .geek_heading-tlisting-col {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+    div.widget_1600678538869 .geek_heading-tlisting-head h2 {
+      font-size: 26px;
+      margin-bottom: 35px;
+    }
+    div.widget_1600678538869 .geek_heading-tlisting {
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+
+  }
+
+  @media screen and (max-width: 479px) {
+
+    div.widget_1600678538869 .geek_heading-tlisting-col {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+
+  }
+
+
+
+
+
+
+
+
+  .widget_1600678761733 {
+    background: rgba(243, 243, 243, 1.0);
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+  .widget_1600678761733 .container {
+    max-width: px !important;
+    margin: 0 auto !important;
+  }
+  .widget_1600678761733 .container-fluid {
+    max-width: 100% !important;
+    margin: 0 auto !important;
+  }
+  .widget_1600678761733 .geek_rccb-heading {
+    text-align: center;
+    margin-bottom: 52px;
+  }
+  .widget_1600678761733 .geek_rccb-heading h1 {
+    font-size: 38px;
+    color: rgba(43, 44, 50, 1.0);
+    margin-bottom: 25px;
+  }
+  .widget_1600678761733 .geek_rccb-heading h2 {
+    font-size: 30px;
+    color: rgba(43, 44, 50, 1.0);
+    margin-bottom: 25px;
+  }
+  .widget_1600678761733 .geek_rccb-heading h3 {
+    font-size: 28px;
+    color: rgba(43, 44, 50, 1.0);
+    margin-bottom: 25px;
+  }
+  .widget_1600678761733 .geek_rccb-heading h4 {
+    font-size: 20px;
+    color: rgba(43, 44, 50, 1.0);
+    margin-bottom: 25px;
+  }
+  .widget_1600678761733 .geek_rccb-heading h5 {
+    font-size: 18px;
+    color: rgba(43, 44, 50, 1.0);
+    margin-bottom: 25px;
+  }
+  .widget_1600678761733 .geek_rccb-heading h6 {
+    font-size: 16px;
+    color: rgba(43, 44, 50, 1.0);
+    margin-bottom: 25px;
+  }
+  .widget_1600678761733 .geek_rccb-heading p {
+    font-size: 14px;
+    color: rgba(43, 44, 50, 1.0);
+    margin-bottom: 10px;
+  }
+  .widget_1600678761733 .geek_rccb-heading p:last-child {
+    margin-bottom: 0px; 
+  }
+  .widget_1600678761733 ul li {
+    color: rgba(43, 44, 50, 1.0);
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .widget_1600678761733 ul li a {
+    color: inherit; 
+  }
+  .widget_1600678761733 ul li:before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background: #ff4300;
+    position: absolute;
+    left: 2px;
+    top: 9px;
+    border-radius: 100%;
+  }
+  .widget_1600678761733 .geek_rccb-contentBox-row {
+    margin: 0 -30px;
+  }
+  .widget_1600678761733 .geek_rccb-contentBox-col {
+    min-height: 132px;
+    padding: 0 30px;
+    flex: 1 1 0;
+  }
+  .widget_1600678761733 .geek_rccb-contentBox-colInner {
+    background: #fcfcfc;
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.09);
+    border-radius: 10px;
+    padding: 24px;
+    text-align: center;
+    height: 100%;
+  }
+  
+    .widget_1600678761733 .geek_rccb-contentBox-colInner:hover {
+    background: #fcfcfc;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    padding: 24px;
+    text-align: center;
+    height: 100%;
+}
+  
+  .widget_1600678761733 .geek_rccb-contentBox-colInner h3 {
+    font-size: 28px;
+    color: rgba(43, 44, 50, 1.0);;
+    margin-bottom: 20px;
+  }
+  .widget_1600678761733 .geek_rccb-contentBox-colInner p {
+    font-size: 14px;
+    color: rgba(43, 44, 50, 1.0);;
+  }
+  .widget_1600678761733 .geek_rccb-contentBox {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .widget_1600678761733 .geek_rccb-contentBox-colInner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: ;
+  }
+  .widget_1600678761733 .geek_rccb-contentBox-colInnerBox {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  
+
+
+
+  
+
+  @media screen and (max-width: 1199px) {
+
+    div.widget_1600678761733 .geek_rccb-heading h2 {
+      font-size: 32px;
+    }
+    div.widget_1600678761733 .geek_rccb-contentBox {
+      width: 100%;
+    }
+    div.widget_1600678761733 {
+      padding-top: 65px;
+      padding-bottom: 45px;
+    }
+    div.widget_1600678761733 .geek_rccb-contentBox-colInner h3 {
+      font-size: 22px;
+    }
+    div.widget_1600678761733 .geek_rccb-contentBox-col {
+      padding: 0 15px;
+      flex: 0 0 33.333336%;
+      max-width: 33.333336%;
+      margin-bottom: 30px;
+    }
+    div.widget_1600678761733 .geek_rccb-contentBox-row {
+      margin: 0 -15px;
+      flex-wrap: wrap;
+    }
+
+
+
+
+
+  }
+
+  @media screen and (max-width: 991px) {
+    div.widget_1600678761733 .container-fluid {
+      max-width: 100% !important;
+    }
+    .widget_1600678761733 .enate_rich-text p {
+      font-size: 16px;
+    }
+    .widget_1600678761733 ul li {
+      font-size: 16px;
+    }
+
+
+  }
+
+  @media screen and (max-width: 767px) {
+
+    div.widget_1600678761733 .geek_rccb-contentBox-col {
+      padding: 0 15px;
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+    div.widget_1600678761733 .geek_rccb-heading h2 {
+      font-size: 26px;
+    }
+
+
+
+  }
+
+  @media screen and (max-width: 639px) {
+
+    div.widget_1600678761733 .geek_rccb-contentBox-col {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    div.widget_1600678761733 .geek_rccb-heading h3 {
+      font-size: 24px;
+    }
+     
+
+
+
+  }
+
+
+
+
+
+
+var _hsp = window._hsp = window._hsp || [];
+_hsp.push(['addPrivacyConsentListener', function(consent) { if (consent.allowed || (consent.categories && consent.categories.analytics)) {
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create','UA-112333841-1','auto');
+  ga('send','pageview');
+}}]);
+
+
+
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+
+if (!window._hsGoogleConsentRunOnce) {
+  window._hsGoogleConsentRunOnce = true;
+
+  gtag('consent', 'default', {
+    'ad_storage': 'denied',
+    'analytics_storage': 'denied'
+  });
+
+  var _hsp = window._hsp = window._hsp || [];
+
+  _hsp.push(['addPrivacyConsentListener', function(consent){
+    var hasAnalyticsConsent = consent && (consent.allowed || (consent.categories && consent.categories.analytics));
+    var hasAdsConsent = consent && (consent.allowed || (consent.categories && consent.categories.advertisement));
+
+    gtag('consent', 'update', {
+      'ad_storage': hasAdsConsent ? 'granted' : 'denied',
+      'analytics_storage': hasAnalyticsConsent ? 'granted' : 'denied'
+    });
+  }]);
+}
+
+gtag('js', new Date());
+gtag('set', 'developer_id.dZTQ1Zm', true);
+gtag('config', 'G-KY9L2DX70B');
+
+
+
+
+
+var _hsp = window._hsp = window._hsp || [];
+
+var hsLoadGtm = function loadGtm() {
+    if(window._hsGtmLoadOnce) {
+      return;
+    }
+
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-P9R4HZ2');
+
+    window._hsGtmLoadOnce = true;
+};
+
+var useGoogleConsentMode = false;
+
+if (!useGoogleConsentMode){
+    _hsp.push(['addPrivacyConsentListener', function(consent){
+      if(consent.allowed || (consent.categories && consent.categories.analytics)){
+        hsLoadGtm();
+      }
+  }]);
+} else{
+    if(!window._hsGoogleConsentRunOnce){
+      window._hsGoogleConsentRunOnce=true;
+
+      window.dataLayer=window.dataLayer||[];
+      function gtag(){dataLayer.push(arguments);}
+
+      gtag('consent','default',{
+        'ad_storage':'denied',
+        'analytics_storage':'denied'
+      });
+
+      gtag('set','developer_id.dZTQ1Zm',true);
+
+      _hsp.push(['addPrivacyConsentListener',function(consent){
+      var hasAnalyticsConsent=consent&&(consent.allowed||(consent.categories&&consent.categories.analytics));
+      var hasAdsConsent=consent&&(consent.allowed||(consent.categories&&consent.categories.advertisement));
+
+      gtag('consent','update',{
+        'ad_storage':hasAdsConsent?'granted':'denied',
+        'analytics_storage':hasAnalyticsConsent?'granted':'denied'
+      });
+    }]);
+  }
+
+  hsLoadGtm();
+}
+
+
+
+
+
+
+!function(){window.analytics||(window.analytics=[]),window.analytics.methods=["identify","track","trackLink","trackForm","trackClick","trackSubmit","page","pageview","ab","alias","ready","group","on","once","off"],window.analytics.factory=function(a){return function(){var t=Array.prototype.slice.call(arguments);return t.unshift(a),window.analytics.push(t),window.analytics}};for(var a=0;a<window.analytics.methods.length;a++){var t=window.analytics.methods[a];window.analytics[t]=window.analytics.factory(t)}analytics.load=function(a){if(!document.getElementById("dreamdata-analytics")){window.a=window.analytics;var t=document.createElement("script");t.async=!0,t.id="dreamdata-analytics",t.type="text/javascript",t.src="https://cdn.dreamdata.cloud/scripts/analytics/v1/dreamdata.min.js";var n=function(){if(analytics&&analytics.initialize)for(analytics.initialize({"Dreamdata.io":{apiKey:a}});window.a.length>0;){var t=window.a.shift(),n=t.shift();analytics[n]&&analytics[n].apply(analytics,t)}};t.addEventListener?t.addEventListener("load",function(){n()},!1):t.onreadystatechange=function(){"complete"!=this.readyState&&"loaded"!=this.readyState||n()};var i=document.getElementsByTagName("script")[0];i.parentNode.insertBefore(t,i)}},analytics.load("48463ff1-067f-482d-896e-fdc77f72e77f"),analytics.page()}();
+
+
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?39cdd0017f43cf7d1b6e3b38e549d281";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+
+
+var hsVars = { app_hs_base_url: 'https://app.hubspot.com' };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Technologie
+
+Robotique 
+
+Série P
+Série RS
+Série S
+Série M
+
+Logiciel
+
+Produits
+
+Goods-to-person
+RoboShuttle
+ Déplacement de charge
+Le Tri
+Entrepôt intelligent
+Usine intelligente
+
+Industries
+
+E-commerce
+Vêtements
+Distribution
+3PL
+Pharmaceutiques
+Fabrication
+Automobile
+
+Assistance
+Entreprise
+
+A propos de Nous
+Nouvelles
+Étude de cas
+Carrière
+
+Contactez Nous
+
+
+
+
+
+
+
+
+
+
+中文
+English
+日本語
+한국어
+Deutsch
+Español
+Français
+繁體中文
+
+
+
+
+
+
+
+
+
+Technologie
+
+Robotique 
+
+Série P
+Série RS
+Série S
+Série M
+
+Logiciel
+
+Produits
+
+Goods-to-person
+RoboShuttle
+ Déplacement de charge
+Le Tri
+Entrepôt intelligent
+Usine intelligente
+
+Industries
+
+E-commerce
+Vêtements
+Distribution
+3PL
+Pharmaceutiques
+Fabrication
+Automobile
+
+Assistance
+Entreprise
+
+A propos de Nous
+Nouvelles
+Étude de cas
+Carrière
+
+Contactez Nous
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.geek_header-menu ul li.hs-menu-depth-1:last-child > a{
+  background: #389fef;
+  border-radius: 45px;
+  padding: 10px;
+  margin-top: 11px;
+  color: white;
+  font-size: 14px;
+}
+.mm-listview>li:last-child:after{
+  display: none;
+}
+.mm-listview li.hs-menu-depth-1:last-child > a{
+  background: #389fef;
+  border-radius: 45px;
+  padding: 10px;
+  margin-top: 11px;
+  color: white;
+  font-size: 14px;
+  max-width: 180px;
+  text-align: center;
+}
+
+
+
+
+
+
+选择另一个国家或地区以查看特定于您的位置的内容。
+
+
+
+
+選擇語言
+中文
+英語
+日本
+
+
+
+繼續
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Goods To Person
+Efficacité •Précision•  Souplesse 
+
+
+
+
+
+
+
+
+
+
+Ce système de préparation des commandes révolutionnaire permet d'améliorer l'efficacité de plus de 300%
+
+
+
+
+
+
+PopPick
+
+
+
+
+
+
+Goods-to-Person
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ hbspt.cta._relativeUrls=true;hbspt.cta.load(5868638, '3d3d9b78-e7d7-40e2-94c1-251c4b06b5b2', {"useNewLoader":"true","region":"na1"}); 
+
+
+
+
+
+
+Grande flexibilité - Compatibilité multi-taille - Grande efficacitéPopPick Pop Out →Pick facilePopPick est notre nouvelle solution révolutionnaire de marchandises à la personne, qui associe une étagère mobile améliorée portée par des robots mobiles à la première station de picking à double unité du secteur. En tant que solution tout-en-un, PopPick combine de manière créative le prélèvement et le stockage de bacs, d'étagères et de palettes. Grâce à une technologie avancée et à des robots mobiles autonomes (AMR) intelligents, PopPick peut augmenter l'efficacité du prélèvement en entrepôt jusqu'à 650 bacs par heure et optimiser la capacité de traitement par un facteur de 2.
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Modèle
+Dimension du rayonnage
+Dimension des bacs
+Nombre de bacs de stockage sur une seule étagère
+Dimensions globales de la station
+
+
+PopPick
+1340*1260*3580mm
+600*400*340mm
+60
+4560*1660*4190mm
+
+
+Rendement de la boîte
+Charge maximale
+Hauteur maximale de la boîte
+Hauteur minimale de la boîte
+Temps d'enlèvement et de retour unique
+
+
+650 boîtes/H/station
+20Kg
+3660mm
+450mm
+2s
+
+
+Vitesse maximale de fonctionnement de l'axe X
+Accélération de l'axe X
+Vitesse maximale de fonctionnement de l'axe Z
+Accélération de l'axe Z
+Précision du contrôle
+
+
+1.5m/s
+2m/s²
+3m/s
+3m/s²
+±1mm
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Prélèvement Goods-to-Person
+La solution Goods-to-Person de Geek+ utilise des robots de la série P pour déplacer les étagères et les palettes de l'inventaire jusqu'au poste de prélèvement, éliminant complètement les déplacements redondants des préparateurs de commandes, améliorant la précision du prélèvement et réduisant l'intensité du travail. Par rapport au prélèvement manuel, l'efficacité du prélèvement est améliorée de 2 à 3 fois
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Dimensions
+Poids propre
+Charge maximale
+Hauteur de levée maximale
+Temps de levée minimum
+Vitesse maximale
+Vitesse de rotation maximale
+Angle de pente maximal
+Précision d’arrêt
+Navigation
+Distance de détection d’obstacle
+Consommation électrique
+Durée de vie de la batterie
+Autonomie
+Certification
+Taille de la charge utile
+Température de fonctionnement
+Température de charge
+
+
+L950*W702*H275
+170
+600
+60
+4
+2m/s sans charge 1.6m/s  pleine charge
+90°/1.5s，180°/2s
+2.5° (slope 4.4%)
+<10
+Capteurs inertiels + code QR
+Infrarouge 2 m/ Laser 3 m
+Lithium-ion, DC50.4V, 39 Ah
+Charge et décharge complètes > 2000 cycles
+2 à 3 heures pour une charge de 10 minutes
+CE、ETL、FCC
+880*880
+-20~50
+0~45
+
+
+L1090*W830*H275
+195
+1000
+60
+4
+2m/s sans charge 1.6m/s pleine charge
+90°/1.5s，180°/2s
+2.5° (slope 4.4%)
+<10
+Capteurs inertiels + code QR
+Infrarouge 2 m/ Laser 3 m
+Lithium-ion, DC50.4V, 39 Ah
+Charge et décharge complètes > 2000 cycles
+2 à 3 heures pour une charge de 10 minutes
+CE、ETL、FCC
+1000*1000/ 1020*1220/ 1000*1200
+-20~50
+0~45
+
+
+L1310*W1020*H275
+220
+1200
+60
+4
+1.8m/s sans charge，1m/s pleine charge
+90°/1.5s，180°/2s  
+-
+<10
+Capteurs inertiels + code QR
+Laser 3m
+Lithium-ion，DC50.4V，39Ah
+Charge et décharge complètes > 2000 cycles
+2 à 3 heures pour une charge de 10 minutes
+CE
+1250*1250~1650*1650
+-20-50
+0~45
+
+
+mm
+kg
+kg
+mm
+s
+m/s
+°/s
+°
+mm
+-
+m
+-
+-
+h
+-
+mm
+°C
+°C
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Une efficacité maximale grâce à des algorithmes intelligents
+
+
+Grâce aux algorithmes intelligents exclusifs de Geek+, le système de prélèvement utilise le moins de robots possible pour atteindre une efficacité maximale tout en améliorant les capacités de stockage de l'entrepôt.
+Les principales fonctions sont les suivantes:
+
+Optimisation et préparation de commandes combinées
+Processus dynamique de sélection des vagues
+Gestion des stocks et pointage.
+Ajustement de la disposition des stocks
+Définition des tâches du poste de travail et du robot
+Intégration de la technologie RFID
+Analyse de la chaleur et recommandation de placement des marchandises
+La hauteur des étagères atteint 2,8 m et la capacité de stockage augmente de 20%
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Avantages incomparables du système de préparation des commandes
+
+
+
+Un retour sur investissement rapide
+
+
+Retour sur investissement en moins de 3 ans
+Investissement initial inférieur à celui des équipements d'automatisation traditionnels
+
+
+
+
+Automatisation accrue
+
+
+Réduit les coûts de main-d'œuvre de 50% à 70% pour la préparation de commandes de marchandises à la personne
+Réduction de l'intensité du travail
+
+
+
+
+Efficacité élevée
+
+
++300% pour le prélèvement de marchandises à la personne
+Précision de 99,997%
+Facile à gérer en période de pointe
+
+
+
+
+Grande flexibilité
+
+
+Ajout ou retrait flexible de robots
+Solutions personnalisables pour de multiples industries
+Pas de point de défaillance unique
+
+
+
+
+Déploiement rapide
+
+
+Déploiement complet du système en moins de 2 mois
+La préparation de commandes de marchandises à la personne peut être déployée en 2 semaines seulement
+Installation facile sur le site, pas de fixation au sol, flexibilité pour le transfert d'entrepôt
+
+
+
+
+
+
+
+
+
+
+
+Couvrant un large éventail de scènes d'application
+Le système de prélèvement de marchandises à la personne de Geek+ convient au commerce de détail, à la logistique de tierce partie, à l'habillement, au commerce électronique, à l'industrie pharmaceutique, au secteur 3C, à la construction automobile et à de nombreuses autres industries.
+
+
+
+
+
+
+Good-to-Person (mono-étage)
+
+
+Prélèvement de pièces de petite et moyenne taille par bac et par pièce
+
+
+
+
+
+
+
+
+Good-to-person multi-étages
+
+
+Multi-locataires, besoin d'une grande capacité d'inventaire, la quantité commandée fluctue beaucoup et la structure de la commande est compliquée
+
+
+
+
+
+
+
+
+Solution combinée
+
+
+Mur mobile de réceptacles
+Préparation consolidée et tri des commandes
+Cache et file d'attente Picktote
+Bras robotisé
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Collecte de bacs par personne
+La solution de picking bin-to-person Geek+ RoboShuttle™ permet de réaliser un stockage haute densité grâce à l'utilisation de l'innovant Geek+ C200 et à la conception d'allées étroites, tout en maintenant une efficacité élevée.
+Manipulation flexible des bacs, renversant le modèle conventionnel d'inventaire des bacs, retour sur investissement en 3 ans.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Dimension
+Poids propre
+Charge maximale
+Hauteur de levée maximale
+Temps de levée minimum
+Vitesse maximale
+Vitesse de rotation maximale
+Angle de pente maximal
+Précision d’arrêt
+Navigation
+Distance de détection d’obstacle
+Consommation électrique
+Durée de vie de la batterie
+Durée d’exécution
+Certification
+Taille de la charge utile
+Température de fonctionnement
+Température de charge
+
+
+L950*W702*H2500/3400
+304
+40
+2915
+8
+2
+90°/1.5s，180°/2s
+2.5° (slope 4.4%)
+<10
+Capteurs inertiels + code QR
+Infrarouge 2 m/ Laser 3 m
+Lithium-ion, DC50.4V, 39 Ah
+Charge et décharge complètes > 2000 cycles
+Charge 10 minutes de travail 2 ~ 3 heures
+CE
+400*300*250~600*400*350
+-20~50
+0~45
+
+
+L1490*W870*H2500~5000
+470
+150
+4865
+12
+1.5m/s
+90°/2s，180°/3s
+-
+<10
+Capteurs inertiels + code QR
+Laser 3m
+Lithium-ion，DC50.4V，42Ah
+Charge et décharge complètes > 2000 cycles
+Charge 10 minutes de travail 2 ~ 3 heures
+CE
+400*300*200~600*400*500
+-20~50
+0~45
+
+
+mm
+kg
+kg
+mm
+s
+m/s
+°/s
+°
+mm
+-
+m
+-
+-
+h
+-
+mm
+°C
+°C
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Une solution primée à la pointe de l'innovation dans le secteur
+
+
+Le système Geek+ RoboShuttle™ a été certifié "Best of Intralogistics 2020" par le prix IFOY de renommée mondiale, l'une des reconnaissances les plus prestigieuses du secteur. Par rapport au système de navette traditionnel, RoboShuttle présente une flexibilité, une efficacité et un retour sur investissement supérieurs.
+
+Efficacité élevée en matière de prélèvement de boîtes, jusqu'à 300 boîtes/heure/station
+Flexibilité pour s'adapter aux étagères et greniers existants des clients
+Mise en œuvre rapide et faible charge au sol
+Investissement plus faible et période d'amortissement plus courte, retour sur investissement d'environ 1 à 3 ans
+Possibilité d'ajouter ou de supprimer facilement des robots en fonction des besoins de l'entreprise
+Ne nécessite pas de rails de haute précision et est facile à entretenir
+Peut être connecté à une variété d'équipements d'automatisation tels que des lignes de convoyeurs et d'autres robots, ce qui est pratique pour l'intégration et le déploiement de projets personnalisés
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Valeur pour le client
+
+
+
+Un retour sur investissement rapide
+
+
+Retour sur investissement en moins de 3 ans
+Investissement initial inférieur à celui des équipements d'automatisation traditionnels
+
+
+
+
+Grande capacité de stockage
+
+
+La solution AMR de stockage sur un seul étage la plus puissante, multipliant la capacité de stockage de l'entrepôt par 2,5.
+Utilisation optimale de l'espace en hauteur, ce qui permet d'obtenir une capacité de stockage identique à celle d'une navette multiple
+
+
+
+
+Haute efficacité
+
+
+Une conception ergonomique ingénieuse permet d'obtenir la solution AMR la plus efficace jamais réalisée en matière de prélèvement, soit trois fois plus que la solution manuelle.
+99,997% de précision
+
+
+
+
+Grande flexibilité
+
+
+Ajoutez ou supprimez des robots à la demande, passez facilement au prélèvement manuel.
+Solutions personnalisables pour de multiples industries
+Pas de point de défaillance unique
+
+
+
+
+Déploiement rapide
+
+
+Déploiement complet du système en moins de 2 mois
+Réutilisation des étagères et greniers existants des clients, déploiement rapide
+
+
+
+
+
+
+
+
+
+
+
+Couvrant un large éventail de scènes d'application
+Le système de prélèvement bin-to-person de Geek+ convient aux secteurs de la cosmétique, de l'habillement, du commerce électronique, de la pharmacie, du 3C, de la construction automobile et à de nombreuses autres industries.
+
+
+
+
+
+
+Bac unique à personne
+
+
+Prélèvement de pièces de petite et moyenne taille ; convient pour les bacs, les conteneurs et les cartons
+Le robot peut soulever la boîte dans la position la plus confortable pour la prélever facilement, ce qui permet de multiplier par trois l'efficacité du prélèvement manuel
+
+
+
+
+
+
+
+
+Bac à personne à profondeur étendue
+
+
+Prélèvement de pièces de petite et moyenne taille; convient pour les bacs, les conteneurs et les cartons
+Stockage haute densité, jusqu'à 2,5 fois supérieur au stockage traditionnel sur étagères
+
+
+
+
+
+
+
+
+Solution combinée
+
+
+Préparation de commandes de biens à la personne
+Bras robotique
+Connexion entre plusieurs processus
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Contactez nous
+
+
+
+
+
+
+
+
+
+
+
+
+
+Chine: +86 4000 450 010
+APAC: +852 3462 2128
+Europe: +49 211 53829033
+Japon: +81 0476 37 7509
+
+Amériques: +1 404 406 3961Sales: sales@geekplus.com
+PR:  pr@geekplus.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Disclaimer
+Privacy Policy
+
+
+
+
+              COPYRIGHT © 2022 Geekplus Technology Co., Ltd.
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var hsVars = hsVars || {}; hsVars['language'] = 'fr';
+
+
+
+
+
+
+      
+
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      if(document.querySelector(this.getAttribute('href'))){
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+
+
+
+
+
+  $(function() {
+
+    try {
+      $(".geek_picking_goodstable").mCustomScrollbar({
+        // horizontalScroll: true,
+        scrollButtons: {
+          enable: true
+        },
+        theme: "dark-thin"
+      });
+    } catch (e) {
+      console.log(e);
+      //TODO handle the exception
+    }
+  })
+
+
+  $( document ).ready(function() {
+    $('.mCSB_container ul.d-flex li:last-child').addClass("right");
+  });
+
+
+
+
+
+
+
+        var options = {
+            portalId: '5868638',
+            formId: 'e583b95d-22af-4d9a-9a55-e4e6ce8f8647',
+            formInstanceId: '634',
+            pageId: '52784387878',
+            region: 'na1',
+            
+            
+            
+            
+            pageName: "Picking",
+            
+            
+            
+            inlineMessage: "<span>Merci d\u2019avoir soumis le formulaire&nbsp;</span>",
+            
+            
+            rawInlineMessage: "<span>Merci d\u2019avoir soumis le formulaire&nbsp;</span>",
+            
+            
+            hsFormKey: "312177aa61fb0ef22737f46b07971aef",
+            
+            
+            deactivateSmartForm: true,
+            
+            css: '',
+            target: '#hs_form_target_form_386823556',
+            
+            
+            
+            
+            
+            contentType: "standard-page",
+            
+            
+            
+            formsBaseUrl: '/_hcms/forms/',
+            
+            
+            useDraft: "true",
+            
+            
+            formData: {
+                cssClass: 'hs-form stacked hs-custom-form'
+            }
+        };
+
+        options.getExtraMetaDataBeforeSubmit = function() {
+            var metadata = {};
+            
+
+            if (hbspt.targetedContentMetadata) {
+                var count = hbspt.targetedContentMetadata.length;
+                var targetedContentData = [];
+                for (var i = 0; i < count; i++) {
+                    var tc = hbspt.targetedContentMetadata[i];
+                     if ( tc.length !== 3) {
+                        continue;
+                     }
+                     targetedContentData.push({
+                        definitionId: tc[0],
+                        criterionId: tc[1],
+                        smartTypeId: tc[2]
+                     });
+                }
+                metadata["targetedContentMetadata"] = JSON.stringify(targetedContentData);
+            }
+
+            return metadata;
+        };
+
+        hbspt.forms.create(options);
+    
+
+
+(function(){
+  const timeoutEvent = document.createEvent('CustomEvent');
+  timeoutEvent.initCustomEvent("content-analytics-code-not-loaded", true, true, { detail: "Not loaded in preview mode" });
+  window.dispatchEvent(timeoutEvent);
+})();
+
+
+
+var hsVars = {
+    ticks: 1681969644505,
+    page_id: 52784387878,
+    
+    content_group_id: 0,
+    portal_id: 5868638,
+    app_hs_base_url: "https://app.hubspot.com",
+    cp_hs_base_url: "https://cp.hubspot.com",
+    language: "fr",
+    analytics_page_type: "standard-page",
+    analytics_page_id: "52784387878",
+    category_id: 1,
+    folder_id: 0,
+    is_hubspot_user: false
+}
+
+
+
+_linkedin_partner_id = "539931";
+window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+
+(function(){var s = document.getElementsByTagName("script")[0];
+var b = document.createElement("script");
+b.type = "text/javascript";b.async = true;
+b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+s.parentNode.insertBefore(b, s);})();
+
+
+
+
+
+_linkedin_partner_id = "539931";
+window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+
+(function(){var s = document.getElementsByTagName("script")[0];
+var b = document.createElement("script");
+b.type = "text/javascript";b.async = true;
+b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+s.parentNode.insertBefore(b, s);})();
+
+
+
+
+console.log("tes");
+    $(".hs_cos_wrapper_type_rich_text").wrapInner( "<div class='container'></div>");
+
+

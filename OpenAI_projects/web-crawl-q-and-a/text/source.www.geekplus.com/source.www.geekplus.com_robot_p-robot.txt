@@ -1,0 +1,2480 @@
+
+
+
+
+
+
+P Series Picking Robots
+
+
+hsjQuery = window['jQuery'];
+
+
+
+
+
+a.cta_button{-moz-box-sizing:content-box !important;-webkit-box-sizing:content-box !important;box-sizing:content-box !important;vertical-align:middle}.hs-breadcrumb-menu{list-style-type:none;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px}.hs-breadcrumb-menu-item{float:left;padding:10px 0px 10px 10px}.hs-breadcrumb-menu-divider:before{content:'›';padding-left:10px}.hs-featured-image-link{border:0}.hs-featured-image{float:right;margin:0 0 20px 20px;max-width:50%}@media (max-width: 568px){.hs-featured-image{float:none;margin:0;width:100%;max-width:100%}}.hs-screen-reader-text{clip:rect(1px, 1px, 1px, 1px);height:1px;overflow:hidden;position:absolute !important;width:1px}
+
+
+
+
+
+
+  .widget_31426854489 .container-fluid {
+    max-width: 95% !important;
+    margin: 0 auto !important;
+    float: none !important;
+    padding: 0 15px;
+    width: 100%;
+  }
+
+  
+  .widget_31426854489 .Banner_contact.left{ text-align:left;}
+  .widget_31426854489 .Banner_contact.right{ text-align:right;}
+  .widget_31426854489 .Banner_contact.center{ text-align:center;}
+
+  .widget_31426854489 .uppercase{
+    text-transform: uppercase;
+  }
+  .widget_31426854489 .vimeo-wrapper video {
+    position: absolute;
+    z-index: -100;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    background-size: cover;
+    overflow: hidden;
+    opacity: 1;
+    transition: 2s opacity;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  .widget_31426854489 .explore {
+    position: absolute;
+    bottom: 22px;
+    font-size: 16px;
+    left: 50%;
+    color: #FFF;
+    transform: translateX(-50%);
+    z-index: 1990;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    text-align: center;
+  }
+  .widget_31426854489 .explore span {
+    color: #fff;
+    display: block;
+  }
+  .widget_31426854489 .explore i.icon {
+    margin: 5px auto 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 9px 0 9px;
+    border-color: #FFF transparent transparent transparent;
+    animation: pulse 2s infinite;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .widget_31426854489 .defaut{
+    text-transform: inherit;
+  }
+  .widget_31426854489 .capitalize{
+    text-transform: capitalize;
+  }
+  .widget_31426854489 .Banner_contact h1{ 
+    color:#ffffff;
+    font-size:100px;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 22px;
+  }
+  .widget_31426854489 .Banner_contact h4 { 
+    color: rgba(255, 255, 255, 1.0);
+    font-size: 24px;
+    line-height: 1.5;
+  }
+  .widget_31426854489 .Banner_contact .geek_banner-desc p { 
+    color:#ffffff;
+    font-size:32px;
+  }
+
+
+  .banner_section {
+    width: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 85px;
+    padding-bottom:  85px;
+  }
+  @keyframes pulse {
+    0% {
+      -webkit-transform: translate(0, 0);
+      transform: translate(0, 0);
+    }
+    50% {
+      -webkit-transform: translate(0, 10px);
+      transform: translate(0, 10px);
+    }
+    100% {
+      -webkit-transform: translate(0, 0);
+      transform: translate(0, 0);
+    }
+  }
+
+  .conatiner_wrap {
+    /*position: absolute;*/
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+  .widget_31426854489 .overlay{
+    background-color: #011031;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .vimeo-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*height:calc(100vh - 0px);*/
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+    overflow: hidden;
+  }
+  .vimeo-wrapper iframe {
+    width: 100vw;
+    height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+    min-height: 100vh;
+    min-width: 177.77vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .image_Section{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*height:calc(100vh - 0px); */
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+  }
+  .widget_31426854489 .banner_section .img-overlay{
+    background-color: #141724;
+    opacity: 0.0; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+  }
+  .widget_31426854489 .Banner_contact ul li a {
+    display: inline-block;
+    height: 50px;
+    line-height: 48px;
+    margin: 0;
+    padding: 0 30px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 5px;
+    border:2px solid #ffffff;   
+    text-decoration: none;
+    border-radius:5px; 
+  }
+  .widget_31426854489 .Banner_contact ul li a:hover{
+    background-color: #FF0201 !important;
+    color:#ffffff;
+    border:2px solid #FF0201 !important; 
+  }
+  .gareer_mail {
+    position: relative;
+    text-align: center;
+    padding: 25px 0;
+  }
+  .gareer_mail a {
+    padding: 0 10px;
+    color: #333;
+    z-index: 2;
+    position: relative;
+    background: #fff;
+  }
+  .gareer_mail:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    left: 0;
+    border-bottom: 1px solid #C9C9C9;
+    z-index: 1;
+  }
+
+  
+
+  @media screen and (max-width: 1199px) {
+
+    div.widget_31426854489 .Banner_contact h1 {
+      font-size: 42px;
+    }
+
+
+  }
+
+  @media screen and (max-width: 991px) {
+
+    div.widget_31426854489 .Banner_contact h1 {
+      font-size: 32px;
+    }
+    div.widget_31426854489 .Banner_contact p {
+      font-size: 22px;
+    }
+
+  }
+
+
+  @media screen and (max-width: 767px) {
+    .Banner_contact h1 br {
+      display: none;
+    }
+    div.widget_31426854489 .geek_banner-desc p {
+      display: inline;
+    }
+
+    
+
+
+  }
+
+
+  @media screen and (max-width: 639px) {
+
+    div.widget_31426854489 .Banner_contact h1 {
+      font-size: 28px;
+    }
+    .widget_31426854489 .banner_section {
+      padding-top: 105px;
+      padding-bottom: 100px;
+    }
+    div.widget_31426854489 .Banner_contact h4 {
+      font-size: 16px;
+    }
+
+
+  }
+
+
+  @media screen and (max-width: 359px) {
+
+    div.widget_31426854489 .Banner_contact h1 {
+      margin-bottom: 7px;
+      line-height: 1.5;
+    }
+
+
+  }
+
+
+
+
+
+
+  .widget_31426854490 .geek_image-content-left {
+    justify-content: flex-end;
+  }
+  .widget_31426854490 .geek_image-box {
+    margin-left: px;
+    margin-right: px;
+    margin-bottom: px;
+    margin-top: px;
+  }
+  .widget_31426854490 .geek_image-content {
+    padding-top: 70px;
+    padding-bottom: 0px;
+  }
+
+  .widget_31426854490 .geek_news {
+    padding: 20px 0;
+    background: rgba(#null, 0.0 );
+  }
+  .widget_31426854490 .geek_image-content-left {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+  .widget_31426854490 .geek_image-content-right {
+    flex: 0 0 80%;
+    max-width: 80%;
+  }
+  .widget_31426854490 .geek_image-content-row {
+    min-height: 368px;
+  }
+  .widget_31426854490 .geek_image-content-rightInner {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 80px;
+  }
+  .widget_31426854490 .geek_image-content-rightCol {
+    flex: 0 0 37%;
+    max-width: 37%;
+    margin-right: 55px;
+    margin-bottom: 50px;
+  }
+  .widget_31426854490 .geek_news-desc ul {
+    padding-left: 20px;
+    list-style: inherit;
+  }
+  .geek_news-desc ul li {
+    line-height: 30px;
+    list-style: inherit;
+  }
+  .widget_31426854490 .geek_image-content-right h3 {
+    color: rgba(51, 51, 51, 1.0 );
+    margin-bottom: 8px;
+    font-weight: normal;
+    font-size: 28px;
+  }
+  .widget_31426854490 .geek_news-desc p {
+    font-size: 14px;
+    color: rgba(51, 51, 51, 1.0 );
+  }
+  .widget_31426854490 .geek_news-action-btn .btn {
+    display: inline-block;
+    padding: 5px 35px 5px 20px;
+    background-color: rgba(255, 255, 255, 1.0 );
+    background-image: url(https://source.www.geekplus.com/hubfs/Geek%20Plus%20Images%202020/arrow-right.png);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 17px);
+    justify-content: center;
+    vertical-align: middle;
+    color: rgba(0, 159, 239, 1.0 );
+    width: 95px;
+    text-transform: capitalize;
+    border: 0px solid rgba(255, 255, 255, 1.0 );
+    transition: all 0.3s;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.18);
+    border-radius: 55px;
+    font-size: 14px;
+    margin-top: 8px;
+    text-align: left;
+  }
+  .widget_31426854490 .geek_news-action-btn .btn:hover {
+    background-color: rgba(0, 159, 239, 1.0 );
+    background-image: url(https://source.www.geekplus.com/hubfs/Geek%20Plus%20Images%202020/arrow-right-hover.png);
+    color: rgba(255, 255, 255, 1.0 );
+    border-color: rgba(0, 159, 239, 1.0 );
+  }
+
+
+
+  
+
+  @media screen and (max-width: 1199px) {
+
+    div.widget_31426854490 .geek_image-content-right {
+      flex: 0 0 80%;
+      max-width: 80%;
+      padding-left: 20px;
+    }
+    div.widget_31426854490 .geek_image-content-rightCol {
+      flex: 0 0 45%;
+      max-width: 45%;
+      margin-right: 30px;
+      margin-bottom: 35px;
+    }
+    div.widget_31426854490 .geek_image-content-right h3 {
+      font-size: 28px;
+    }
+
+
+
+  }  
+
+
+  @media screen and (max-width: 991px) {
+
+    div.widget_31426854490 .geek_image-content {
+      background: none;
+    }
+    div.widget_31426854490 .geek_image-content-left {
+      flex: 0 0 100%;
+      max-width: 100%;
+      justify-content: center;
+      padding-top: 25px;
+      padding-bottom: 30px;
+    }
+    div.widget_31426854490 .geek_image-content-right {
+      flex: 0 0 100%;
+      max-width: 100%;
+      padding-left: 0px;
+    }
+    div.widget_31426854490 .geek_image-box {
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-bottom: 0px;
+      margin-top: 0px;
+    }
+    div.widget_31426854490 .geek_image-content {
+      padding-top: 0px;
+      padding-bottom: 35px;
+      margin-bottom: 0px;
+    }
+    div.widget_31426854490 .geek_image-content-rightInner {
+      padding-left: 0px;
+    }
+
+
+
+
+
+
+
+  }  
+
+
+  @media screen and (max-width: 767px) {
+
+    div.widget_31426854490 .geek_news-desc {
+      margin-bottom: 0px;
+    }
+    div.widget_31426854490 .geek_image-content-right h3 {
+      font-size: 24px;
+    }
+
+  }   
+
+
+  @media screen and (max-width: 649px) {
+
+    div.widget_31426854490 .geek_image-content-rightCol {
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-right: 0px;
+      margin-bottom: 35px;
+    }
+
+  }  
+
+
+
+
+
+  .widget_1636439919961 .geek_robot-parameter-left {
+    flex: 0 0 26%;
+    max-width: 26%;
+  }
+  .widget_1636439919961 .geek_robot-parameter-right {
+    flex: 0 0 74%;
+    max-width: 74%;
+  }
+  .widget_1636439919961 .geek_robot-parameter {
+    padding-top: 120px;
+    padding-bottom: 0px;
+  }
+  .geek_parameter_left {
+    width: 24%;
+    margin-right: 1.33%;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  .geek_parameter-block {
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: white;
+    border-radius: 5px;
+    padding: 15px 0 0;
+    height: 260px;
+    margin-bottom: 20px;
+  }
+  .geek-box {
+    box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.1);
+  }
+  .geek_parameter-block h3 {
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+    /* overflow: hidden; */
+    text-overflow: ellipsis;
+    white-space: normal;
+    margin-bottom: 12px;
+  }
+  .geek_parameter-block .text ul {
+    padding-top: 5px;
+  }
+  .geek_parameter-block .text ul li {
+    margin-bottom: 20px;
+    line-height: 24px;
+  }
+  .geek_parameter-block .text ul li:last-child {
+    margin-bottom: 0px;
+  }
+  .geek_parameter-block .geek_yuan {
+    margin: 0px auto 15px;
+    width: 140px;
+    height: 140px;
+    position: relative;
+  }
+  .geek_parameter-block .geek_yuan .geek_icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    background-image: url(https://source.www.geekplus.com/hubfs/yuanimg.jpg);
+    width: 75px;
+    height: 71px;
+  }
+  .geek_bar.vertical {
+    height: 185px;
+    width: 10px;
+    margin: 0 auto;
+  }
+  .geek_bar.vertical .bar_blue {
+    width: 10px;
+    content: '';
+    height: 0;
+    left: 0;
+    bottom: 0;
+  }
+  .geek_bar.vertical .num {
+    left: 100%;
+    margin-left: -15px;
+    transition: all 0.5s ease-out;
+    display: flex;
+    align-items: center;
+    bottom: 0;
+    margin-bottom: -2px;
+  }
+  .geek_bar.vertical .num .icon {
+    margin-right: 8px;
+  }
+  .geek_parameter-block h4 {
+    font-size: 20px;
+    color: #009FEF;
+    font-weight: 700;
+  }
+  .geek_parameter-block.sm-block {
+    height: 120px;
+  }
+  .geek_bar.horizontal {
+    height: 10px;
+    top: 35px;
+    margin: 0px 30px 0;
+  }
+  .geek_bar {
+    background-color: #E5E5E5;
+    position: relative;
+  }
+  .geek_bar.horizontal .num {
+    display: flex;
+    flex-direction: column-reverse;
+    left: 0;
+    bottom: -4px;
+  }
+  .geek_parameter-block i, .geek_parameter-block em {
+    font-style: normal;
+  }
+  .geek_bar .num {
+    position: absolute;
+    color: #009FEF;
+    font-size: 16px;
+    transition: all 0.5s ease-out;
+    bottom: 0;
+  }
+  .geek_bar.horizontal .num .icon {
+    margin-top: 5px;
+    margin-left: -2px;
+  }
+  .geek_bar .num .icon {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-color: #009FEF;
+    border-radius: 50%;
+  }
+  .geek_bar.horizontal .num em {
+    position: relative;
+    font-weight: bold;
+  }
+  .geek_bar.horizontal .bar_blue {
+    height: 10px;
+    left: 0;
+    width: 0;
+  }
+  .geek_bar .bar_blue {
+    position: absolute;
+    background-color: #009FEF;
+    transition: all 0.5s ease-out;
+  }
+  .geek_parameter-block .text_blue {
+    font-weight: bold;
+    font-size: 20px;
+    color: #009FEF;
+    line-height: 24px;
+    height: 48px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .geek_robot-parameter-right .geek_parameter_left:last-child {
+    margin-right: 0px;
+  }
+  .geek_parameter-block dl {
+    padding: 0 12px;
+  }
+  .geek_parameter-block dd {
+    font-size: 14px;
+    color: #333;
+    padding: 14px 0;
+    font-weight: bold;
+    border-bottom: 1px solid #E5E5E5;
+  }
+  .geek_parameter-block dd:nth-of-type(1) {
+    padding-top: 0;
+  }
+  .geek_parameter-block dd i {
+    font-weight: normal;
+  }
+  .geek_parameter-block dd:last-child {
+    border: none;
+  }
+
+
+
+  
+  @media screen and (max-width: 1199px) {
+
+
+
+    div.widget_1636439919961 .geek_image-content-right h3 {
+      font-size: 24px;
+    }
+    .widget_1636439919961 .geek_parameter-block {
+      padding: 27px 7px 0;
+    }
+    div.widget_1636439919961 .geek_robot-parameter {
+      padding-top: 70px;
+      padding-bottom: 0px;
+    }
+    .widget_1636439919961 .geek_parameter-block dd {
+      font-size: 13px;
+    }
+    .geek_parameter-block .text_blue {
+      word-break: break-all;
+    }
+
+
+  }
+
+  @media screen and (max-width: 991px) {
+
+    div.widget_1636439919961 .geek_robot-parameter {
+      padding-top: 50px;
+      padding-bottom: 0px;
+    }
+    div.widget_1636439919961 .geek_robot-parameter-left {
+      flex: 0 0 100%;
+      max-width: 100%;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+    div.widget_1636439919961 .geek_robot-parameter-right {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+
+
+  }
+
+  @media screen and (max-width: 767px) {
+
+    div.widget_1636439919961 .geek_parameter_left {
+      width: 100%;
+      margin-right: 0px;
+    }
+    div.widget_1636439919961 .geek_image-content-right h3 {
+      font-size: 20px;
+    }
+  }
+
+
+
+
+  .widget_31426854491 .geek_robot-parameter-left {
+    flex: 0 0 26%;
+    max-width: 26%;
+  }
+  .widget_31426854491 .geek_robot-parameter-right {
+    flex: 0 0 74%;
+    max-width: 74%;
+  }
+  .widget_31426854491 .geek_robot-parameter {
+    padding-top: 120px;
+    padding-bottom: 0px;
+  }
+  .geek_parameter_left {
+    width: 24%;
+    margin-right: 1.33%;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  .geek_parameter-block {
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: white;
+    border-radius: 5px;
+    padding: 15px 0 0;
+    height: 260px;
+    margin-bottom: 20px;
+  }
+  .geek-box {
+    box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.1);
+  }
+  .geek_parameter-block h3 {
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+    /* overflow: hidden; */
+    text-overflow: ellipsis;
+    white-space: normal;
+    margin-bottom: 12px;
+  }
+  .geek_parameter-block .text ul {
+    padding-top: 5px;
+  }
+  .geek_parameter-block .text ul li {
+    margin-bottom: 20px;
+    line-height: 24px;
+  }
+  .geek_parameter-block .text ul li:last-child {
+    margin-bottom: 0px;
+  }
+  .geek_parameter-block .geek_yuan {
+    margin: 0px auto 15px;
+    width: 140px;
+    height: 140px;
+    position: relative;
+  }
+  .geek_parameter-block .geek_yuan .geek_icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    background-image: url(https://source.www.geekplus.com/hubfs/yuanimg.jpg);
+    width: 75px;
+    height: 71px;
+  }
+  .geek_bar.vertical {
+    height: 185px;
+    width: 10px;
+    margin: 0 auto;
+  }
+  .geek_bar.vertical .bar_blue {
+    width: 10px;
+    content: '';
+    height: 0;
+    left: 0;
+    bottom: 0;
+  }
+  .geek_bar.vertical .num {
+    left: 100%;
+    margin-left: -15px;
+    transition: all 0.5s ease-out;
+    display: flex;
+    align-items: center;
+    bottom: 0;
+    margin-bottom: -2px;
+  }
+  .geek_bar.vertical .num .icon {
+    margin-right: 8px;
+  }
+  .geek_parameter-block h4 {
+    font-size: 20px;
+    color: #009FEF;
+    font-weight: 700;
+  }
+  .geek_parameter-block.sm-block {
+    height: 120px;
+  }
+  .geek_bar.horizontal {
+    height: 10px;
+    top: 35px;
+    margin: 0px 30px 0;
+  }
+  .geek_bar {
+    background-color: #E5E5E5;
+    position: relative;
+  }
+  .geek_bar.horizontal .num {
+    display: flex;
+    flex-direction: column-reverse;
+    left: 0;
+    bottom: -4px;
+  }
+  .geek_parameter-block i, .geek_parameter-block em {
+    font-style: normal;
+  }
+  .geek_bar .num {
+    position: absolute;
+    color: #009FEF;
+    font-size: 16px;
+    transition: all 0.5s ease-out;
+    bottom: 0;
+  }
+  .geek_bar.horizontal .num .icon {
+    margin-top: 5px;
+    margin-left: -2px;
+  }
+  .geek_bar .num .icon {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-color: #009FEF;
+    border-radius: 50%;
+  }
+  .geek_bar.horizontal .num em {
+    position: relative;
+    font-weight: bold;
+  }
+  .geek_bar.horizontal .bar_blue {
+    height: 10px;
+    left: 0;
+    width: 0;
+  }
+  .geek_bar .bar_blue {
+    position: absolute;
+    background-color: #009FEF;
+    transition: all 0.5s ease-out;
+  }
+  .geek_parameter-block .text_blue {
+    font-weight: bold;
+    font-size: 20px;
+    color: #009FEF;
+    line-height: 24px;
+    height: 48px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .geek_robot-parameter-right .geek_parameter_left:last-child {
+    margin-right: 0px;
+  }
+  .geek_parameter-block dl {
+    padding: 0 12px;
+  }
+  .geek_parameter-block dd {
+    font-size: 14px;
+    color: #333;
+    padding: 14px 0;
+    font-weight: bold;
+    border-bottom: 1px solid #E5E5E5;
+  }
+  .geek_parameter-block dd:nth-of-type(1) {
+    padding-top: 0;
+  }
+  .geek_parameter-block dd i {
+    font-weight: normal;
+  }
+  .geek_parameter-block dd:last-child {
+    border: none;
+  }
+
+
+
+  
+  @media screen and (max-width: 1199px) {
+
+
+
+    div.widget_31426854491 .geek_image-content-right h3 {
+      font-size: 24px;
+    }
+    .widget_31426854491 .geek_parameter-block {
+      padding: 27px 7px 0;
+    }
+    div.widget_31426854491 .geek_robot-parameter {
+      padding-top: 70px;
+      padding-bottom: 0px;
+    }
+    .widget_31426854491 .geek_parameter-block dd {
+      font-size: 13px;
+    }
+    .geek_parameter-block .text_blue {
+      word-break: break-all;
+    }
+
+
+  }
+
+  @media screen and (max-width: 991px) {
+
+    div.widget_31426854491 .geek_robot-parameter {
+      padding-top: 50px;
+      padding-bottom: 0px;
+    }
+    div.widget_31426854491 .geek_robot-parameter-left {
+      flex: 0 0 100%;
+      max-width: 100%;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+    div.widget_31426854491 .geek_robot-parameter-right {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+
+
+  }
+
+  @media screen and (max-width: 767px) {
+
+    div.widget_31426854491 .geek_parameter_left {
+      width: 100%;
+      margin-right: 0px;
+    }
+    div.widget_31426854491 .geek_image-content-right h3 {
+      font-size: 20px;
+    }
+  }
+
+
+
+
+  .widget_31426854492 .geek_robot-parameter-left {
+    flex: 0 0 26%;
+    max-width: 26%;
+  }
+  .widget_31426854492 .geek_robot-parameter-right {
+    flex: 0 0 74%;
+    max-width: 74%;
+  }
+  .widget_31426854492 .geek_robot-parameter {
+    padding-top: 120px;
+    padding-bottom: 0px;
+  }
+  .geek_parameter_left {
+    width: 24%;
+    margin-right: 1.33%;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  .geek_parameter-block {
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: white;
+    border-radius: 5px;
+    padding: 15px 0 0;
+    height: 260px;
+    margin-bottom: 20px;
+  }
+  .geek-box {
+    box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.1);
+  }
+  .geek_parameter-block h3 {
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+    /* overflow: hidden; */
+    text-overflow: ellipsis;
+    white-space: normal;
+    margin-bottom: 12px;
+  }
+  .geek_parameter-block .text ul {
+    padding-top: 5px;
+  }
+  .geek_parameter-block .text ul li {
+    margin-bottom: 20px;
+    line-height: 24px;
+  }
+  .geek_parameter-block .text ul li:last-child {
+    margin-bottom: 0px;
+  }
+  .geek_parameter-block .geek_yuan {
+    margin: 0px auto 15px;
+    width: 140px;
+    height: 140px;
+    position: relative;
+  }
+  .geek_parameter-block .geek_yuan .geek_icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    background-image: url(https://source.www.geekplus.com/hubfs/yuanimg.jpg);
+    width: 75px;
+    height: 71px;
+  }
+  .geek_bar.vertical {
+    height: 185px;
+    width: 10px;
+    margin: 0 auto;
+  }
+  .geek_bar.vertical .bar_blue {
+    width: 10px;
+    content: '';
+    height: 0;
+    left: 0;
+    bottom: 0;
+  }
+  .geek_bar.vertical .num {
+    left: 100%;
+    margin-left: -15px;
+    transition: all 0.5s ease-out;
+    display: flex;
+    align-items: center;
+    bottom: 0;
+    margin-bottom: -2px;
+  }
+  .geek_bar.vertical .num .icon {
+    margin-right: 8px;
+  }
+  .geek_parameter-block h4 {
+    font-size: 20px;
+    color: #009FEF;
+    font-weight: 700;
+  }
+  .geek_parameter-block.sm-block {
+    height: 120px;
+  }
+  .geek_bar.horizontal {
+    height: 10px;
+    top: 35px;
+    margin: 0px 30px 0;
+  }
+  .geek_bar {
+    background-color: #E5E5E5;
+    position: relative;
+  }
+  .geek_bar.horizontal .num {
+    display: flex;
+    flex-direction: column-reverse;
+    left: 0;
+    bottom: -4px;
+  }
+  .geek_parameter-block i, .geek_parameter-block em {
+    font-style: normal;
+  }
+  .geek_bar .num {
+    position: absolute;
+    color: #009FEF;
+    font-size: 16px;
+    transition: all 0.5s ease-out;
+    bottom: 0;
+  }
+  .geek_bar.horizontal .num .icon {
+    margin-top: 5px;
+    margin-left: -2px;
+  }
+  .geek_bar .num .icon {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-color: #009FEF;
+    border-radius: 50%;
+  }
+  .geek_bar.horizontal .num em {
+    position: relative;
+    font-weight: bold;
+  }
+  .geek_bar.horizontal .bar_blue {
+    height: 10px;
+    left: 0;
+    width: 0;
+  }
+  .geek_bar .bar_blue {
+    position: absolute;
+    background-color: #009FEF;
+    transition: all 0.5s ease-out;
+  }
+  .geek_parameter-block .text_blue {
+    font-weight: bold;
+    font-size: 20px;
+    color: #009FEF;
+    line-height: 24px;
+    height: 48px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .geek_robot-parameter-right .geek_parameter_left:last-child {
+    margin-right: 0px;
+  }
+  .geek_parameter-block dl {
+    padding: 0 12px;
+  }
+  .geek_parameter-block dd {
+    font-size: 14px;
+    color: #333;
+    padding: 14px 0;
+    font-weight: bold;
+    border-bottom: 1px solid #E5E5E5;
+  }
+  .geek_parameter-block dd:nth-of-type(1) {
+    padding-top: 0;
+  }
+  .geek_parameter-block dd i {
+    font-weight: normal;
+  }
+  .geek_parameter-block dd:last-child {
+    border: none;
+  }
+
+
+
+  
+  @media screen and (max-width: 1199px) {
+
+
+
+    div.widget_31426854492 .geek_image-content-right h3 {
+      font-size: 24px;
+    }
+    .widget_31426854492 .geek_parameter-block {
+      padding: 27px 7px 0;
+    }
+    div.widget_31426854492 .geek_robot-parameter {
+      padding-top: 70px;
+      padding-bottom: 0px;
+    }
+    .widget_31426854492 .geek_parameter-block dd {
+      font-size: 13px;
+    }
+    .geek_parameter-block .text_blue {
+      word-break: break-all;
+    }
+
+
+  }
+
+  @media screen and (max-width: 991px) {
+
+    div.widget_31426854492 .geek_robot-parameter {
+      padding-top: 50px;
+      padding-bottom: 0px;
+    }
+    div.widget_31426854492 .geek_robot-parameter-left {
+      flex: 0 0 100%;
+      max-width: 100%;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+    div.widget_31426854492 .geek_robot-parameter-right {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+
+
+  }
+
+  @media screen and (max-width: 767px) {
+
+    div.widget_31426854492 .geek_parameter_left {
+      width: 100%;
+      margin-right: 0px;
+    }
+    div.widget_31426854492 .geek_image-content-right h3 {
+      font-size: 20px;
+    }
+  }
+
+
+
+
+  .widget_31426854493 .geek_robot-parameter-left {
+    flex: 0 0 26%;
+    max-width: 26%;
+  }
+  .widget_31426854493 .geek_robot-parameter-right {
+    flex: 0 0 74%;
+    max-width: 74%;
+  }
+  .widget_31426854493 .geek_robot-parameter {
+    padding-top: 120px;
+    padding-bottom: 0px;
+  }
+  .geek_parameter_left {
+    width: 24%;
+    margin-right: 1.33%;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  .geek_parameter-block {
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: white;
+    border-radius: 5px;
+    padding: 15px 0 0;
+    height: 260px;
+    margin-bottom: 20px;
+  }
+  .geek-box {
+    box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.1);
+  }
+  .geek_parameter-block h3 {
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+    /* overflow: hidden; */
+    text-overflow: ellipsis;
+    white-space: normal;
+    margin-bottom: 12px;
+  }
+  .geek_parameter-block .text ul {
+    padding-top: 5px;
+  }
+  .geek_parameter-block .text ul li {
+    margin-bottom: 20px;
+    line-height: 24px;
+  }
+  .geek_parameter-block .text ul li:last-child {
+    margin-bottom: 0px;
+  }
+  .geek_parameter-block .geek_yuan {
+    margin: 0px auto 15px;
+    width: 140px;
+    height: 140px;
+    position: relative;
+  }
+  .geek_parameter-block .geek_yuan .geek_icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    background-image: url(https://source.www.geekplus.com/hubfs/yuanimg.jpg);
+    width: 75px;
+    height: 71px;
+  }
+  .geek_bar.vertical {
+    height: 185px;
+    width: 10px;
+    margin: 0 auto;
+  }
+  .geek_bar.vertical .bar_blue {
+    width: 10px;
+    content: '';
+    height: 0;
+    left: 0;
+    bottom: 0;
+  }
+  .geek_bar.vertical .num {
+    left: 100%;
+    margin-left: -15px;
+    transition: all 0.5s ease-out;
+    display: flex;
+    align-items: center;
+    bottom: 0;
+    margin-bottom: -2px;
+  }
+  .geek_bar.vertical .num .icon {
+    margin-right: 8px;
+  }
+  .geek_parameter-block h4 {
+    font-size: 20px;
+    color: #009FEF;
+    font-weight: 700;
+  }
+  .geek_parameter-block.sm-block {
+    height: 120px;
+  }
+  .geek_bar.horizontal {
+    height: 10px;
+    top: 35px;
+    margin: 0px 30px 0;
+  }
+  .geek_bar {
+    background-color: #E5E5E5;
+    position: relative;
+  }
+  .geek_bar.horizontal .num {
+    display: flex;
+    flex-direction: column-reverse;
+    left: 0;
+    bottom: -4px;
+  }
+  .geek_parameter-block i, .geek_parameter-block em {
+    font-style: normal;
+  }
+  .geek_bar .num {
+    position: absolute;
+    color: #009FEF;
+    font-size: 16px;
+    transition: all 0.5s ease-out;
+    bottom: 0;
+  }
+  .geek_bar.horizontal .num .icon {
+    margin-top: 5px;
+    margin-left: -2px;
+  }
+  .geek_bar .num .icon {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-color: #009FEF;
+    border-radius: 50%;
+  }
+  .geek_bar.horizontal .num em {
+    position: relative;
+    font-weight: bold;
+  }
+  .geek_bar.horizontal .bar_blue {
+    height: 10px;
+    left: 0;
+    width: 0;
+  }
+  .geek_bar .bar_blue {
+    position: absolute;
+    background-color: #009FEF;
+    transition: all 0.5s ease-out;
+  }
+  .geek_parameter-block .text_blue {
+    font-weight: bold;
+    font-size: 20px;
+    color: #009FEF;
+    line-height: 24px;
+    height: 48px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .geek_robot-parameter-right .geek_parameter_left:last-child {
+    margin-right: 0px;
+  }
+  .geek_parameter-block dl {
+    padding: 0 12px;
+  }
+  .geek_parameter-block dd {
+    font-size: 14px;
+    color: #333;
+    padding: 14px 0;
+    font-weight: bold;
+    border-bottom: 1px solid #E5E5E5;
+  }
+  .geek_parameter-block dd:nth-of-type(1) {
+    padding-top: 0;
+  }
+  .geek_parameter-block dd i {
+    font-weight: normal;
+  }
+  .geek_parameter-block dd:last-child {
+    border: none;
+  }
+
+
+
+  
+  @media screen and (max-width: 1199px) {
+
+
+
+    div.widget_31426854493 .geek_image-content-right h3 {
+      font-size: 24px;
+    }
+    .widget_31426854493 .geek_parameter-block {
+      padding: 27px 7px 0;
+    }
+    div.widget_31426854493 .geek_robot-parameter {
+      padding-top: 70px;
+      padding-bottom: 0px;
+    }
+    .widget_31426854493 .geek_parameter-block dd {
+      font-size: 13px;
+    }
+    .geek_parameter-block .text_blue {
+      word-break: break-all;
+    }
+
+
+  }
+
+  @media screen and (max-width: 991px) {
+
+    div.widget_31426854493 .geek_robot-parameter {
+      padding-top: 50px;
+      padding-bottom: 0px;
+    }
+    div.widget_31426854493 .geek_robot-parameter-left {
+      flex: 0 0 100%;
+      max-width: 100%;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+    div.widget_31426854493 .geek_robot-parameter-right {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+
+
+  }
+
+  @media screen and (max-width: 767px) {
+
+    div.widget_31426854493 .geek_parameter_left {
+      width: 100%;
+      margin-right: 0px;
+    }
+    div.widget_31426854493 .geek_image-content-right h3 {
+      font-size: 20px;
+    }
+  }
+
+
+
+  .widget_31426854494 .spacer{
+        height:80px;
+    }
+  
+  @media(max-width:767px){
+    .widget_31426854494 .spacer{
+        height:30px;
+    } 
+    
+  }
+
+
+
+var _hsp = window._hsp = window._hsp || [];
+_hsp.push(['addPrivacyConsentListener', function(consent) { if (consent.allowed || (consent.categories && consent.categories.analytics)) {
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create','UA-112333841-1','auto');
+  ga('send','pageview');
+}}]);
+
+
+
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+
+if (!window._hsGoogleConsentRunOnce) {
+  window._hsGoogleConsentRunOnce = true;
+
+  gtag('consent', 'default', {
+    'ad_storage': 'denied',
+    'analytics_storage': 'denied'
+  });
+
+  var _hsp = window._hsp = window._hsp || [];
+
+  _hsp.push(['addPrivacyConsentListener', function(consent){
+    var hasAnalyticsConsent = consent && (consent.allowed || (consent.categories && consent.categories.analytics));
+    var hasAdsConsent = consent && (consent.allowed || (consent.categories && consent.categories.advertisement));
+
+    gtag('consent', 'update', {
+      'ad_storage': hasAdsConsent ? 'granted' : 'denied',
+      'analytics_storage': hasAnalyticsConsent ? 'granted' : 'denied'
+    });
+  }]);
+}
+
+gtag('js', new Date());
+gtag('set', 'developer_id.dZTQ1Zm', true);
+gtag('config', 'G-KY9L2DX70B');
+
+
+
+
+
+var _hsp = window._hsp = window._hsp || [];
+
+var hsLoadGtm = function loadGtm() {
+    if(window._hsGtmLoadOnce) {
+      return;
+    }
+
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-P9R4HZ2');
+
+    window._hsGtmLoadOnce = true;
+};
+
+var useGoogleConsentMode = false;
+
+if (!useGoogleConsentMode){
+    _hsp.push(['addPrivacyConsentListener', function(consent){
+      if(consent.allowed || (consent.categories && consent.categories.analytics)){
+        hsLoadGtm();
+      }
+  }]);
+} else{
+    if(!window._hsGoogleConsentRunOnce){
+      window._hsGoogleConsentRunOnce=true;
+
+      window.dataLayer=window.dataLayer||[];
+      function gtag(){dataLayer.push(arguments);}
+
+      gtag('consent','default',{
+        'ad_storage':'denied',
+        'analytics_storage':'denied'
+      });
+
+      gtag('set','developer_id.dZTQ1Zm',true);
+
+      _hsp.push(['addPrivacyConsentListener',function(consent){
+      var hasAnalyticsConsent=consent&&(consent.allowed||(consent.categories&&consent.categories.analytics));
+      var hasAdsConsent=consent&&(consent.allowed||(consent.categories&&consent.categories.advertisement));
+
+      gtag('consent','update',{
+        'ad_storage':hasAdsConsent?'granted':'denied',
+        'analytics_storage':hasAnalyticsConsent?'granted':'denied'
+      });
+    }]);
+  }
+
+  hsLoadGtm();
+}
+
+
+
+
+
+
+!function(){window.analytics||(window.analytics=[]),window.analytics.methods=["identify","track","trackLink","trackForm","trackClick","trackSubmit","page","pageview","ab","alias","ready","group","on","once","off"],window.analytics.factory=function(a){return function(){var t=Array.prototype.slice.call(arguments);return t.unshift(a),window.analytics.push(t),window.analytics}};for(var a=0;a<window.analytics.methods.length;a++){var t=window.analytics.methods[a];window.analytics[t]=window.analytics.factory(t)}analytics.load=function(a){if(!document.getElementById("dreamdata-analytics")){window.a=window.analytics;var t=document.createElement("script");t.async=!0,t.id="dreamdata-analytics",t.type="text/javascript",t.src="https://cdn.dreamdata.cloud/scripts/analytics/v1/dreamdata.min.js";var n=function(){if(analytics&&analytics.initialize)for(analytics.initialize({"Dreamdata.io":{apiKey:a}});window.a.length>0;){var t=window.a.shift(),n=t.shift();analytics[n]&&analytics[n].apply(analytics,t)}};t.addEventListener?t.addEventListener("load",function(){n()},!1):t.onreadystatechange=function(){"complete"!=this.readyState&&"loaded"!=this.readyState||n()};var i=document.getElementsByTagName("script")[0];i.parentNode.insertBefore(t,i)}},analytics.load("48463ff1-067f-482d-896e-fdc77f72e77f"),analytics.page()}();
+
+
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?39cdd0017f43cf7d1b6e3b38e549d281";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+
+
+
+
+
+
+
+
+
+
+
+
+
+{"@context":"https://schema.org/",
+"@type":"WebPage","mainEntityOfPage":{
+"@type":"WebPage","@id":"https://www.geekplus.com/robot/p-robot"},
+"url":"https://www.geekplus.com/robot/p-robot",
+"headline":"P Series Picking Robots",
+"image":{"@type":"ImageObject",
+"url":"https://www.geekplus.com/hs-fs/hubfs/Geek%20Plus%20Images%202020/logo.png",
+"width":696,"height":"378"},
+"description":"Geek+ P-series picking robots can reduce manual labor by 50-70% and increase picking accuracy to 99.99%, overall maximising warehouse productivity."}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+选择另一个国家或地区以查看特定于您的位置的内容。
+
+
+
+
+選擇語言
+中文
+英語
+日本
+
+
+
+繼續
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Technology
+
+Robotics
+
+P Series
+X Series
+RS Series
+S Series
+M Series
+
+Software
+
+Product
+
+Goods-to-person
+RoboShuttle
+Four-way Shuttle Solution
+Moving
+Sorting
+Smart Warehouse
+Smart Factory
+
+Industries
+
+Apparel
+E-commerce
+Retail
+3PL
+Pharmaceutical
+Manufacturing
+Automotive
+
+Support
+Company
+
+About us 
+Cases
+News
+Sustainability
+Partnership
+Career
+Robotics Blog
+Brochures & Flyers
+
+Contact us
+
+
+
+
+
+
+
+
+
+
+中文
+English
+日本語
+한국어
+Deutsch
+Español
+Français
+繁體中文
+
+
+
+
+
+
+
+
+
+Technology
+
+Robotics
+
+P Series
+X Series
+RS Series
+S Series
+M Series
+
+Software
+
+Product
+
+Goods-to-person
+RoboShuttle
+Four-way Shuttle Solution
+Moving
+Sorting
+Smart Warehouse
+Smart Factory
+
+Industries
+
+Apparel
+E-commerce
+Retail
+3PL
+Pharmaceutical
+Manufacturing
+Automotive
+
+Support
+Company
+
+About us 
+Cases
+News
+Sustainability
+Partnership
+Career
+Robotics Blog
+Brochures & Flyers
+
+Contact us
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.geek_header-menu ul li.hs-menu-depth-1:last-child > a{
+  background: #389fef;
+  border-radius: 45px;
+  padding: 10px;
+  margin-top: 11px;
+  color: white;
+  font-size: 14px;
+}
+.mm-listview>li:last-child:after{
+  display: none;
+}
+.mm-listview li.hs-menu-depth-1:last-child > a{
+  background: #389fef;
+  border-radius: 45px;
+  padding: 10px;
+  margin-top: 11px;
+  color: white;
+  font-size: 14px;
+  max-width: 180px;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Goods-to-Person Picking
+High Throughput • Flexibility • Safety
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Fast ROI
+
+
+ROI in less than 3 years
+Lower investment compared to traditional automation equipment
+
+
+
+
+High Efficiency
+
+
+3 x efficiency of manual labor
+Accuracy up to 99.99%
+
+
+
+
+Increased Automation
+
+
+Reduces labor by 50%- 70%
+Lowers labor intensity
+
+
+
+
+High Flexibility
+
+
+Flexible addition or removal of robots
+Customizable solutions for multiple industries
+
+
+
+
+More Safety
+
+
+Patented security solutions that meet CE standards ensure safe human-robot interaction
+System has high fault tolerance
+
+
+
+
+Rapid Deployment
+
+
+Full system deployed within 3 months
+Deployment can be as fast as 2 weeks
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Maximum Lifting Load
+
+
+
+
+10%
+
+40kg
+
+
+
+
+
+
+
+Maximum No Load Speed
+
+2.5m/s
+
+
+
+
+
+Maximum Full Load Speed
+
+2.5m/s
+
+
+
+
+
+
+
+
+
+Maximum Tote Size
+600*400mm
+
+
+Maximum Lifting Height
+700mm
+
+
+
+
+
+
+
+
+Length：640mm
+Width：440mm
+Height：295~700mm
+Weight：50kg
+Minimum Lifting Time：4s
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Maximum Lifting Load
+
+
+
+
+30%
+
+600kg
+
+
+
+
+
+
+
+Maximum No-Load Speed
+
+2m/s
+
+
+
+
+
+Maximum Full-Load Speed
+
+1.6m/s
+
+
+
+
+
+
+
+
+
+Maximum Shelf Size 
+880*880mm
+
+
+Maximum Lifting Height
+60mm
+
+
+
+
+
+
+
+
+Length：950mm
+Width：702mm
+Height：275mm
+Weight：170kg
+Minimum Lifting Time：4s
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Maximum Lifting Load
+
+
+
+
+50%
+
+1000kg
+
+
+
+
+
+
+
+Maximum No-Load Speed
+
+2m/s
+
+
+
+
+
+Maximum Full-Load Speed
+
+1.6m/s
+
+
+
+
+
+
+
+
+
+Maximum Shelf Size
+1220*1020mm
+
+
+Maximum Lifting Height
+60mm
+
+
+
+
+
+
+
+
+Length：1090mm
+Width：830mm
+Height：275mm
+Weight：195kg
+Minimum Lifting Time：4s
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Maximum Lifting Load
+
+
+
+
+60%
+
+1200kg
+
+
+
+
+
+
+
+Maximum No-Load Speed
+
+1.5m/s
+
+
+
+
+
+Maximum Full-Load Speed
+
+1.2m/s
+
+
+
+
+
+
+
+
+
+Maximum Shelf Size
+1346*1260*3830mm
+
+
+Maximum Lifting Height
+60mm
+
+
+
+
+
+
+
+
+Length：1325mm
+Width：1020mm
+Height：275mm
+Weight：320kg
+Minimum Lifting Time：4s
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Contact us
+
+
+
+
+
+
+
+
+
+
+
+
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P9R4HZ2');
+China: +86 4000 450 010
+APAC: +852 3462 2128
+Europe: +49 211 53829033
+Japan: +81 0476 37 7509
+America: +1 404 406 3961Sales: sales@geekplus.comPR:  pr@geekplus.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Disclaimer
+Privacy Policy
+
+
+
+
+              COPYRIGHT © 2022 Geekplus Technology Co., Ltd.
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(function () {
+    window.addEventListener('load', function () {
+        setTimeout(function () {
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', '/_hcms/perf', true /*async*/);
+            xhr.setRequestHeader("Content-type", "application/json");
+            xhr.onreadystatechange = function () {
+                // do nothing.
+            };
+            var connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+            function populateNetworkInfo(name, connection, info) {
+                if (name in connection) {
+                    info[name] = connection[name];
+                }
+            }
+            var networkInfo = {};
+            if (connection) {
+                ['type', 'effectiveType', 'downlink', 'rtt'].forEach(function(name) {
+                    populateNetworkInfo(name, connection, networkInfo);
+                });
+            }
+            var perfData = {
+                url: location.href,
+                portal: 5868638,
+                content: 31427214719,
+                group: -1,
+                connection: networkInfo,
+                timing: performance.timing
+            };
+            xhr.send(JSON.stringify(perfData));
+        }, 3000);  // Execute this 3 seconds after onload.
+    });
+})();
+
+
+
+var hsVars = hsVars || {}; hsVars['language'] = 'en';
+
+
+
+
+
+
+
+      
+
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      if(document.querySelector(this.getAttribute('href'))){
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+
+
+
+
+
+
+
+        var options = {
+            portalId: '5868638',
+            formId: '6e5982c1-3ab0-45b8-abdf-4c57ab606a47',
+            formInstanceId: '6128',
+            pageId: '31427214719',
+            region: 'na1',
+            
+            
+            
+            
+            pageName: "P Series Picking Robots",
+            
+            
+            redirectUrl: "https:\/\/source.blog.geekplus.com\/en-us\/thankyou",
+            
+            
+            
+            
+            
+            css: '',
+            target: '#hs_form_target_form_170017021',
+            
+            
+            
+            
+            
+            contentType: "standard-page",
+            
+            
+            
+            formsBaseUrl: '/_hcms/forms/',
+            
+            
+            
+            formData: {
+                cssClass: 'hs-form stacked hs-custom-form'
+            }
+        };
+
+        options.getExtraMetaDataBeforeSubmit = function() {
+            var metadata = {};
+            
+
+            if (hbspt.targetedContentMetadata) {
+                var count = hbspt.targetedContentMetadata.length;
+                var targetedContentData = [];
+                for (var i = 0; i < count; i++) {
+                    var tc = hbspt.targetedContentMetadata[i];
+                     if ( tc.length !== 3) {
+                        continue;
+                     }
+                     targetedContentData.push({
+                        definitionId: tc[0],
+                        criterionId: tc[1],
+                        smartTypeId: tc[2]
+                     });
+                }
+                metadata["targetedContentMetadata"] = JSON.stringify(targetedContentData);
+            }
+
+            return metadata;
+        };
+
+        hbspt.forms.create(options);
+    
+
+
+var _hsq = _hsq || [];
+_hsq.push(["setContentType", "standard-page"]);
+_hsq.push(["setCanonicalUrl", "https:\/\/source.www.geekplus.com\/robot\/p-robot"]);
+_hsq.push(["setPageId", "31427214719"]);
+_hsq.push(["setContentMetadata", {
+    "contentPageId": 31427214719,
+    "legacyPageId": "31427214719",
+    "contentFolderId": null,
+    "contentGroupId": null,
+    "abTestId": null,
+    "languageVariantId": 31427214719,
+    "languageCode": "en",
+    
+}]);
+
+
+
+
+var hsVars = {
+    ticks: 1681958772979,
+    page_id: 31427214719,
+    
+    content_group_id: 0,
+    portal_id: 5868638,
+    app_hs_base_url: "https://app.hubspot.com",
+    cp_hs_base_url: "https://cp.hubspot.com",
+    language: "en",
+    analytics_page_type: "standard-page",
+    analytics_page_id: "31427214719",
+    category_id: 1,
+    folder_id: 0,
+    is_hubspot_user: false
+}
+
+
+

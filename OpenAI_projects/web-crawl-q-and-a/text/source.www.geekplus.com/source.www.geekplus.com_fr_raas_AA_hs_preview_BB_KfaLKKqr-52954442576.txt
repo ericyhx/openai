@@ -1,0 +1,2254 @@
+
+
+
+
+
+
+RaaS 
+
+
+hsjQuery = window['jQuery'];
+
+
+
+
+
+a.cta_button{-moz-box-sizing:content-box !important;-webkit-box-sizing:content-box !important;box-sizing:content-box !important;vertical-align:middle}.hs-breadcrumb-menu{list-style-type:none;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px}.hs-breadcrumb-menu-item{float:left;padding:10px 0px 10px 10px}.hs-breadcrumb-menu-divider:before{content:'›';padding-left:10px}.hs-featured-image-link{border:0}.hs-featured-image{float:right;margin:0 0 20px 20px;max-width:50%}@media (max-width: 568px){.hs-featured-image{float:none;margin:0;width:100%;max-width:100%}}.hs-screen-reader-text{clip:rect(1px, 1px, 1px, 1px);height:1px;overflow:hidden;position:absolute !important;width:1px}
+
+
+
+
+
+
+  .widget_31428388766 .container-fluid {
+    max-width: 95% !important;
+    margin: 0 auto !important;
+    float: none !important;
+    padding: 0 15px;
+    width: 100%;
+  }
+
+  
+  .widget_31428388766 .Banner_contact.left{ text-align:left;}
+  .widget_31428388766 .Banner_contact.right{ text-align:right;}
+  .widget_31428388766 .Banner_contact.center{ text-align:center;}
+
+  .widget_31428388766 .uppercase{
+    text-transform: uppercase;
+  }
+  .widget_31428388766 .vimeo-wrapper video {
+    position: absolute;
+    z-index: -100;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    background-size: cover;
+    overflow: hidden;
+    opacity: 1;
+    transition: 2s opacity;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  .widget_31428388766 .explore {
+    position: absolute;
+    bottom: 22px;
+    font-size: 16px;
+    left: 50%;
+    color: #FFF;
+    transform: translateX(-50%);
+    z-index: 1990;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    text-align: center;
+  }
+  .widget_31428388766 .explore span {
+    color: #fff;
+    display: block;
+  }
+  .widget_31428388766 .explore i.icon {
+    margin: 5px auto 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 9px 0 9px;
+    border-color: #FFF transparent transparent transparent;
+    animation: pulse 2s infinite;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .widget_31428388766 .defaut{
+    text-transform: inherit;
+  }
+  .widget_31428388766 .capitalize{
+    text-transform: capitalize;
+  }
+  .widget_31428388766 .Banner_contact h1{ 
+    color:#ffffff;
+    font-size:100px;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 22px;
+  }
+  .widget_31428388766 .Banner_contact h4 { 
+    color: rgba(255, 255, 255, 1.0);
+    font-size: 32px;
+    line-height: 1.5;
+  }
+  .widget_31428388766 .Banner_contact .geek_banner-desc p { 
+    color:#ffffff;
+    font-size:12px;
+  }
+
+
+  .banner_section {
+    width: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 135px;
+    padding-bottom:  135px;
+  }
+  @keyframes pulse {
+    0% {
+      -webkit-transform: translate(0, 0);
+      transform: translate(0, 0);
+    }
+    50% {
+      -webkit-transform: translate(0, 10px);
+      transform: translate(0, 10px);
+    }
+    100% {
+      -webkit-transform: translate(0, 0);
+      transform: translate(0, 0);
+    }
+  }
+
+  .conatiner_wrap {
+    /*position: absolute;*/
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+  .widget_31428388766 .overlay{
+    background-color: #011031;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .vimeo-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*height:calc(100vh - 0px);*/
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+    overflow: hidden;
+  }
+  .vimeo-wrapper iframe {
+    width: 100vw;
+    height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+    min-height: 100vh;
+    min-width: 177.77vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .image_Section{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*height:calc(100vh - 0px); */
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+  }
+  .widget_31428388766 .banner_section .img-overlay{
+    background-color: #141724;
+    opacity: 0.0; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+  }
+  .widget_31428388766 .Banner_contact ul li a {
+    display: inline-block;
+    height: 50px;
+    line-height: 48px;
+    margin: 0;
+    padding: 0 30px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 5px;
+    border:2px solid #ffffff;   
+    text-decoration: none;
+    border-radius:5px; 
+  }
+  .widget_31428388766 .Banner_contact ul li a:hover{
+    background-color: #FF0201 !important;
+    color:#ffffff;
+    border:2px solid #FF0201 !important; 
+  }
+  .gareer_mail {
+    position: relative;
+    text-align: center;
+    padding: 25px 0;
+  }
+  .gareer_mail a {
+    padding: 0 10px;
+    color: #333;
+    z-index: 2;
+    position: relative;
+    background: #fff;
+  }
+  .gareer_mail:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    left: 0;
+    border-bottom: 1px solid #C9C9C9;
+    z-index: 1;
+  }
+
+  
+
+  @media screen and (max-width: 1199px) {
+
+    div.widget_31428388766 .Banner_contact h1 {
+      font-size: 42px;
+    }
+
+
+  }
+
+  @media screen and (max-width: 991px) {
+
+    div.widget_31428388766 .Banner_contact h1 {
+      font-size: 32px;
+    }
+    div.widget_31428388766 .Banner_contact p {
+      font-size: 22px;
+    }
+
+  }
+
+
+  @media screen and (max-width: 767px) {
+    .Banner_contact h1 br {
+      display: none;
+    }
+    div.widget_31428388766 .geek_banner-desc p {
+      display: inline;
+    }
+
+    
+    .widget_31428388766 .banner_section {
+      background-image: url(https://source.www.geekplus.com/hubfs/Geek%20Plus%20Images%202020/%E5%A4%B4%E5%9B%BE750x450-RaaS2.jpg) !important; 
+    }
+    
+
+
+  }
+
+
+  @media screen and (max-width: 639px) {
+
+    div.widget_31428388766 .Banner_contact h1 {
+      font-size: 28px;
+    }
+    .widget_31428388766 .banner_section {
+      padding-top: 105px;
+      padding-bottom: 100px;
+    }
+    div.widget_31428388766 .Banner_contact h4 {
+      font-size: 16px;
+    }
+
+
+  }
+
+
+  @media screen and (max-width: 359px) {
+
+    div.widget_31428388766 .Banner_contact h1 {
+      margin-bottom: 7px;
+      line-height: 1.5;
+    }
+
+
+  }
+
+
+
+
+
+
+  
+  .widget_31428388767 {
+    padding-top: 75px;
+    padding-bottom: 75px;
+    background: rgba(255, 255, 255, 1.0);
+    overflow: hidden;
+  }
+  
+
+  .widget_31428388767 .geek_imageText-row {
+    margin: 0 -15px;
+  }
+
+  
+  .widget_31428388767 .geek_imageText-left, .widget_31428388767 .geek_imageText-right {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 15px;
+  }
+
+  
+
+  
+  .widget_31428388767 .geek_imageText-right {
+    order: -1;
+  }
+  
+
+  
+  .widget_31428388767 .geek_imageText-left {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 15px;
+  }
+  
+
+  
+
+  .widget_31428388767 .container {
+    max-width: px !important;
+    margin: 0 auto !important;
+  }
+
+  .widget_31428388767 .container-fluid {
+    max-width: % !important;
+    margin: 0 auto !important;
+  }
+  .widget_31428388767 .geek_imageText-row {
+    align-items: flex-start;
+  }
+  .widget_31428388767 .enate_rich-text {
+    text-align: center;
+    width: 100%;
+  }
+
+  
+  .widget_31428388767 .enate_rich-text {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  
+
+
+
+  .widget_31428388767 .geek_imageText-right {
+    text-align: center; 
+  }
+  .widget_31428388767 .enate_rich-text h1 {
+    font-size: 30px;
+    color: rgba(111, 114, 125, 1.0);
+    padding-bottom: 0.5rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  .widget_31428388767 .enate_rich-text h2 {
+    font-size: 34px;
+    color: rgba(43, 44, 50, 1.0);
+    padding-bottom: 0.5rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  .widget_31428388767 .enate_rich-text h3 {
+    font-size: 24px;
+    color: rgba(111, 114, 125, 1.0);
+    padding-bottom: 0.5rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  .widget_31428388767 .enate_rich-text h4 {
+    font-size: 20px;
+    color: rgba(111, 114, 125, 1.0);
+    padding-bottom: 0.5rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  .widget_31428388767 .enate_rich-text h5 {
+    font-size: 18px;
+    color: rgba(111, 114, 125, 1.0);
+    padding-bottom: 0.5rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  .widget_31428388767 .enate_rich-text h6 {
+    font-size: 16px;
+    color: rgba(111, 114, 125, 1.0);
+    padding-bottom: 0.5rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  .widget_31428388767 .enate_rich-text p {
+    font-size: 16px;
+    color: rgba(51, 51, 51, 1.0);
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+  }
+  .widget_31428388767 .enate_rich-text p:last-child {
+    margin-bottom: 0px; 
+  }
+
+  
+
+  .widget_31428388767 .geek_imageText-right img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: px;
+  }
+
+  .widget_31428388767 ul li {
+    color: rgba(111, 114, 125, 1.0);
+    margin-bottom: 10px;
+    margin-left: 0;
+    position: relative;
+    font-size: 16px;
+    line-height: 1.5;
+    flex: 0 0 45%;
+    max-width: 45%;
+    list-style: inside;
+  }
+
+  
+
+  
+
+  .widget_31428388767 .geek_imageText-right {
+    margin-bottom: 40px;
+  }
+
+  
+
+  
+
+
+  
+
+  
+  .widget_31428388767 ul li {
+    flex: 0 0 45%;
+    max-width: 45%;
+  }
+
+  
+
+  .widget_31428388767 ul li a {
+    color: inherit; 
+  }
+  .widget_31428388767 ul {
+    list-style: inherit;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .widget_31428388767 .geek_imageText-right p {
+    font-size: 12px;
+  }
+
+
+  
+
+  @media screen and (max-width: 991px) {
+    div.widget_31428388767 .container-fluid {
+      max-width: 100% !important;
+    }
+    div.widget_31428388767 .enate_rich-text {
+      width: 100%;
+    }
+    div.widget_31428388767 {
+      padding-top: 35px;
+      padding-bottom: 35px;
+    }
+    div.widget_31428388767 .enate_rich-text h2 {
+      font-size: 32px;
+    }
+    div.widget_31428388767 .enate_rich-text h3 {
+      font-size: 24px;
+    }
+    div.widget_31428388767 .enate_rich-text p {
+      font-size: 18px;
+    }
+    div.widget_31428388767 .geek_imageText-left, div.widget_31428388767 .geek_imageText-right {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    div.widget_31428388767 .geek_imageText-right {
+      order: inherit;
+      padding-top: 20px;
+    }
+
+    
+
+    
+
+    .widget_31428388767 .geek_imageText-right {
+      margin-bottom: 0;
+    }
+
+    
+
+    
+
+        
+
+    div.widget_31428388767 .geek_imageText-right img {
+      margin-top: 0;
+    }
+
+  }
+
+  @media screen and (max-width: 767px) {
+
+    div.widget_31428388767 .enate_rich-text h2 {
+      font-size: 22px;
+    }
+    div.widget_31428388767 .enate_rich-text h3 {
+      font-size: 20px;
+    }
+
+  }
+
+  @media screen and (max-width: 479px) {
+
+    div.widget_31428388767 ul li {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }    
+    div.widget_31428388767 .enate_rich-text h2 {
+      font-size: 20px;
+    }
+    div.widget_31428388767 .enate_rich-text h3 {
+      font-size: 19px;
+    }
+
+  }
+
+
+
+
+
+
+  .rass_solution_grid ul {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+  .rass_solution_grid ul li:nth-of-type(1) {
+    width: 30%;
+  }
+  .rass_solution_grid ul li {
+    flex-shrink: 0;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .rass_solution_grid .top_ul li h3 {
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 34px;
+  }
+  .rass_solution_grid ul li>p {
+    line-height: 1.5;
+    height: 120px;
+    text-align: center;
+  }
+  .rass_solution_grid ul dl {
+    justify-content: center;
+  }
+  .rass_solution_grid dl dd {
+    text-align: center;
+  }
+  .rass_solution_grid dl p {
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+  }
+  .rass_solution_grid dl .icon {
+    padding: 0 10px;
+    display: flex;
+    align-items: flex-end;
+  }
+  .rass_solution_grid ul li:nth-of-type(2) {
+    width: 33%;
+  }
+
+
+  
+
+  @media screen and (max-width: 1199px) {
+
+    div.rass_solution_grid ul li:nth-of-type(1) {
+      width: 40%;
+    }
+    div.rass_solution_grid ul li:nth-of-type(2) {
+      width: 40%;
+    }
+
+  }
+
+  @media screen and (max-width: 991px) {
+
+    div.rass_solution_grid ul li {
+      padding-right: 15px;
+      padding-left: 15px;
+      width: 50% !important;
+    }
+    div.rass_solution_grid .top_ul li h3 {
+      font-size: 26px;
+    }
+
+  }
+
+  @media screen and (max-width: 649px) {
+
+    div.rass_solution_grid ul li {
+      width: 100% !important;
+      margin-bottom: 45px;
+    }
+    div.rass_solution_grid ul li:last-child {
+      margin-bottom: 0;
+    }
+    div.rass_solution_grid ul li>p {
+      height: auto;
+      margin-bottom: 30px;
+    }
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+  .rass_fact {
+    padding: 70px 0 30px;
+  }
+  .rass_fact .left {
+    flex: 0 0 65%;
+    max-width: 65%;
+    padding: 0 15px;
+    position: relative;
+  }
+  .rass_fact .right {
+    flex: 0 0 35%;
+    max-width: 35%;
+    padding: 0 15px;
+  }
+  .rass_fact .left li {
+    position: absolute;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3Cpath fill='%2341a0e9' d='M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z'/%3E%3C/svg%3E");
+    z-index: 1990;
+    width: 17px;
+    height: 23px;
+    text-indent: -200px;
+    overflow: hidden;
+  }
+  .rass_fact .left li:nth-of-type(1) {
+    right: 279px;
+    top: 473px;
+  }
+  .rass_fact .left li:nth-of-type(2) {
+    right: 262px;
+    top: 478px;
+  }
+  .rass_fact .left li:nth-of-type(3) {
+    right: 426px;
+    top: 350px;
+  }
+  .rass_fact .left li:nth-of-type(4) {
+    right: 191px;
+    top: 371px;
+  }
+  .rass_fact .left li:nth-of-type(5) {
+    right: 233px;
+    top: 219px;
+  }
+  .rass_fact .left li:nth-of-type(6) {
+    right: 335px;
+    top: 309px;
+  }
+  .rass_fact .left li:nth-of-type(7) {
+    right: 284px;
+    top: 359px;
+  }
+  .rass_fact .left li:nth-of-type(8) {
+    right: 190px;
+    top: 336px;
+  }
+  .rass_fact .left li:nth-of-type(9) {
+    right: 225px;
+    top: 298px;
+  }
+  .rass_fact .left li:nth-of-type(10) {
+    right: 264px;
+    top: 357px;
+  }
+  .rass_fact .left li:hover, .rass_fact .left li.act {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3Cpath fill='%23fb4828' d='M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z'/%3E%3C/svg%3E");
+  }
+  .rass_fact .right img {
+    margin: 35px 0 10px;
+    width: 100%;
+  }
+  .tab_fac_img h5 {
+    margin-bottom: 12px;
+  }
+
+
+  
+
+  @media screen and (max-width: 1199px) {
+
+
+  }
+
+  @media screen and (max-width: 991px) {
+
+    div.rass_fact .left {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    div.rass_fact .right {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+
+  }  
+
+  @media screen and (max-width: 767px) {
+
+    div.rass_fact .left {
+      display: none; 
+    }
+    .widget_31428388769 .rass_fact {
+      padding: 32px 0 45px;
+    }
+
+
+  }  
+
+
+
+
+
+
+  
+  .widget_31428388770 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background: rgba(255, 255, 255, 1.0);
+    overflow: hidden;
+  }
+  
+
+  .widget_31428388770 .geek_imageText-row {
+    margin: 0 -15px;
+  }
+
+  
+  .widget_31428388770 .geek_imageText-left, .widget_31428388770 .geek_imageText-right {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 15px;
+  }
+
+  
+
+  
+  .widget_31428388770 .geek_imageText-right {
+    order: -1;
+  }
+  
+
+  
+
+  
+  .widget_31428388770 .geek_imageText-right {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 15px;
+  }
+  
+
+  .widget_31428388770 .container {
+    max-width: px !important;
+    margin: 0 auto !important;
+  }
+
+  .widget_31428388770 .container-fluid {
+    max-width: % !important;
+    margin: 0 auto !important;
+  }
+  .widget_31428388770 .geek_imageText-row {
+    align-items: flex-start;
+  }
+  .widget_31428388770 .enate_rich-text {
+    text-align: center;
+    width: 100%;
+  }
+
+  
+  .widget_31428388770 .enate_rich-text {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  
+
+
+
+  .widget_31428388770 .geek_imageText-right {
+    text-align: center; 
+  }
+  .widget_31428388770 .enate_rich-text h1 {
+    font-size: 30px;
+    color: rgba(111, 114, 125, 1.0);
+    padding-bottom: 0.5rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  .widget_31428388770 .enate_rich-text h2 {
+    font-size: 28px;
+    color: rgba(111, 114, 125, 1.0);
+    padding-bottom: 0.5rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  .widget_31428388770 .enate_rich-text h3 {
+    font-size: 24px;
+    color: rgba(111, 114, 125, 1.0);
+    padding-bottom: 0.5rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  .widget_31428388770 .enate_rich-text h4 {
+    font-size: 20px;
+    color: rgba(111, 114, 125, 1.0);
+    padding-bottom: 0.5rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  .widget_31428388770 .enate_rich-text h5 {
+    font-size: 18px;
+    color: rgba(111, 114, 125, 1.0);
+    padding-bottom: 0.5rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  .widget_31428388770 .enate_rich-text h6 {
+    font-size: 16px;
+    color: rgba(111, 114, 125, 1.0);
+    padding-bottom: 0.5rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  .widget_31428388770 .enate_rich-text p {
+    font-size: 14px;
+    color: rgba(111, 114, 125, 1.0);
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+  }
+  .widget_31428388770 .enate_rich-text p:last-child {
+    margin-bottom: 0px; 
+  }
+
+  
+
+  .widget_31428388770 .geek_imageText-right img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: px;
+  }
+
+  .widget_31428388770 ul li {
+    color: rgba(111, 114, 125, 1.0);
+    margin-bottom: 10px;
+    margin-left: 0;
+    position: relative;
+    font-size: 14px;
+    line-height: 1.5;
+    flex: 0 0 45%;
+    max-width: 45%;
+    list-style: inside;
+  }
+
+  
+
+  
+
+  .widget_31428388770 .geek_imageText-right {
+    margin-bottom: 40px;
+  }
+
+  
+
+  
+
+  .widget_31428388770 .geek_imageText-right {
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .widget_31428388770 .geek_imageText-right {
+    margin-bottom: 0;
+  }
+
+  
+
+
+  
+
+  
+  .widget_31428388770 ul li {
+    flex: 0 0 45%;
+    max-width: 45%;
+  }
+
+  
+
+  .widget_31428388770 ul li a {
+    color: inherit; 
+  }
+  .widget_31428388770 ul {
+    list-style: inherit;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .widget_31428388770 .geek_imageText-right p {
+    font-size: 12px;
+  }
+
+
+  
+
+  @media screen and (max-width: 991px) {
+    div.widget_31428388770 .container-fluid {
+      max-width: 100% !important;
+    }
+    div.widget_31428388770 .enate_rich-text {
+      width: 100%;
+    }
+    div.widget_31428388770 {
+      padding-top: 35px;
+      padding-bottom: 35px;
+    }
+    div.widget_31428388770 .enate_rich-text h2 {
+      font-size: 32px;
+    }
+    div.widget_31428388770 .enate_rich-text h3 {
+      font-size: 24px;
+    }
+    div.widget_31428388770 .enate_rich-text p {
+      font-size: 18px;
+    }
+    div.widget_31428388770 .geek_imageText-left, div.widget_31428388770 .geek_imageText-right {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    div.widget_31428388770 .geek_imageText-right {
+      order: inherit;
+      padding-top: 20px;
+    }
+
+    
+
+    
+
+    .widget_31428388770 .geek_imageText-right {
+      margin-bottom: 0;
+    }
+
+    
+
+    
+
+    div.widget_31428388770 .geek_imageText-right {
+      padding-top: 0;
+    }
+    div.widget_31428388770 {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    
+
+        
+
+    div.widget_31428388770 .geek_imageText-right img {
+      margin-top: 0;
+    }
+
+  }
+
+  @media screen and (max-width: 767px) {
+
+    div.widget_31428388770 .enate_rich-text h2 {
+      font-size: 22px;
+    }
+    div.widget_31428388770 .enate_rich-text h3 {
+      font-size: 20px;
+    }
+
+  }
+
+  @media screen and (max-width: 479px) {
+
+    div.widget_31428388770 ul li {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }    
+    div.widget_31428388770 .enate_rich-text h2 {
+      font-size: 20px;
+    }
+    div.widget_31428388770 .enate_rich-text h3 {
+      font-size: 19px;
+    }
+
+  }
+
+
+
+
+
+
+  .widget_31428388771 .title {
+    margin: 50px 0;
+  }
+  .main-rass .rass_adv h2 {
+    text-align: center;
+    font-weight: normal;
+    color: #333;
+    font-size: 34px;
+  }
+  .rass_adv ul {
+    justify-content: space-between;
+  }
+  .rass_adv h3 .icon {
+    margin-left: 10px;
+    margin-bottom: 5px;
+    font-style: normal;
+  }
+  .rass_adv h3 span {
+    font-weight: normal;
+    font-size: 18px;
+    display: inline-block;
+    color: #333;
+    vertical-align: middle;
+  }
+  .rass_adv ul p.d-flex {
+    align-items: flex-end;
+    font-size: 32px;
+    color: #333;
+    line-height: 1;
+  }
+  .rass_adv ul h3 {
+    line-height: 1;
+  }
+  .rass_adv-desc ul {
+    list-style: inherit;
+    margin-left: 17px;
+  }
+  .rass_adv-desc ul li {
+    list-style: disc;
+    margin-bottom: 5px;
+  }
+  .rass_adv > ul > li {
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding: 0 15px 30px;
+  }
+
+
+  
+
+  @media screen and (max-width: 1199px) {
+
+    div.rass_adv ul p.d-flex {
+      font-size: 26px;
+    }
+    div.rass_adv h3 span {
+      font-size: 16px;
+      line-height: normal;
+    }
+    div.main-rass .rass_adv h2 {
+      font-size: 30px;
+    }
+    div.rass_adv ul p.d-flex img {
+      height: 30px;
+    }
+
+
+
+
+  }
+
+  @media screen and (max-width: 991px) {
+
+    div.rass_adv > ul > li {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+
+
+  }
+
+  @media screen and (max-width: 639px) {
+
+    div.rass_adv ul p.d-flex {
+      font-size: 24px;
+    }
+    div.main-rass .rass_adv h2 {
+      font-size: 24px;
+      margin: 0px;
+    }
+
+
+
+  }
+
+  @media screen and (max-width: 479px) {
+
+    div.rass_adv > ul > li {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+
+
+  }
+
+
+
+
+
+
+  .ress_application .title {
+    margin: 55px 0 20px;
+    text-align: center;
+  }
+  .ress_application .title h2 {
+    text-align: center;
+    font-weight: normal;
+    color: #333;
+    font-size: 34px;
+  }
+  .title .sub {
+    padding-top: 8px;
+    line-height: 1.5;
+  }
+  .ress_application .left, .ress_application .right {
+    width: 48%;
+  }
+  .ress_application .left {
+    margin-right: 4%;
+  }
+  .ress_application ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 10px;
+  }
+  .ress_application ul li {
+    width: 30%;
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: initial;
+  }
+  .ress_application {
+    margin-bottom: 40px;
+  }
+
+
+  
+
+  @media screen and (max-width: 1199px) {
+
+    div.ress_application .title h2 {
+      font-size: 30px;
+    }
+
+
+  }
+
+  @media screen and (max-width: 640px) {
+
+    div.ress_application .left, div.ress_application .right {
+      width: 100%;
+      margin: 0;
+    }
+    div.ress_application ul li {
+      width: 33%;
+    }
+
+
+  }
+
+
+
+
+
+
+  .widget_31428388773 iframe {
+    border: none;
+    border-radius: 10px;
+  }
+  .widget_31428388773 .hs-oembed__starter, .widget_31428388773 .hs-mp4-Video {
+    margin-top: 30px;
+  }
+  
+  .widget_31428388773 .hs-mp4-Video video {
+    width: 65%;
+    max-height: 431px;
+    margin: 0 auto;
+    box-shadow: 0px 10px 27px 3px rgba(0, 0, 0, 0.14);
+    /* background-image: url(https://source.www.geekplus.com/hubfs/766x431%E5%B1%8F%E4%BF%9D-%E6%8B%A3%E9%80%89nike.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: contain; */
+}
+  .hs-mp4-Video { text-align: center; position: relative;}
+
+  
+
+  @media screen and (max-width: 991px) {
+
+    div.widget_31428388773 .hs-oembed__starter {
+      margin-top: 0px;
+    }
+    div.widget_31428388773 {
+      padding: 20px 0px;
+    }
+
+
+
+  }
+
+  @media screen and (max-width: 767px) {
+
+    div#hs-oembed__starter--target_widget_31428388773 {
+      max-width: 766px;
+      padding-bottom: 85%; 
+    }
+
+
+
+  }
+
+
+
+  .widget_31428388774 .spacer{
+        height:72px;
+    }
+  
+  @media(max-width:767px){
+    .widget_31428388774 .spacer{
+        height:40px;
+    } 
+    
+  }
+
+
+
+var _hsp = window._hsp = window._hsp || [];
+_hsp.push(['addPrivacyConsentListener', function(consent) { if (consent.allowed || (consent.categories && consent.categories.analytics)) {
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create','UA-112333841-1','auto');
+  ga('send','pageview');
+}}]);
+
+
+
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+
+if (!window._hsGoogleConsentRunOnce) {
+  window._hsGoogleConsentRunOnce = true;
+
+  gtag('consent', 'default', {
+    'ad_storage': 'denied',
+    'analytics_storage': 'denied'
+  });
+
+  var _hsp = window._hsp = window._hsp || [];
+
+  _hsp.push(['addPrivacyConsentListener', function(consent){
+    var hasAnalyticsConsent = consent && (consent.allowed || (consent.categories && consent.categories.analytics));
+    var hasAdsConsent = consent && (consent.allowed || (consent.categories && consent.categories.advertisement));
+
+    gtag('consent', 'update', {
+      'ad_storage': hasAdsConsent ? 'granted' : 'denied',
+      'analytics_storage': hasAnalyticsConsent ? 'granted' : 'denied'
+    });
+  }]);
+}
+
+gtag('js', new Date());
+gtag('set', 'developer_id.dZTQ1Zm', true);
+gtag('config', 'G-KY9L2DX70B');
+
+
+
+
+
+var _hsp = window._hsp = window._hsp || [];
+
+var hsLoadGtm = function loadGtm() {
+    if(window._hsGtmLoadOnce) {
+      return;
+    }
+
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-P9R4HZ2');
+
+    window._hsGtmLoadOnce = true;
+};
+
+var useGoogleConsentMode = false;
+
+if (!useGoogleConsentMode){
+    _hsp.push(['addPrivacyConsentListener', function(consent){
+      if(consent.allowed || (consent.categories && consent.categories.analytics)){
+        hsLoadGtm();
+      }
+  }]);
+} else{
+    if(!window._hsGoogleConsentRunOnce){
+      window._hsGoogleConsentRunOnce=true;
+
+      window.dataLayer=window.dataLayer||[];
+      function gtag(){dataLayer.push(arguments);}
+
+      gtag('consent','default',{
+        'ad_storage':'denied',
+        'analytics_storage':'denied'
+      });
+
+      gtag('set','developer_id.dZTQ1Zm',true);
+
+      _hsp.push(['addPrivacyConsentListener',function(consent){
+      var hasAnalyticsConsent=consent&&(consent.allowed||(consent.categories&&consent.categories.analytics));
+      var hasAdsConsent=consent&&(consent.allowed||(consent.categories&&consent.categories.advertisement));
+
+      gtag('consent','update',{
+        'ad_storage':hasAdsConsent?'granted':'denied',
+        'analytics_storage':hasAnalyticsConsent?'granted':'denied'
+      });
+    }]);
+  }
+
+  hsLoadGtm();
+}
+
+
+
+
+
+
+!function(){window.analytics||(window.analytics=[]),window.analytics.methods=["identify","track","trackLink","trackForm","trackClick","trackSubmit","page","pageview","ab","alias","ready","group","on","once","off"],window.analytics.factory=function(a){return function(){var t=Array.prototype.slice.call(arguments);return t.unshift(a),window.analytics.push(t),window.analytics}};for(var a=0;a<window.analytics.methods.length;a++){var t=window.analytics.methods[a];window.analytics[t]=window.analytics.factory(t)}analytics.load=function(a){if(!document.getElementById("dreamdata-analytics")){window.a=window.analytics;var t=document.createElement("script");t.async=!0,t.id="dreamdata-analytics",t.type="text/javascript",t.src="https://cdn.dreamdata.cloud/scripts/analytics/v1/dreamdata.min.js";var n=function(){if(analytics&&analytics.initialize)for(analytics.initialize({"Dreamdata.io":{apiKey:a}});window.a.length>0;){var t=window.a.shift(),n=t.shift();analytics[n]&&analytics[n].apply(analytics,t)}};t.addEventListener?t.addEventListener("load",function(){n()},!1):t.onreadystatechange=function(){"complete"!=this.readyState&&"loaded"!=this.readyState||n()};var i=document.getElementsByTagName("script")[0];i.parentNode.insertBefore(t,i)}},analytics.load("48463ff1-067f-482d-896e-fdc77f72e77f"),analytics.page()}();
+
+
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?39cdd0017f43cf7d1b6e3b38e549d281";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+
+
+var hsVars = { app_hs_base_url: 'https://app.hubspot.com' };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Technologie
+
+Robotique 
+
+Série P
+Série RS
+Série S
+Série M
+
+Logiciel
+
+Produits
+
+Goods-to-person
+RoboShuttle
+ Déplacement de charge
+Le Tri
+Entrepôt intelligent
+Usine intelligente
+
+Industries
+
+E-commerce
+Vêtements
+Distribution
+3PL
+Pharmaceutiques
+Fabrication
+Automobile
+
+Assistance
+Entreprise
+
+A propos de Nous
+Nouvelles
+Étude de cas
+Carrière
+
+Contactez Nous
+
+
+
+
+
+
+
+
+
+
+中文
+English
+日本語
+한국어
+Deutsch
+Español
+Français
+繁體中文
+
+
+
+
+
+
+
+
+
+Technologie
+
+Robotique 
+
+Série P
+Série RS
+Série S
+Série M
+
+Logiciel
+
+Produits
+
+Goods-to-person
+RoboShuttle
+ Déplacement de charge
+Le Tri
+Entrepôt intelligent
+Usine intelligente
+
+Industries
+
+E-commerce
+Vêtements
+Distribution
+3PL
+Pharmaceutiques
+Fabrication
+Automobile
+
+Assistance
+Entreprise
+
+A propos de Nous
+Nouvelles
+Étude de cas
+Carrière
+
+Contactez Nous
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.geek_header-menu ul li.hs-menu-depth-1:last-child > a{
+  background: #389fef;
+  border-radius: 45px;
+  padding: 10px;
+  margin-top: 11px;
+  color: white;
+  font-size: 14px;
+}
+.mm-listview>li:last-child:after{
+  display: none;
+}
+.mm-listview li.hs-menu-depth-1:last-child > a{
+  background: #389fef;
+  border-radius: 45px;
+  padding: 10px;
+  margin-top: 11px;
+  color: white;
+  font-size: 14px;
+  max-width: 180px;
+  text-align: center;
+}
+
+
+
+
+
+
+选择另一个国家或地区以查看特定于您的位置的内容。
+
+
+
+
+選擇語言
+中文
+英語
+日本
+
+
+
+繼續
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RaaS
+Évolutif • Accessible • Changeant la donne
+
+
+
+
+
+
+
+
+
+
+
+
+Robot-as-a-Service (RaaS) 
+Robot-as-a-Service ou RaaS est un produit développé avec les robots, les systèmes et les algorithmes d'IA de Geek +, fournissant une solution de service intégrée pour l'entrepôt et la distribution intelligente. Grâce à des modèles de coopération commerciale flexibles, RaaS réduit les obstacles en termes de capital et de capacité pour que les entreprises puissent accéder aux technologies avancées. RaaS habilite les clients avec des capacités opérationnelles basées sur des robots pour les aider à atteindre rapidement la mise à niveau de la chaîne d'approvisionnement.
+*Veuillez contacter un représentant Geek+ pour obtenir plus d'informations et savoir si le produit est déjà disponible dans votre région
+
+
+
+
+
+
+
+
+
+
+
+Location de robots
+Geek+ propose des services de location de robots, adaptés à la demande des clients.
+
+
+
+Solution
+
++
+
+
+Robots
+
+
+
+
+Service d'exploitation
+En plus des services de location de robots, Geek+ peut également fournir un service d'exploitation et de gestion sur site.
+
+
+
+Solution
+
++
+
+
+Robots
+
++
+
+
+Operator
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Guangzhou 1
+Guangzhou 2
+Chengdu
+Hangzhou
+Tianjin
+Zhengzhou
+Kunshan 1
+Kunshan 3
+Kunshan 2
+Kunshan 3
+
+
+
+
+Entrepôt intelligent géré par Geek+
+ 
+Le réseau d'entrepôts B2C + B2B basé sur les systèmes Geek+ couvre 7 grandes villes de Chine.
+
+Guangzhou 1
+
+
+Entrepôt intelligent géré par Geek+
+Le réseau d'entrepôts B2C + B2B basé sur les systèmes Geek+ couvre 7 grandes villes de Chine.
+
+Guangzhou 2
+
+
+Entrepôt intelligent géré par Geek+
+Le réseau d'entrepôts B2C + B2B basé sur les systèmes Geek+ couvre 7 grandes villes de Chine.
+
+Chengdu
+
+
+Entrepôt intelligent géré par Geek+
+Le réseau d'entrepôts B2C + B2B basé sur les systèmes Geek+ couvre 7 grandes villes de Chine.
+
+Tianjin
+
+
+Entrepôt intelligent géré par Geek+
+Le réseau d'entrepôts B2C + B2B basé sur les systèmes Geek+ couvre 7 grandes villes de Chine.
+
+Zhengzhou
+
+
+Entrepôt intelligent géré par Geek+
+Le réseau d'entrepôts B2C + B2B basé sur les systèmes Geek+ couvre 7 grandes villes de Chine.
+
+Kunshan 1
+
+
+Entrepôt intelligent géré par Geek+
+Le réseau d'entrepôts B2C + B2B basé sur les systèmes Geek+ couvre 7 grandes villes de Chine.
+
+Kunshan 3
+
+
+Entrepôt intelligent géré par Geek+
+Le réseau d'entrepôts B2C + B2B basé sur les systèmes Geek+ couvre 7 grandes villes de Chine.
+
+Kunshan 2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Les avantages uniques du RaaS
+
+
+
+
+Plus facile
+              
+
+
+d'appliquer l'IA
+
+
+
+Déploiement simple
+Aucun technicien n'est nécessaire
+Exploitation des dernières technologies
+
+
+
+
+
+Plus petit
+              
+
+
+Investissement 
+
+
+
+Moins d'investissement en espèces
+Pas de personnel de maintenance nécessaire
+L'investissement peut être recentré sur les activités de base.
+
+
+
+
+
+Plus élevé
+              
+
+
+fréquence de mise à jour du système
+
+
+
+Mises à jour synchronisées
+Mise à jour du service fournie sans coût supplémentaire
+Non limitée par le contrat d'achat
+
+
+
+
+
+Amélioration 
+              
+
+
+coopération
+
+
+
+Se concentre sur une relation à long terme
+Favorise un meilleur service
+Meilleure stabilité du service après-vente
+
+
+
+
+
+
+
+
+
+
+
+
+Une solide reconnaissance des clients 
+Le champ d'application des clients couvre, sans s'y limiter, les secteurs de l'habillement, du commerce électronique, de la vente au détail, des services 3PL, de la fabrication, des cosmétiques, des livres, de l'alimentation et d'autres industries.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Contactez nous
+
+
+
+
+
+
+
+
+
+
+
+
+
+Chine: +86 4000 450 010
+APAC: +852 3462 2128
+Europe: +49 211 53829033
+Japon: +81 0476 37 7509
+
+Amériques: +1 404 406 3961Sales: sales@geekplus.com
+PR:  pr@geekplus.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Disclaimer
+Privacy Policy
+
+
+
+
+              COPYRIGHT © 2022 Geekplus Technology Co., Ltd.
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var hsVars = hsVars || {}; hsVars['language'] = 'fr';
+
+
+
+
+
+
+
+      
+
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      if(document.querySelector(this.getAttribute('href'))){
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+
+
+
+
+
+
+  $(function() {
+
+    try {
+      //map è½®æ’­ç‚¹
+      var maptime = null;
+      var mapIndex = $('.rass_fact .left ul').find('li').length;
+
+      var maptimeZero = 5;
+      $('.rass_fact .left ul').find('li').eq(6).addClass('act').siblings().removeClass('act');
+      $('.tab_fac_img').eq(6).show().siblings().hide();
+      maptime = setInterval(function() {
+        maptimeZero++;
+        // console.log(maptimeZero);
+        $('.rass_fact .left li').eq(maptimeZero).addClass('act').siblings().removeClass('act');
+        $('.tab_fac_img').eq(maptimeZero).show().siblings().hide();
+        if (maptimeZero > (mapIndex - 2)) {
+          maptimeZero = -1;
+        }
+        // console.log(maptimeZero);
+      }, 4000)
+      $('.rass_fact .left li').hover(function() {
+        clearInterval(maptime);
+        let index = $(this).index();
+        $(this).addClass('act').siblings().removeClass('act');
+        $('.tab_fac_img').eq(index).show().siblings().hide();
+
+      });;
+    } catch (error) {
+
+    }
+
+  })
+
+
+
+
+
+
+
+
+
+
+
+        var options = {
+            portalId: '5868638',
+            formId: 'e583b95d-22af-4d9a-9a55-e4e6ce8f8647',
+            formInstanceId: '5548',
+            pageId: '52954442576',
+            region: 'na1',
+            
+            
+            
+            
+            pageName: "RaaS ",
+            
+            
+            
+            inlineMessage: "<span>Merci d\u2019avoir soumis le formulaire&nbsp;</span>",
+            
+            
+            rawInlineMessage: "<span>Merci d\u2019avoir soumis le formulaire&nbsp;</span>",
+            
+            
+            hsFormKey: "2a0b1b54409d3f17162b5a5edbd0440b",
+            
+            
+            deactivateSmartForm: true,
+            
+            css: '',
+            target: '#hs_form_target_form_367352288',
+            
+            
+            
+            
+            
+            contentType: "standard-page",
+            
+            
+            
+            formsBaseUrl: '/_hcms/forms/',
+            
+            
+            useDraft: "true",
+            
+            
+            formData: {
+                cssClass: 'hs-form stacked hs-custom-form'
+            }
+        };
+
+        options.getExtraMetaDataBeforeSubmit = function() {
+            var metadata = {};
+            
+
+            if (hbspt.targetedContentMetadata) {
+                var count = hbspt.targetedContentMetadata.length;
+                var targetedContentData = [];
+                for (var i = 0; i < count; i++) {
+                    var tc = hbspt.targetedContentMetadata[i];
+                     if ( tc.length !== 3) {
+                        continue;
+                     }
+                     targetedContentData.push({
+                        definitionId: tc[0],
+                        criterionId: tc[1],
+                        smartTypeId: tc[2]
+                     });
+                }
+                metadata["targetedContentMetadata"] = JSON.stringify(targetedContentData);
+            }
+
+            return metadata;
+        };
+
+        hbspt.forms.create(options);
+    
+
+
+(function(){
+  const timeoutEvent = document.createEvent('CustomEvent');
+  timeoutEvent.initCustomEvent("content-analytics-code-not-loaded", true, true, { detail: "Not loaded in preview mode" });
+  window.dispatchEvent(timeoutEvent);
+})();
+
+
+
+var hsVars = {
+    ticks: 1681969641743,
+    page_id: 52954442576,
+    
+    content_group_id: 0,
+    portal_id: 5868638,
+    app_hs_base_url: "https://app.hubspot.com",
+    cp_hs_base_url: "https://cp.hubspot.com",
+    language: "fr",
+    analytics_page_type: "standard-page",
+    analytics_page_id: "52954442576",
+    category_id: 1,
+    folder_id: 0,
+    is_hubspot_user: false
+}
+
+
+

@@ -1,0 +1,2349 @@
+
+
+
+
+
+
+關於我們
+
+
+hsjQuery = window['jQuery'];
+
+
+
+
+
+a.cta_button{-moz-box-sizing:content-box !important;-webkit-box-sizing:content-box !important;box-sizing:content-box !important;vertical-align:middle}.hs-breadcrumb-menu{list-style-type:none;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px}.hs-breadcrumb-menu-item{float:left;padding:10px 0px 10px 10px}.hs-breadcrumb-menu-divider:before{content:'›';padding-left:10px}.hs-featured-image-link{border:0}.hs-featured-image{float:right;margin:0 0 20px 20px;max-width:50%}@media (max-width: 568px){.hs-featured-image{float:none;margin:0;width:100%;max-width:100%}}.hs-screen-reader-text{clip:rect(1px, 1px, 1px, 1px);height:1px;overflow:hidden;position:absolute !important;width:1px}
+
+
+
+
+
+
+  .widget_31428439164 .container-fluid {
+    max-width: 95% !important;
+    margin: 0 auto !important;
+    float: none !important;
+    padding: 0 15px;
+    width: 100%;
+  }
+
+  
+  .widget_31428439164 .Banner_contact.left{ text-align:left;}
+  .widget_31428439164 .Banner_contact.right{ text-align:right;}
+  .widget_31428439164 .Banner_contact.center{ text-align:center;}
+
+  .widget_31428439164 .uppercase{
+    text-transform: uppercase;
+  }
+  .widget_31428439164 .vimeo-wrapper video {
+    position: absolute;
+    z-index: -100;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    background-size: cover;
+    overflow: hidden;
+    opacity: 1;
+    transition: 2s opacity;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  .widget_31428439164 .explore {
+    position: absolute;
+    bottom: 22px;
+    font-size: 16px;
+    left: 50%;
+    color: #FFF;
+    transform: translateX(-50%);
+    z-index: 1990;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    text-align: center;
+  }
+  .widget_31428439164 .explore span {
+    color: #fff;
+    display: block;
+  }
+  .widget_31428439164 .explore i.icon {
+    margin: 5px auto 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 9px 0 9px;
+    border-color: #FFF transparent transparent transparent;
+    animation: pulse 2s infinite;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .widget_31428439164 .defaut{
+    text-transform: inherit;
+  }
+  .widget_31428439164 .capitalize{
+    text-transform: capitalize;
+  }
+  .widget_31428439164 .Banner_contact h1{ 
+    color:#ffffff;
+    font-size:100px;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 22px;
+  }
+  .widget_31428439164 .Banner_contact h4 { 
+    color: rgba(255, 255, 255, 1.0);
+    font-size: 32px;
+    line-height: 1.5;
+  }
+  .widget_31428439164 .Banner_contact .geek_banner-desc p { 
+    color:#ffffff;
+    font-size:12px;
+  }
+
+
+  .banner_section {
+    width: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 135px;
+    padding-bottom:  135px;
+  }
+  @keyframes pulse {
+    0% {
+      -webkit-transform: translate(0, 0);
+      transform: translate(0, 0);
+    }
+    50% {
+      -webkit-transform: translate(0, 10px);
+      transform: translate(0, 10px);
+    }
+    100% {
+      -webkit-transform: translate(0, 0);
+      transform: translate(0, 0);
+    }
+  }
+
+  .conatiner_wrap {
+    /*position: absolute;*/
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+  .widget_31428439164 .overlay{
+    background-color: #011031;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .vimeo-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*height:calc(100vh - 0px);*/
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+    overflow: hidden;
+  }
+  .vimeo-wrapper iframe {
+    width: 100vw;
+    height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+    min-height: 100vh;
+    min-width: 177.77vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .image_Section{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*height:calc(100vh - 0px); */
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+  }
+  .widget_31428439164 .banner_section .img-overlay{
+    background-color: #141724;
+    opacity: 0.0; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+  }
+  .widget_31428439164 .Banner_contact ul li a {
+    display: inline-block;
+    height: 50px;
+    line-height: 48px;
+    margin: 0;
+    padding: 0 30px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 5px;
+    border:2px solid #ffffff;   
+    text-decoration: none;
+    border-radius:5px; 
+  }
+  .widget_31428439164 .Banner_contact ul li a:hover{
+    background-color: #FF0201 !important;
+    color:#ffffff;
+    border:2px solid #FF0201 !important; 
+  }
+  .gareer_mail {
+    position: relative;
+    text-align: center;
+    padding: 25px 0;
+  }
+  .gareer_mail a {
+    padding: 0 10px;
+    color: #333;
+    z-index: 2;
+    position: relative;
+    background: #fff;
+  }
+  .gareer_mail:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    left: 0;
+    border-bottom: 1px solid #C9C9C9;
+    z-index: 1;
+  }
+
+  
+
+  @media screen and (max-width: 1199px) {
+
+    div.widget_31428439164 .Banner_contact h1 {
+      font-size: 42px;
+    }
+
+
+  }
+
+  @media screen and (max-width: 991px) {
+
+    div.widget_31428439164 .Banner_contact h1 {
+      font-size: 32px;
+    }
+    div.widget_31428439164 .Banner_contact p {
+      font-size: 22px;
+    }
+
+  }
+
+
+  @media screen and (max-width: 767px) {
+    .Banner_contact h1 br {
+      display: none;
+    }
+    div.widget_31428439164 .geek_banner-desc p {
+      display: inline;
+    }
+
+    
+    .widget_31428439164 .banner_section {
+      background-image: url(https://source.www.geekplus.com/hubfs/Geek%20Plus%20Images%202020/about-us-%E6%89%8B%E6%9C%BA%E7%AB%AF.jpg) !important; 
+    }
+    
+
+
+  }
+
+
+  @media screen and (max-width: 639px) {
+
+    div.widget_31428439164 .Banner_contact h1 {
+      font-size: 28px;
+    }
+    .widget_31428439164 .banner_section {
+      padding-top: 105px;
+      padding-bottom: 100px;
+    }
+    div.widget_31428439164 .Banner_contact h4 {
+      font-size: 16px;
+    }
+
+
+  }
+
+
+  @media screen and (max-width: 359px) {
+
+    div.widget_31428439164 .Banner_contact h1 {
+      margin-bottom: 7px;
+      line-height: 1.5;
+    }
+
+
+  }
+
+
+
+
+
+
+  .box-about-top-text .title.type1, .about_leader .title.type1 {
+    margin-top: 76px;
+  }
+  .title.type1 {
+    position: relative;
+    text-align: center;
+  }
+  .about-text .title {
+    margin: 50px 0;
+  }
+  .title.type1 h2 {
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.3;
+    background-color: #FFF;
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    padding: 0 76px;
+    font-weight: normal;
+    color: #333;
+    font-size: 34px;
+  }
+  .box-about-top-text .title.type1 h2, .about_leader .title.type1 h2 {
+    line-height: 1;
+  }
+  .title.type1:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #333;
+    z-index: 1;
+  }
+  .box-about-top-text .d-flex {
+    justify-content: space-between;
+  }
+  .box-about-top-text .d-flex p {
+    font-size: 16px;
+    text-align: center;
+  }
+  .box-about-top-text p {
+    margin-bottom: 15px;
+  }
+  .about_info_number ul {
+    padding: 60px 0;
+  }
+  .about_info_number li {
+    float: left;
+    width: 20%;
+    padding: 8px 0;
+    position: relative;
+    text-align: center;
+  }
+  .about_info_number small {
+    font-size: 16px;
+    display: block;
+  }
+  .about_info_number li em {
+    margin-top: 20px;
+    display: inline-block;
+    color: #333;
+    font-size: 60px;
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  .about_info_number .icon img {
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+    vertical-align: middle;
+  }
+  .about_info_number li:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 90%;
+    border-right: 1px solid #999;
+  }
+  .about_info_number li:nth-last-of-type(1):after {
+    display: none;
+  }
+  .about_info_number ul {
+    padding: 60px 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+
+  
+
+  @media screen and (max-width: 1199px) {
+
+    div.about_info_number li em {
+      margin-top: 12px;
+      font-size: 40px;
+    } 
+
+
+  }
+
+  @media screen and (max-width: 991px) {
+
+    div.about_info_number li {
+      width: 33%;
+    }
+    div.title.type1 h2 {
+      font-size: 28px;
+    }
+
+
+  } 
+
+  @media screen and (max-width: 639px) {
+
+    div.about_info_number li {
+      width: 50%;
+    }
+    div.title.type1 h2 {
+      font-size: 24px;
+      width: 100%;
+      padding: 0;
+    }
+    div.box-about-top-text .title.type1, div.about_leader .title.type1 {
+      margin-top: 50px;
+      margin-bottom: 30px;
+    }
+    div.about_info_number li em {
+      margin-top: 10px;
+      font-size: 32px;
+    }
+    div.about_info_number ul {
+      padding-bottom: 0px;
+      padding-top: 40px;
+    }
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .about_map_grid .title.type1 {
+    position: relative;
+    text-align: center;
+  }
+  .about_map_grid .title {
+    margin: 50px 0;
+  }
+  .about_map_grid .title.type1 h2 {
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.3;
+    background-color: #FFF;
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    padding: 0 76px;
+    font-weight: normal;
+    color: #333;
+    font-size: 34px;
+  }
+  .about_map_grid .title.type1:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #333;
+    z-index: 1;
+  }
+
+
+  
+
+  @media screen and (max-width: 767px) {
+
+    div.about_map_grid .title.type1 h2 {
+      padding: 0 15px;
+      font-size: 24px;
+    }
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .about_care .title {
+    margin: 50px 0;
+  }
+
+  .about_care .title.type1 {
+    position: relative;
+    text-align: center;
+  }
+
+  .about_care .textcenter {
+    text-align: center !important;
+    justify-content: center;
+  }
+
+  .about_care .title.type1 h2 {
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.3;
+    background-color: #FFF;
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    padding: 0 76px;
+    font-weight: normal;
+    color: #333;
+    font-size: 34px;
+  }
+
+  .about_care .title.type1 h2 {
+    max-width: 660px;
+  }
+
+  .about_care .title.type1:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #333;
+    z-index: 1;
+  }
+
+  .odm_work {
+    background-color: #FFF;
+    padding: 1px 0;
+  }
+
+  .odm_work ul {
+    position: relative;
+    margin: 0 35px;
+  }
+
+  .odm_work li {
+    background-color: #FFF;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    color: #494A4C;
+    font-size: 16px;
+    flex-wrap: wrap;
+    transition: all 0.3s;
+    position: relative;
+  }
+
+  .odm_work li:nth-of-type(1).act {
+    color: #009FEF;
+  }
+
+  .odm_work li p {
+    display: block;
+    color: #F3F3F3;
+    font-size: 21px;
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+  }
+
+  .odm_work li:nth-of-type(1).act p {
+    color: #009FEF;
+  }
+
+  .odm_work li:nth-of-type(2).act p {
+    color: #ffcc66;
+  }
+
+  .odm_work li:nth-of-type(3).act p {
+    color: #ec6c7b;
+  }
+
+  .odm_work li:nth-of-type(4).act p {
+    color: #c3ec6f;
+  }
+
+  .odm_work li:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 9px 8px 9px;
+    border-color: transparent transparent #eee transparent;
+    position: absolute;
+    bottom: -36px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .odm_work li.act:after {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .odm_work li:hover .icon {
+    display: none !important;
+  }
+
+  .odm_work li:hover .icon-hover {
+    display: inline-block !important;
+  }
+
+  .odm_work li .icon-hover {
+    display: none;
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .odm_work li .icon {
+    text-align: center;
+    font-weight: bold;
+    color: #F3F3F3;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .odm_work li:nth-of-type(1) .icon {
+    background-image: url(https://source.www.geekplus.com/hubfs/Geek%20Plus%20Images%202020/C.png);
+  }
+
+  .odm_work li:nth-of-type(1).act .icon {
+    background-image: url(https://source.www.geekplus.com/hubfs/Geek%20Plus%20Images%202020/C2.png);
+  }
+
+  .odm_work li:nth-of-type(2) .icon {
+    background-image: url(https://source.www.geekplus.com/hubfs/Geek%20Plus%20Images%202020/A.png);
+  }
+
+  .odm_work li:nth-of-type(2).act .icon {
+    background-image: url(https://source.www.geekplus.com/hubfs/Geek%20Plus%20Images%202020/A2.png);
+  }
+
+  .odm_work li:nth-of-type(3) .icon {
+    background-image: url(https://source.www.geekplus.com/hubfs/Geek%20Plus%20Images%202020/R.png);
+  }
+
+  .odm_work li:nth-of-type(3).act .icon {
+    background-image: url(https://source.www.geekplus.com/hubfs/Geek%20Plus%20Images%202020/R2.png);
+    color: #ec6c7b;
+  }
+
+  .odm_work li:nth-of-type(4) .icon {
+    background-image: url(https://source.www.geekplus.com/hubfs/Geek%20Plus%20Images%202020/E.png);
+  }
+
+  .odm_work li:nth-of-type(4).act .icon {
+    background-image: url(https://source.www.geekplus.com/hubfs/Geek%20Plus%20Images%202020/E2.png);
+    color: #c3ec6f;
+  }
+
+  .odm_work .text_over {
+    color: #333;
+    width: 90%;
+    box-sizing: border-box;
+    left: 0;
+    border-radius: 10px;
+    margin: 35px auto 0;
+    background-color: #eee;
+  }
+
+  .odm_work .text_over ul {
+    list-style: initial;
+    padding: revert;
+  }
+
+  .odm_work .text_over ul li {
+    background: unset;
+    display: list-item;
+    border: none;
+  }
+
+  .odm_work .text_over p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .odm_work .text_over p:last-child {
+    margin-bottom: 0;
+  }
+
+  .odm_work .text_over {
+    padding: 35px 25px;
+  }
+
+  .text p {
+    line-height: 1.5;
+  }
+
+
+  @media screen and (max-width: 991px) {
+
+    .about_care .title.type1 h2 {
+      font-size: 28px;
+      padding: 0 15px;
+    }
+
+    .about_care .title.type1 h2 {
+      max-width: 458px;
+    }
+
+    .odm_work ul {
+      flex-wrap: wrap;
+    }
+
+    .odm_work li {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    .odm_work li p {
+      width: 100%;
+      text-align: center;
+      margin-top: 0;
+    }
+
+
+
+  }
+
+  @media screen and (max-width: 767px) {
+
+    div.about_care .title.type1 h2 {
+      max-width: 100%;
+      font-size: 24px;
+    }
+
+
+
+
+  }
+
+
+
+
+  .about_awards .title {
+    margin: 110px 0 50px 0;
+  }
+  .about_awards .title.type1 {
+    position: relative;
+    text-align: center;
+  }
+  .about_awards .title.type1 h2 {
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.3;
+    background-color: #FFF;
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    padding: 0 76px;
+    font-weight: normal;
+    color: #333;
+    font-size: 34px;
+  }
+  .about_awards-left {
+    flex: 0 0 40%;
+    max-width: 40%;
+  }
+  .about_awards-right {
+    flex: 0 0 40%;
+    max-width: 40%;
+  }
+  .about_awards-row ul li {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 10px 15px;
+  }
+  .about_awards-row ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .about_awards-center {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+  .about_awards-row .about_awards-center li {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .about_awards {
+    padding-bottom: 70px;
+  }
+
+
+  
+
+  @media screen and (max-width: 767px) {
+
+    div.about_awards .title.type1 h2 {
+      padding: 0 15px;
+      font-size: 24px;
+    }
+
+
+
+  }
+
+  @media screen and (max-width: 639px) {
+
+    div.about_awards-left, div.about_awards-right {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    div.about_awards-center {
+      flex: 0 0 100%;
+      max-width: 100%;
+      text-align: center;
+    }
+    div.about_awards .title {
+      margin: 55px 0 40px 0;
+    }
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .box-about-top-text .title.type1, .about_leader .title.type1 {
+    margin-top: 76px;
+  }
+  .about_leader .title {
+    margin: 50px 0;
+  }
+  .box-about-top-text  .title.type1 {
+    position: relative;
+    text-align: center;
+  }
+  .about_leader .title.type1 h2 {
+    /* max-width: 905px; */
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.3;
+    background-color: #f6f6f6;
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    padding: 0 76px;
+    font-weight: normal;
+    color: #333;
+    font-size: 34px;
+  }
+  .box-about-top-text .title.type1 h2, .about_leader .title.type1 h2 {
+    line-height: 1;
+  }
+  .bgccc {
+    background-color: #F6F6F6;
+  }
+  .about_leader {
+    padding: 1px 0 50px;
+  }
+  .about_leader .title.type1:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #333;
+    z-index: 1;
+  }
+  .about_leader-list li {
+    flex: 0 0 25%;
+    max-width: 25%;
+    text-align: center;
+    padding: 0 15px;
+  }
+  ul.about_leader-list {
+    margin: 0 -15px;
+  }
+  a {
+    transition: all 0.3s;
+  }
+  .about_leader .imgshow {
+    position: relative;
+  }
+  .about_leader .imgshow img {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: max-content;
+  }
+  .about_leader .text_layer, .about_leader .layer_img {
+    display: none;
+  }
+  .about_leader h4 {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+  }
+  .about_leader li p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    height: 42px;
+    line-height: 1.5;
+    overflow: hidden;
+  }
+
+  .layui-layer-my .layui-layer-content {
+    padding: 5% 7%;
+  }
+  .layui-layer-my .user_grid {
+    display: block;
+    position: relative;
+    padding-left: 380px;
+  }
+  .layui-layer-my .imgshow {
+    position: absolute;
+    left: 0;
+    top: -30px;
+    width: 350px;
+  }
+  .layui-layer-my .imgshow img.layer_img {
+    display: block;
+  }
+  .layui-layer-my .imgshow img {
+    display: none;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    width: 350px;
+  }
+  .layui-layer-my .imgshow img {
+    display: none;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    width: 350px;
+  }
+  .layui-layer-my .text {
+    display: none;
+  }
+  .layui-layer-my h4 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 13px;
+    font-weight: normal;
+  }
+  .layui-layer-my .btn.hover {
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    width: auto;
+    display: inline-block;
+    border-radius: 7px;
+    font-size: 16px;
+  }
+  .btn.hover, .btn:hover {
+    background-color: #009FEF;
+    color: #FFF;
+    box-shadow: none;
+  }
+  .layui-layer-my .text_p {
+    min-height: 428px;
+  }
+  .layui-layer-my .text_p p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  .about_leader .text_layer, .about_leader .layer_img {
+    display: none;
+  }
+  .layui-layer-my .layui-layer-title {
+    display: none;
+  }
+  .layui-layer-my .layui-layer-title {
+    background-color: #FFF;
+    border-bottom: 0;
+  }
+  .layui-layer-my .layui-layer-setwin .layui-layer-close1 {
+    background: url(https://source.www.geekplus.com/hubfs/Geek%20Plus%20Images%202020/close.jpg) no-repeat 50% 50%;
+    background-size: 22px;
+    width: 22px;
+    height: 20px;
+    z-index: 3;
+  }
+
+
+  
+
+  @media screen and (max-width: 991px) {
+
+    ul.about_leader-list li {
+      flex: 0 0 33.33336%;
+      max-width: 33.33336%;
+    }
+    div.layui-layer-my .user_grid {
+      padding-left: 0px;
+    }
+    div.layui-layer-my .imgshow {
+      position: relative;
+      left: 0;
+      top: 0;
+      width: 100%;
+      text-align: center;
+    }
+    div.layui-layer-my .imgshow img.layer_img {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .layui-layer-content .text_layer {
+      width: 100%;
+      text-align: center;
+    }
+
+
+  }
+
+  @media screen and (max-width: 639px) {
+
+    ul.about_leader-list li {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+    div.about_leader .title.type1 h2 {
+      padding: 0;
+      font-size: 26px;
+      width: 100%;
+    }
+
+
+  }
+
+  @media screen and (max-width: 479px) {
+
+    ul.about_leader-list li {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+
+  }
+
+
+
+
+
+  .about_video>.m-width-1200 {
+    position: relative;
+  }
+  .about_video .title.type1 {
+    margin-top: 100px;
+    margin-bottom: 72px;
+  }
+  .about_video .title.type1 {
+    position: relative;
+    text-align: center;
+  }
+  .about_video .title {
+    margin: 50px 0;
+  }
+  .about_video .title.type1 h2 {
+    /* max-width: 905px; */
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1;
+    background-color: #FFF;
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    padding: 0 76px;
+    font-weight: normal;
+    color: #333;
+    font-size: 34px;
+  }
+
+  
+
+  @media screen and (max-width: 991px) {
+
+    div.about_video .title.type1 h2 {
+      padding: 0 15px;
+      font-size: 25px;
+    }
+    div.about_video .title.type1 {
+      margin-top: 60px;
+      margin-bottom: 32px;
+    }
+
+
+  }
+
+
+
+
+
+
+
+  .widget_31428439171 iframe {
+    border: none;
+    border-radius: 10px;
+  }
+  .widget_31428439171 .hs-oembed__starter, .widget_31428439171 .hs-mp4-Video {
+    margin-top: 0px;
+  }
+  
+  .widget_31428439171 .hs-mp4-Video video {
+    width: 65%;
+    max-height: 431px;
+    margin: 0 auto;
+    box-shadow: 0px 10px 27px 3px rgba(0, 0, 0, 0.14);
+    /* background-image: url(https://source.www.geekplus.com/hubfs/766x431%E5%B1%8F%E4%BF%9D-%E6%8B%A3%E9%80%89nike.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: contain; */
+}
+  .hs-mp4-Video { text-align: center; position: relative;}
+
+  
+
+  @media screen and (max-width: 991px) {
+
+    div.widget_31428439171 .hs-oembed__starter {
+      margin-top: 0px;
+    }
+    div.widget_31428439171 {
+      padding: 20px 0px;
+    }
+
+
+
+  }
+
+  @media screen and (max-width: 767px) {
+
+    div#hs-oembed__starter--target_widget_31428439171 {
+      max-width: 766px;
+      padding-bottom: 85%; 
+    }
+
+
+
+  }
+
+
+
+  .widget_1617191207061 .spacer{
+        height:50px;
+    }
+  
+  @media(max-width:767px){
+    .widget_1617191207061 .spacer{
+        height:30px;
+    } 
+    
+  }
+
+
+
+var _hsp = window._hsp = window._hsp || [];
+_hsp.push(['addPrivacyConsentListener', function(consent) { if (consent.allowed || (consent.categories && consent.categories.analytics)) {
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create','UA-112333841-1','auto');
+  ga('send','pageview');
+}}]);
+
+
+
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+
+if (!window._hsGoogleConsentRunOnce) {
+  window._hsGoogleConsentRunOnce = true;
+
+  gtag('consent', 'default', {
+    'ad_storage': 'denied',
+    'analytics_storage': 'denied'
+  });
+
+  var _hsp = window._hsp = window._hsp || [];
+
+  _hsp.push(['addPrivacyConsentListener', function(consent){
+    var hasAnalyticsConsent = consent && (consent.allowed || (consent.categories && consent.categories.analytics));
+    var hasAdsConsent = consent && (consent.allowed || (consent.categories && consent.categories.advertisement));
+
+    gtag('consent', 'update', {
+      'ad_storage': hasAdsConsent ? 'granted' : 'denied',
+      'analytics_storage': hasAnalyticsConsent ? 'granted' : 'denied'
+    });
+  }]);
+}
+
+gtag('js', new Date());
+gtag('set', 'developer_id.dZTQ1Zm', true);
+gtag('config', 'G-KY9L2DX70B');
+
+
+
+
+
+var _hsp = window._hsp = window._hsp || [];
+
+var hsLoadGtm = function loadGtm() {
+    if(window._hsGtmLoadOnce) {
+      return;
+    }
+
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-P9R4HZ2');
+
+    window._hsGtmLoadOnce = true;
+};
+
+var useGoogleConsentMode = false;
+
+if (!useGoogleConsentMode){
+    _hsp.push(['addPrivacyConsentListener', function(consent){
+      if(consent.allowed || (consent.categories && consent.categories.analytics)){
+        hsLoadGtm();
+      }
+  }]);
+} else{
+    if(!window._hsGoogleConsentRunOnce){
+      window._hsGoogleConsentRunOnce=true;
+
+      window.dataLayer=window.dataLayer||[];
+      function gtag(){dataLayer.push(arguments);}
+
+      gtag('consent','default',{
+        'ad_storage':'denied',
+        'analytics_storage':'denied'
+      });
+
+      gtag('set','developer_id.dZTQ1Zm',true);
+
+      _hsp.push(['addPrivacyConsentListener',function(consent){
+      var hasAnalyticsConsent=consent&&(consent.allowed||(consent.categories&&consent.categories.analytics));
+      var hasAdsConsent=consent&&(consent.allowed||(consent.categories&&consent.categories.advertisement));
+
+      gtag('consent','update',{
+        'ad_storage':hasAdsConsent?'granted':'denied',
+        'analytics_storage':hasAnalyticsConsent?'granted':'denied'
+      });
+    }]);
+  }
+
+  hsLoadGtm();
+}
+
+
+
+
+
+
+!function(){window.analytics||(window.analytics=[]),window.analytics.methods=["identify","track","trackLink","trackForm","trackClick","trackSubmit","page","pageview","ab","alias","ready","group","on","once","off"],window.analytics.factory=function(a){return function(){var t=Array.prototype.slice.call(arguments);return t.unshift(a),window.analytics.push(t),window.analytics}};for(var a=0;a<window.analytics.methods.length;a++){var t=window.analytics.methods[a];window.analytics[t]=window.analytics.factory(t)}analytics.load=function(a){if(!document.getElementById("dreamdata-analytics")){window.a=window.analytics;var t=document.createElement("script");t.async=!0,t.id="dreamdata-analytics",t.type="text/javascript",t.src="https://cdn.dreamdata.cloud/scripts/analytics/v1/dreamdata.min.js";var n=function(){if(analytics&&analytics.initialize)for(analytics.initialize({"Dreamdata.io":{apiKey:a}});window.a.length>0;){var t=window.a.shift(),n=t.shift();analytics[n]&&analytics[n].apply(analytics,t)}};t.addEventListener?t.addEventListener("load",function(){n()},!1):t.onreadystatechange=function(){"complete"!=this.readyState&&"loaded"!=this.readyState||n()};var i=document.getElementsByTagName("script")[0];i.parentNode.insertBefore(t,i)}},analytics.load("48463ff1-067f-482d-896e-fdc77f72e77f"),analytics.page()}();
+
+
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?39cdd0017f43cf7d1b6e3b38e549d281";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+技術
+
+機器人
+
+P系列
+X系列
+RS系列
+S系列
+M系列
+
+軟件
+
+產品
+
+貨到人
+貨箱到人
+搬運
+智能分揀
+智能倉
+智慧工廠
+
+行業
+
+服飾
+電商
+零售
+物流
+醫藥
+製造
+汽車
+
+RaaS
+售後服務與支持
+公司
+
+關於我們
+案例分析
+新聞與活動
+極智嘉使命
+
+聯繫我們
+
+
+
+
+
+
+
+
+
+
+中文
+English
+日本語
+한국어
+Deutsch
+Español
+Français
+繁體中文
+
+
+
+
+
+
+
+
+
+技術
+
+機器人
+
+P系列
+X系列
+RS系列
+S系列
+M系列
+
+軟件
+
+產品
+
+貨到人
+貨箱到人
+搬運
+智能分揀
+智能倉
+智慧工廠
+
+行業
+
+服飾
+電商
+零售
+物流
+醫藥
+製造
+汽車
+
+RaaS
+售後服務與支持
+公司
+
+關於我們
+案例分析
+新聞與活動
+極智嘉使命
+
+聯繫我們
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+选择另一个国家或地区以查看特定于您的位置的内容。
+
+
+
+
+選擇語言
+中文
+英語
+日本
+
+
+
+繼續
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+關於我們
+引領全球智慧物流變革
+
+
+
+
+
+
+
+
+
+
+
+
+我們是誰？
+
+
+
+極智嘉是一家引領全球智慧物流變革的智能機器人公司，連續三年全球AMR市場佔有率第一（來源：Interact Analysis），佔據市場領先地位。極智嘉成立於2015年，公司總部位於北京，並在全球超30個國家和地區擁有銷售、運營和服務能力。公司應用先進的機器人和人工智能技術，打造高效、彈性、可靠的解決方案，幫助全球各行業的企業提升物流效率，實現智能化升級。目前，極智嘉已服務全球客戶超500家，項目覆蓋零售、鞋服、醫藥、3PL、汽車、鋰電、光伏、電子行業等行業。 
+憑藉穩定可靠的產品、豐富的全球項目經驗、加上高效優質的售後服務，極智嘉已成為耐克、沃爾瑪、豐田、西門子、寶馬等眾多國內外知名品牌的智慧物流合作夥伴。此外，極智嘉的技術實力也備受微軟、Intel等行業巨頭的認可並結成生態合作夥伴，強強聯手共同賦能企業智能化升級，引領智慧物流變革。
+
+
+
+
+
+
+
+
+
+
+2021年訂單額
+300M+
+
+
+
+
+
+員工
+1500+
+
+
+
+
+
+全球AMR市場份額
+No.1 
+
+
+
+
+
+專利
+900+
+
+
+
+
+
+國家
+30+
+
+
+
+
+
+
+
+
+
+
+
+
+          業務實現全球覆蓋
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+極智嘉 CARE 戰略指引公司成長和全球化進程
+
+
+
+
+
+
+客戶為中心 (Customer-focused)
+
+
+
+
+人工智能  (Artificial intelligence-driven)
+
+
+
+
+機器人即服務 (Robot-as-a-Service)
+
+
+
+
+生態賦能 (Ecosystem-enabling)
+
+
+
+We don’t just focus on one project, but on customers’ operations.
+We design and upgrade our solutions to help customers become more competitive and achieve their business
+            goals.
+We develop comprehensive smart warehouse and smart factory solutions that integrate mobile robots, robot
+            arms, computer vision, IoT technologies and management systems inside the warehouse and the factory.
+
+
+
+
+
+
+
+
+
+
+極智嘉榮譽牆
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+核心管理團隊
+
+
+
+
+
+
+
+
+
+
+
+郑勇
+創始人兼首席執行官
+
+
+郑勇
+創始人兼首席執行官
+
+鄭勇是極智嘉創始人兼首席執行官。他相信，物流一定是AI和機器人技術最先落地的重要場景。因此，於2015年，他創立了極智嘉公司，並推動公司引領智慧物流變革，為各行各業帶來創新的自動化解決方案。 
+在鄭勇的帶領下，極智嘉迅速發展成為業界領先的龍頭企業，為全球四大洲的各大公司提供一流的智慧物流解決方案。極智嘉於2019年2020年被世界領先的人工智能與機器人研究機構Robotics Business Review （RBR）評選為世界機器人公司TOP50。鄭勇也曾榮登《財富》雜誌“中國40位40歲以下商界精英”榜單。 
+鄭勇畢業於清華大學，並於德國亞琛工業大學學習工業工程專業，之後在跨國公司ABB和聖戈班從事供應鏈管理工作，負責中國重點生產基地從工程到質量控制和物流的整體運作。之後，鄭勇加入了領先的投資基金公司——新天域資本，主要負責投資組合公司的投後管理，以及 TMT 和機器人行業的新投資項目。
+
+
+
+
+
+
+
+
+
+
+
+
+
+李洪波
+聯合創始人兼首席技術官
+
+
+李洪波
+聯合創始人兼首席技術官
+
+李洪波是極智嘉聯合創始人兼首席技術官。他帶領著一個由400多名工程師組成的智囊團，負責機器人、軟件系統和人工智能算法設計方面的所有研發活動，不斷研究開發適用於多種工業場景的綜合技術解決方案。
+ 在李洪波的帶領下，極智嘉研發並實踐了顛覆市場的智能倉儲技術。作為世界頂尖的多智能體機器人系統專家之一，李洪波在大型先進機器人和人工智能算法的導航、感知和調度方面擁有15年的理論和應用研究經驗，在全球領先的科學期刊IEEE / IEE上發表了30多篇論文。他曾獲教育部自然科學獎、北京科學技術獎、中國自動化學會科學技術獎等多個獎項 
+李洪波擁有清華大學計算機科學博士學位，曾是清華大學計算機科學系的副教授。他是國際自動化與控制系統行業雜誌編委，同時擔任人工智能服務委員會的秘書長。
+
+
+
+
+
+
+
+
+
+
+
+
+
+劉凱
+聯合創始人兼產品部副總裁
+
+
+劉凱
+聯合創始人兼產品部副總裁
+
+劉凱是極智嘉的聯合創始人，同時也是公司揀選及智能倉產品事業部的負責人。他負責把控Geek +揀选和分揀機器人以及無人倉解決方案的設計和開發。 
+他擅長機器人設計，包括移動機器人和視覺服務、控制系統、多智能體算法以及軟件系統設計。他在機器人技術方面的工作已經擁有了30多項專利認證。 
+劉凱擁有清華大學人工智能研究院的碩士學位，是中國國家智能汽車和機器人競賽的一等獎獲得者。
+
+
+
+
+
+
+
+
+
+
+
+
+
+陳曦
+聯合創始人兼機器人部門副總裁
+
+
+陳曦
+聯合創始人兼機器人部門副總裁
+
+陳曦是極智嘉聯合創始人兼機器人研發部門的副總裁。他負責極智嘉的機器人的解決方案。作為機器人團隊的第一位成員，他將這個部門從一無所有發展到如今的成就。 
+在加入極智嘉之前，陳曦是瑞斯康達的高速光纖通信產品經理。陳曦擁有超過十年的應用機器人研究經驗，擅長工業自動化和智能製造。 
+陳曦擁有北京科技大學汽車工程碩士學位。他曾是中國國家智能汽車和機器人競賽的一等獎獲得者。
+
+
+
+
+
+
+
+
+
+
+
+
+
+劉紅岩
+首席財務官
+
+
+劉紅岩
+首席財務官
+
+劉紅岩負責監管Geek+的財務部門並且幫助確定和實施公司財務戰略、項目評估和風險管控。在她的帶領下，Geek+在2018年10月和2019年7月分別完成了B輪和C1輪融資。 
+在加入Geek+之前，劉紅岩曾擔任致同會計師事務所項目經理，之後在A股上市公司——亞夏股份擔任財務總監。她擅長市場運作，在投融資方面有著豐富的專業知識。劉紅岩擁有近15年財務管理經驗和投資戰略經驗。 
+劉紅岩擁有廈門大學會計碩士學位證書。她曾獲得浙江省“會計領軍人才”稱號。
+
+
+
+
+
+
+
+
+
+
+
+
+
+王春光
+首席人力資源官
+
+
+王春光
+首席人力資源官
+
+王春光負責公司人才選拔、管理戰略以及Geek+企業文化。她熱衷於挖掘最優秀的人才並幫助他們在一個激勵的、安全的環境中茁壯成長。王春光一直努力構建高效友好的人力資源管理系統以塑造卓越的企業文化。 
+王春光擁有近20年人力資源管理經驗。在加入Geek+之前，曾在聯想集團歷任聯想中國區人力資源負責人、聯想中國及亞太區招聘總監、全球薪酬福利經理等多個職務，她在績效管理、人才招聘、薪酬福利、組織變革、文化變革等方面有著豐富的實戰經驗。 
+王春光擁有哈爾濱工業大學的管理學碩士學位。
+
+
+
+
+
+
+
+
+
+
+
+
+
+于洪
+首席市場官
+
+
+于洪
+首席市場官
+
+于洪是極智嘉首席市場官。他負責公司的全球定位，推動公司的營銷戰略和計劃，包括銷售營銷、全球戰略夥伴關係、公關、活動及內容等。于洪專注於客戶關懷，始終將客戶放在營銷策略的核心位置。在于洪的帶領下，極智嘉迅速在海內外市場打開知名度。 
+在加入極智嘉之前，于洪在亞馬遜擔任Kindle中國區市場營銷負責人。于洪還曾在英特爾供職8年，擔任數字全球化經理和品牌戰略經理等重要管理職位，隨後進入微軟擔任中國營銷組織總監一職。 
+于洪擁有北京工業大學國際貿易學士學位。
+
+
+
+
+
+
+
+
+
+
+
+
+
+馮家浩
+亞太、英國和美洲地區副總裁
+
+
+馮家浩
+亞太、英國和美洲地區副總裁
+
+馮家浩（Lit），極極智嘉海外事務執行董事。他的辦事處在香港，負責香港公司在亞太地區的擴張和運營，包括戰略，銷售，項目管理和客戶關係等。他曾是海外市場的總經理，在啟動和開發公司的首個海外項目中發揮了至關重要的作用。 
+Lit是AI和機器人技術方面的專家，在物流自動化領域負責全球項目有著超過10年的經驗。他對電子商務和零售業以及自動化如何解決它們所面臨的全球挑戰並改善運營有深入的了解。
+
+
+
+
+
+
+
+
+
+
+
+
+
+張劍
+歐洲大區副總裁
+
+
+張劍
+歐洲大區副總裁
+
+極智嘉歐洲區辦公處位於德國杜塞爾多夫，張劍領導該辦事處在歐洲的運營和擴張，包括戰略、銷售、項目管理和客戶關係等。 
+張劍在ICT技術、智能製造、新零售、雲計算和AI的市場營銷，銷售和全球運營管理方面擁有14年以上的經驗。 
+張劍的職業生涯始於愛立信的電子工程師。加入極智嘉之前，張劍曾在華為技術公司擔任高級管理職務超過8年，包括全球雲負責人和歐洲業務總監，之後他在道通科技擔任過全球營銷和銷售總裁。 
+張劍擁有電子科技大學電子科學與技術專業碩士學位。
+
+
+
+
+
+
+
+
+
+
+
+
+
+郭立
+美洲大區總經理
+
+
+郭立
+美洲大區總經理
+
+郭立負責公司在美洲大區的擴張和運營，包括戰略，銷售，項目管理和客戶關係等。此前他還負責服務的管理與銷售，包括備件管理，售後培訓以及機器人硬件產品全生命週期服務的管理。
+ 在加入極智嘉之前，郭立曾在ABB歷任市場與銷售高級經理、服務產品管理及研發經理、研發部項目經理等多個職位。郭立在服務事業與產品管理、業務拓展方面有著豐富的經驗。 
+郭立本碩均畢業於清華大學電氣工程專業。
+
+
+
+
+
+
+
+
+
+
+
+
+
+楊雋哲
+中國大區負責人兼智能倉儲副總裁
+
+
+楊雋哲
+中國大區負責人兼智能倉儲副總裁
+
+楊雋哲主要負責公司中國大區及RaaS（機器人即服務）智能倉儲事業部的管理和發展。在雋哲的帶領下，智能倉儲服務不斷擴張，截至2019年年底，極智嘉智能倉儲面積已超過30萬平。 
+楊雋哲先後在天地華宇、科捷物流、上海發網等知名企業歷任銷售總監、區域總經理和公司副總裁等職務。雋哲在物流、電商、新零售領域擁有10年以上的管理經驗。 
+工作之餘，楊雋哲先生是名不折不扣的足球迷。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            智慧物流 賦能世界
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+聯繫我們
+
+
+
+
+
+
+
+
+
+
+
+
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P9R4HZ2');
+中國: +86 4000 450 010
+亞太: +852 3462 2128
+歐洲: +49 211 53829033
+日本: +81 0476 37 7509
+美國: +1 404 406 3961銷售: sales@geekplus.com媒體:  pr@geekplus.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+免責聲明
+信息保護政策
+
+
+
+
+              COPYRIGHT © 2022 Geekplus Technology Co., Ltd.
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(function () {
+    window.addEventListener('load', function () {
+        setTimeout(function () {
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', '/_hcms/perf', true /*async*/);
+            xhr.setRequestHeader("Content-type", "application/json");
+            xhr.onreadystatechange = function () {
+                // do nothing.
+            };
+            var connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+            function populateNetworkInfo(name, connection, info) {
+                if (name in connection) {
+                    info[name] = connection[name];
+                }
+            }
+            var networkInfo = {};
+            if (connection) {
+                ['type', 'effectiveType', 'downlink', 'rtt'].forEach(function(name) {
+                    populateNetworkInfo(name, connection, networkInfo);
+                });
+            }
+            var perfData = {
+                url: location.href,
+                portal: 5868638,
+                content: 71577241601,
+                group: -1,
+                connection: networkInfo,
+                timing: performance.timing
+            };
+            xhr.send(JSON.stringify(perfData));
+        }, 3000);  // Execute this 3 seconds after onload.
+    });
+})();
+
+
+var hsVars = hsVars || {}; hsVars['language'] = 'zh-hant';
+
+
+
+
+
+
+
+      
+
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      if(document.querySelector(this.getAttribute('href'))){
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+
+
+
+
+  $(function () {
+
+    try {
+      $('.odm_work li').hover(function () {
+        $('.odm_work .text_over').html('');
+        // let title = $(this).data('title');
+        let sub = $(this).data('sub');
+        $(this).addClass('act').siblings().removeClass('act');
+        $('.odm_work .text_over').html(sub);
+      });
+    } catch (error) {
+
+    }
+
+  })
+  $(document).ready(function () {
+    $('.odm_work .text_over').html('');
+    let sub = $('.odm_work li:first-child').data('sub');
+    $('.odm_work li:first-child').addClass('act').siblings().removeClass('act');
+    $('.odm_work .text_over').html(sub);
+  })
+
+
+
+
+
+
+
+
+  $(function() {
+
+
+    //leaderç‚¹å‡»å¼¹çª—æ•ˆæžœ
+    try {
+      $('.about_leader li').click(function() {
+        console.log($(this).html());
+        let html = $(this).html();
+        layer.open({
+          type: 1,
+          // offset: '182px',
+          skin: 'layui-layer-my', //åŠ ä¸Šè¾¹æ¡†
+          area: '80%', //å®½é«˜
+          content: html,
+          shadeClose: true,
+          zIndex: 199002101521
+        });
+      });
+
+      //gareer å¼¹çª—
+      $('.gareer_detail').click(function() {
+
+        // let html = $(this).html();
+        layer.open({
+          type: 1,
+          offset: '180px',
+          skin: 'layui-layer-my', //åŠ ä¸Šè¾¹æ¡†
+          area: ['80%', '70%'], //å®½é«˜
+          shade: false,
+          content: $('.gareer_detail_lay_content'),
+          // shadeClose: true,
+          scrollbar: false,
+          zIndex: 199002101521,
+        });
+      });
+    } catch (error) {
+
+    }
+
+  });
+
+
+
+
+
+
+
+
+
+
+
+        var options = {
+            portalId: '5868638',
+            formId: '5a28518e-c3a6-4127-864b-6e6a2bca42fb',
+            formInstanceId: '3898',
+            pageId: '71577241601',
+            region: 'na1',
+            
+            
+            
+            
+            pageName: "\u95DC\u65BC\u6211\u5011",
+            
+            
+            redirectUrl: "https:\/\/source.blog.geekplus.com\/en-us\/thankyou",
+            
+            
+            
+            
+            
+            css: '',
+            target: '#hs_form_target_form_430049880',
+            
+            
+            
+            
+            
+            contentType: "standard-page",
+            
+            
+            
+            formsBaseUrl: '/_hcms/forms/',
+            
+            
+            
+            formData: {
+                cssClass: 'hs-form stacked hs-custom-form'
+            }
+        };
+
+        options.getExtraMetaDataBeforeSubmit = function() {
+            var metadata = {};
+            
+
+            if (hbspt.targetedContentMetadata) {
+                var count = hbspt.targetedContentMetadata.length;
+                var targetedContentData = [];
+                for (var i = 0; i < count; i++) {
+                    var tc = hbspt.targetedContentMetadata[i];
+                     if ( tc.length !== 3) {
+                        continue;
+                     }
+                     targetedContentData.push({
+                        definitionId: tc[0],
+                        criterionId: tc[1],
+                        smartTypeId: tc[2]
+                     });
+                }
+                metadata["targetedContentMetadata"] = JSON.stringify(targetedContentData);
+            }
+
+            return metadata;
+        };
+
+        hbspt.forms.create(options);
+    
+
+
+var _hsq = _hsq || [];
+_hsq.push(["setContentType", "standard-page"]);
+_hsq.push(["setCanonicalUrl", "https:\/\/source.www.geekplus.com\/zh-hant\/company"]);
+_hsq.push(["setPageId", "71577241601"]);
+_hsq.push(["setContentMetadata", {
+    "contentPageId": 31431608702,
+    "legacyPageId": "71577241601",
+    "contentFolderId": null,
+    "contentGroupId": null,
+    "abTestId": null,
+    "languageVariantId": 71577241601,
+    "languageCode": "zh-hant",
+    
+}]);
+
+
+
+
+var hsVars = {
+    ticks: 1681870776589,
+    page_id: 71577241601,
+    
+    content_group_id: 0,
+    portal_id: 5868638,
+    app_hs_base_url: "https://app.hubspot.com",
+    cp_hs_base_url: "https://cp.hubspot.com",
+    language: "zh-hant",
+    analytics_page_type: "standard-page",
+    analytics_page_id: "71577241601",
+    category_id: 1,
+    folder_id: 0,
+    is_hubspot_user: false
+}
+
+
+
